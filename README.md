@@ -1,7 +1,6 @@
 # Harri1118.github.io
 <html>
 <head>
-<title>Harrison McKenna</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <h1>Harrison McKenna</h1>
