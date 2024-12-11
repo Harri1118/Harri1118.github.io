@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import AOS from 'aos';
+import NestedModal from './NestedModal';
 
 const AnimatedCard = styled(Card)(({ theme }) => ({
   maxWidth: 345,
@@ -42,7 +43,7 @@ export default function MediaCard() {
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
-        <Button size="small">Learn More</Button>
+        <NestedModal size="small"/>
       </CardActions>
     </AnimatedCard>
   );

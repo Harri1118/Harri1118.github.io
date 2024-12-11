@@ -17,7 +17,7 @@ const BackgroundBox = styled(Box)(({ theme }) => ({
   position: 'relative',
   fontFamily: 'Ring of Kerry',
   minHeight: '100vh',
-  backgroundImage: 'url(https://static.wikia.nocookie.net/the-middle-earth-cinematic-universe/images/7/73/Shire.jpg/revision/latest?cb=20210709083101)',
+  backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',

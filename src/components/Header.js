@@ -27,7 +27,7 @@ function Header() {
         maxWidth: { xs: 350, md: 250 },
       }}
         alt="The house from the offer."
-        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
+        src="https://media.licdn.com/dms/image/v2/D4E35AQHdsxZsWWeGNw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1724352473197?e=1734544800&v=beta&t=U7vcq3gXd64hB2utTVi5wav9QTu_rdagXRcFgJ6piQU"
       />
       <Typography variant="h2" component="h2" data-aos="fade-in">
         Goal

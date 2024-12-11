@@ -1,107 +1,208 @@
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import { useEffect, useRef } from 'react';
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent } from '@mui/lab';
+import { Paper, Typography, Box } from '@mui/material';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
-import MediaCard from '../elements/MediaCard'
+import '../css/WorkExperience.css'
+function WorkExperience() {
+  const elementsRef = useRef([]);
 
-function WorkExperience(){
-    return (
-      
-    <VerticalTimeline>
-          
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="2011 - present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2010 - 2011"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Art Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2008 - 2010"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-    <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2006 - 2008"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-    <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="April 2013"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<SchoolIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-    <p>
-      Strategy, Social Media
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="November 2012"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<SchoolIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="2002 - 2006"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<SchoolIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-    <p>
-      Creative Direction, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-    icon={<StarIcon />}
-  />
-</VerticalTimeline>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+          }
+        });
+      },
+      { threshold: 0.1 }
     );
+
+    elementsRef.current.forEach((element) => {
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      elementsRef.current.forEach((element) => {
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, []);
+
+  return (
+    <Timeline>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            2011 - present
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <WorkIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+            <Typography variant="h6" component="h1">
+              Creative Director
+            </Typography>
+            <Typography>Miami, FL</Typography>
+            <Typography>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineContent>
+          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+            <Typography variant="h6" component="h1">
+              Art Director
+            </Typography>
+            <Typography>San Francisco, CA</Typography>
+            <Typography>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</Typography>
+          </Paper>
+        </TimelineContent>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <WorkIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            2010 - 2011
+          </Typography>
+        </TimelineOppositeContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            2008 - 2010
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <WorkIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+            <Typography variant="h6" component="h1">
+              Web Designer
+            </Typography>
+            <Typography>Los Angeles, CA</Typography>
+            <Typography>User Experience, Visual Design</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineContent>
+          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+            <Typography variant="h6" component="h1">
+              Web Designer
+            </Typography>
+            <Typography>San Francisco, CA</Typography>
+            <Typography>User Experience, Visual Design</Typography>
+          </Paper>
+        </TimelineContent>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <WorkIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            2006 - 2008
+          </Typography>
+        </TimelineOppositeContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            April 2013
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+            <Typography variant="h6" component="h1">
+              Content Marketing for Web, Mobile and Social Media
+            </Typography>
+            <Typography>Online Course</Typography>
+            <Typography>Strategy, Social Media</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineContent>
+          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+            <Typography variant="h6" component="h1">
+              Agile Development Scrum Master
+            </Typography>
+            <Typography>Certification</Typography>
+            <Typography>Creative Direction, User Experience, Visual Design</Typography>
+          </Paper>
+        </TimelineContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            November 2012
+          </Typography>
+        </TimelineOppositeContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            2002 - 2006
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+            <Typography variant="h6" component="h1">
+              Bachelor of Science in Interactive Digital Media Visual Imaging
+            </Typography>
+            <Typography>Bachelor Degree</Typography>
+            <Typography>Creative Direction, Visual Design</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="success">
+            <StarIcon />
+          </TimelineDot>
+        </TimelineSeparator>
+        <TimelineContent>
+          <Box display="flex" justifyContent="center"/>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
+  );
 }
 
 export default WorkExperience;
