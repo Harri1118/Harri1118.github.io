@@ -53,8 +53,8 @@ function ChildModal() {
 }
 
 export default function NestedModal(props) {
-  const {title, description, image, date, skills, link, youtubeLink} = props
-  const [skillObjs, setSkills] = useState([])
+  const {title, description, image, date, link, youtubeLink, skills} = props
+  const skillObjs = []
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -64,9 +64,19 @@ export default function NestedModal(props) {
   };
 
   useEffect(() => {
-      console.log(skills)
-      //objectMap.Skills.map()
-    }, []);
+    putData()
+    console.log(link)
+  }, [skills]);
+
+  function putData(){
+    let Skills = objectMap.Skills
+    for(let skillEntry of Skills){
+      if(skills.includes(skillEntry.title)){
+        skillObjs.push(skillEntry)
+      }
+    }
+  }
+
   return (
     <div>
       <Button onClick={handleOpen}>Learn more</Button>
@@ -92,7 +102,7 @@ export default function NestedModal(props) {
         <Typography variant="body1" id="parent-modal-description">
             {description}
         </Typography>
-        <Link href={link} target="_blank" rel="noopener noreferrer">
+        <Link href={link} target="_blank" rel="noopener noreferrer" color="#fff">
             Click here to view repo
         </Link>
         <br/>

@@ -23,7 +23,7 @@ const AnimatedCard = styled(Card)(({ theme }) => ({
 }));
 
 export default function MediaCard(props) {
-  const {title, description, image, date, skills} = props
+  const {title, description, image, date, link, youtubeLink, skills} = props
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -45,7 +45,7 @@ export default function MediaCard(props) {
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
-        <NestedModal size="small" title={title} description={description} image={image} date={date} skills={skills} />
+        <NestedModal size="small" title={title} description={description} image={image} date={date} link={link} youtubeLink={youtubeLink} skills={skills} />
       </CardActions>
     </AnimatedCard>
   );
