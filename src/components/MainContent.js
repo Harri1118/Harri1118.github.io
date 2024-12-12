@@ -13,9 +13,6 @@ function MainContent() {
 
   return (
     <div className="main-content">
-      {/*<section data-aos="fade-up">Links</section>*/}
-      
-
     <Box
       component="header"
       data-aos="fade-up"
@@ -31,9 +28,6 @@ function MainContent() {
         Work Experience
       </Typography>
       <WorkExperience/>
-      
-      <section data-aos="fade-up">Education</section>
-      {/* Add this later: <section data-aos="fade-up">Certifications</section> */}
     </Box>
     </div>
   );

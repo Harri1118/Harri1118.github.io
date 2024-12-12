@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Box, IconButton } from '@mui/material';
+import { Typography, Box, IconButton, Link } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import AOS from 'aos';
 import '../css/Header.css';
@@ -54,9 +54,11 @@ function Header() {
                 position: 'absolute',
                 top: 0,
                 left: 0,
+                borderRadius: '0.5rem'
               }}
               alt="The house from the offer."
               src={images[currentImage]}
+              data-aos="fade-in"
             />
           </CSSTransition>
         </TransitionGroup>
@@ -73,7 +75,7 @@ function Header() {
           <ArrowForward />
         </IconButton>
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 , alignItems: 'center', flexWrap: 'wrap',}}>
         {images.map((_, index) => (
           <Box
             key={index}
@@ -97,6 +99,7 @@ function Header() {
           modern technologies, I enjoy solving complex problems and delivering
           impactful solutions.
         </Typography>
+        <Link></Link>
       </Box>
     </Box>
   );

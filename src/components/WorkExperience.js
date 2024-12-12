@@ -4,6 +4,7 @@ import { Paper, Typography, Box } from '@mui/material';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
+import AOS from 'aos'
 import '../css/WorkExperience.css'
 function WorkExperience() {
   const elementsRef = useRef([]);
@@ -35,11 +36,14 @@ function WorkExperience() {
     };
   }, []);
 
+  useEffect(() => {
+          AOS.init({ duration: 1000 });
+      }, []);
   return (
     <Timeline>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" data-aos="fade-in">
             2011 - present
           </Typography>
         </TimelineOppositeContent>
@@ -50,7 +54,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff'}}>
             <Typography variant="h6" component="h1">
               Creative Director
             </Typography>
@@ -61,7 +65,7 @@ function WorkExperience() {
       </TimelineItem>
       <TimelineItem>
         <TimelineContent>
-          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Art Director
             </Typography>
@@ -76,14 +80,14 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" data-aos="fade-in">
             2010 - 2011
           </Typography>
         </TimelineOppositeContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" data-aos="fade-in">
             2008 - 2010
           </Typography>
         </TimelineOppositeContent>
@@ -94,7 +98,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Web Designer
             </Typography>
@@ -105,7 +109,7 @@ function WorkExperience() {
       </TimelineItem>
       <TimelineItem>
         <TimelineContent>
-          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Web Designer
             </Typography>
@@ -120,14 +124,14 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" data-aos="fade-in">
             2006 - 2008
           </Typography>
         </TimelineOppositeContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" data-aos="fade-in">
             April 2013
           </Typography>
         </TimelineOppositeContent>
@@ -138,7 +142,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Content Marketing for Web, Mobile and Social Media
             </Typography>
@@ -149,7 +153,7 @@ function WorkExperience() {
       </TimelineItem>
       <TimelineItem>
         <TimelineContent>
-          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Agile Development Scrum Master
             </Typography>
@@ -164,14 +168,14 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" data-aos="fade-in">
             November 2012
           </Typography>
         </TimelineOppositeContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" data-aos="fade-in">
             2002 - 2006
           </Typography>
         </TimelineOppositeContent>
@@ -182,7 +186,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Bachelor of Science in Interactive Digital Media Visual Imaging
             </Typography>

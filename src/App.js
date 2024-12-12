@@ -49,6 +49,7 @@ function App() {
         <MainContent />
         <Footer />
       </BackgroundBox>
+      <Box sx={{ m: 10 }} />
     </ThemeProvider>
   );
 }

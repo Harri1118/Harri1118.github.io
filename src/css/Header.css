@@ -1,8 +1,8 @@
 .slide-enter {
     opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
     width: 100%;
     height: 100%;
     transform: translateX(100%);
@@ -10,18 +10,18 @@
   
   .slide-enter-active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0%);
     transition: opacity 500ms, transform 500ms;
   }
   
   .slide-exit {
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
+    opacity: 0;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
     width: 100%;
     height: 100%;
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
   
   .slide-exit-active {
