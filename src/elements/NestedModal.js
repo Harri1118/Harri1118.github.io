@@ -1,6 +1,9 @@
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
 import { Box, Typography, Button, Link } from '@mui/material';
+import objectMap from '../objectClassifications/objects.json'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const style = {
   position: 'absolute',
@@ -49,7 +52,9 @@ function ChildModal() {
   );
 }
 
-export default function NestedModal() {
+export default function NestedModal(props) {
+  const {title, description, image, date, skills, link, youtubeLink} = props
+  const [skillObjs, setSkills] = useState([])
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -58,6 +63,10 @@ export default function NestedModal() {
     setOpen(false);
   };
 
+  useEffect(() => {
+      console.log(skills)
+      //objectMap.Skills.map()
+    }, []);
   return (
     <div>
       <Button onClick={handleOpen}>Learn more</Button>
@@ -69,19 +78,22 @@ export default function NestedModal() {
       >
         <Box sx={{ ...style, width: "90%", height: 900, alignContent: "center", textAlign: "center" }}>
             <Typography variant="h2" id="parent-modal-title">
-            Title goes here
+            {title}
             </Typography>
         <Box
             component="img"
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg"
-            alt="Girl in a jacket"
+            src={image}
+            //alt="Girl in a jacket"
             sx={{ width: "30%", height: "50%", justifyContent: "center" }}
         />
         <Typography variant="body1" id="parent-modal-description">
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            {date}
         </Typography>
-        <Link href="https://github.com/Harri1118/Harrison-McKenna-Website-Portfolio" target="_blank" rel="noopener noreferrer">
-            Click here to view
+        <Typography variant="body1" id="parent-modal-description">
+            {description}
+        </Typography>
+        <Link href={link} target="_blank" rel="noopener noreferrer">
+            Click here to view repo
         </Link>
         <br/>
         <Button>Show skills</Button>

@@ -36,6 +36,7 @@ function Header() {
           modern technologies, I enjoy solving complex problems and delivering
           impactful solutions.
         </Typography>
+        <br/>
         <Link href="https://www.overleaf.com/project/66fb66249304752bb0d0559a" target="_blank" color="#fff">Check out my resume!</Link>
       </Box>
       

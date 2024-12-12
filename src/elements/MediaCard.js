@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -22,7 +22,9 @@ const AnimatedCard = styled(Card)(({ theme }) => ({
   },
 }));
 
-export default function MediaCard() {
+export default function MediaCard(props) {
+  const {title, description, image, date, skills} = props
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -31,19 +33,19 @@ export default function MediaCard() {
     <AnimatedCard data-aos="fade-up">
       <CardMedia
         sx={{ height: 140 }}
-        image="https://www.shutterstock.com/shutterstock/photos/2284126663/display_1500/stock-photo-data-science-and-big-data-technology-scientist-computing-analysing-and-visualizing-complex-data-2284126663.jpg"
-        title="Title goes here"
+        image={image}
+        title={title}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Title goes here
+          {title}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Body goes here
+          {description}
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
-        <NestedModal size="small"/>
+        <NestedModal size="small" title={title} description={description} image={image} date={date} skills={skills} />
       </CardActions>
     </AnimatedCard>
   );

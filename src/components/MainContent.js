@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Header from './Header'
 import WorkExperience from './WorkExperience'
 import Projects from './Projects'
+import Skills from './Skills'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {Typography, Box} from '@mui/material'
@@ -28,6 +29,7 @@ function MainContent() {
         Work Experience
       </Typography>
       <WorkExperience/>
+      <Skills/>
     </Box>
     </div>
   );
