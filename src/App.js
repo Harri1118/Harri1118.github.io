@@ -6,6 +6,7 @@ import MainContent from './components/MainContent';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box, styled } from '@mui/material';
+import ImageSlider from './elements/ImageSlider'
 import './App.css'
 const darkTheme = createTheme({
   palette: {

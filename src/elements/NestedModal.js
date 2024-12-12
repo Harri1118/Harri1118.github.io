@@ -35,7 +35,10 @@ function ChildModal() {
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">Text in a child modal</h2>
+          {/* <h2 id="child-modal-title">Title in a child modal</h2> */}
+          <Typography variant="h2" component="h2" data-aos="fade-in" fontFamily={"Ring of Kerry, sans-serif"}>
+          Welcome
+        </Typography>
           <p id="child-modal-description">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </p>
@@ -57,22 +60,22 @@ export default function NestedModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>Learn more</Button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Box sx={{ ...style, width: 400 }}>
+        <Box sx={{ ...style, width: "90%", height: 900, alignContent: "center", textAlign: "center" }}>
             <Typography variant="h2" id="parent-modal-title">
-            Text in a modal
+            Title goes here
             </Typography>
         <Box
             component="img"
             src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg"
             alt="Girl in a jacket"
-            sx={{ width: 500, height: 600 }}
+            sx={{ width: "30%", height: "50%", justifyContent: "center" }}
         />
         <Typography variant="body1" id="parent-modal-description">
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
@@ -80,6 +83,9 @@ export default function NestedModal() {
         <Link href="https://github.com/Harri1118/Harrison-McKenna-Website-Portfolio" target="_blank" rel="noopener noreferrer">
             Click here to view
         </Link>
+        <br/>
+        <Button>Show skills</Button>
+        <br/>
         <Button onClick={handleClose}>Close</Button>
             </Box>
       </Modal>
