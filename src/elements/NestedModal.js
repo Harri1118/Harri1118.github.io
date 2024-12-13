@@ -4,6 +4,7 @@ import { Box, Typography, Button, Link } from '@mui/material';
 import objectMap from '../objectClassifications/objects.json'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import SkillsIcons from './SkillsIcons'
 
 const style = {
   position: 'absolute',
@@ -107,6 +108,8 @@ export default function NestedModal(props) {
         </Link>
         <br/>
         <Button>Show skills</Button>
+        <br/>
+        <SkillsIcons skills={skillObjs}/>
         <br/>
         <Button onClick={handleClose}>Close</Button>
             </Box>
