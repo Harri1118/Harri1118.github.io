@@ -5,6 +5,8 @@ import objectMap from '../objectClassifications/objects.json'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import SkillsIcons from './SkillsIcons'
+import AccordionExpandIcon from './AccordionExpandIcon';
+import ReactPlayer from 'react-player';
 
 const style = {
   position: 'absolute',
@@ -66,7 +68,6 @@ export default function NestedModal(props) {
 
   useEffect(() => {
     putData()
-    console.log(link)
   }, [skills]);
 
   function putData(){
@@ -87,7 +88,15 @@ export default function NestedModal(props) {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Box sx={{ ...style, width: "90%", height: 900, alignContent: "center", textAlign: "center" }}>
+        <Box 
+          sx={{ 
+            ...style, 
+            width: "90%", 
+            height: 900, 
+            alignContent: "center", 
+            textAlign: "center" ,
+            overflow: 'auto'
+          }}>
             <Typography variant="h2" id="parent-modal-title">
             {title}
             </Typography>
@@ -97,6 +106,10 @@ export default function NestedModal(props) {
             //alt="Girl in a jacket"
             sx={{ width: "30%", height: "50%", justifyContent: "center" }}
         />
+        {
+          youtubeLink != "" &&
+            <ReactPlayer url={youtubeLink} />
+        }
         <Typography variant="body1" id="parent-modal-description">
             {date}
         </Typography>
@@ -107,9 +120,18 @@ export default function NestedModal(props) {
             Click here to view repo
         </Link>
         <br/>
-        <Button>Show skills</Button>
-        <br/>
-        <SkillsIcons skills={skillObjs}/>
+        {putData()}
+        <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: 2,
+        }}
+        >
+        <AccordionExpandIcon skills={skillObjs}/>
+        {/* <SkillsIcons skills={skillObjs}/> */}
+        </Box>
         <br/>
         <Button onClick={handleClose}>Close</Button>
             </Box>

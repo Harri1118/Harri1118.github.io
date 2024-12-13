@@ -6,8 +6,8 @@
           "image": "https://images.freeimages.com/fic/images/icons/1265/doctor_who/256/the_tardis.png",
           "date": "10/17",
           "link": "https://www.youtube.com/watch?v=bfoBArDgWak",
-          "youtubeLink": "",
-          "skills": ["Test Skill"]  
+          "youtubeLink": "https://www.youtube.com/watch?v=bfoBArDgWak",
+          "skills": ["Test Skill", "Test skill 2"]  
         },
         {
             "projectTitle": "Test title2",

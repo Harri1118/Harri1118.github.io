@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
-import { useState } from 'react';
-
-const heights = [150, 30, 90, 70, 110, 150, 130, 80, 50, 90, 100, 150, 30, 50, 80];
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -16,17 +13,32 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.applyStyles('dark', {
     backgroundColor: '#1A2027',
   }),
+  height: 100
 }));
 
-export default function BasicMasonry(props) {
+export default function SkillsIcons(props) {
   const {skills} = props
 
+  useEffect(() => {
+    console.log(skills)
+  }, [props]);
+
   return (
-    <Box sx={{ width: 500, minHeight: 393 }}>
+    <Box sx={{ width: 500, minHeight: 393}}>
       <Masonry columns={4} spacing={2}>
-        {heights.map((height, index) => (
-          <Item key={index} sx={{ height }}>
-            {index + 1}
+        {skills.map((skill, index) => (
+          <Item key={index}>
+            <Box
+              component="img"
+              src={skill.image}
+              sx={{
+                width: '100%',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: 1,
+              }}
+            />
+            {skill.title}
           </Item>
         ))}
       </Masonry>
