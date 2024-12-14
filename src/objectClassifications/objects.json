@@ -27,7 +27,39 @@
         }
     ],
     "Jobs":[
-        {}
+        {
+            "jobTitle": "job title #1",
+            "description": "job #1 description",
+            "location": "New York   ",
+            "image": "",
+            "startDate": "2023",
+            "endDate": "present",
+            "employer": "",
+            "skills": "",
+            "timelineType" : "work"
+        },
+        {
+            "jobTitle": "job title #2",
+            "description": "job #2 description",
+            "location": "New York   ",
+            "image": "",
+            "startDate": "2023",
+            "endDate": "present",
+            "employer": "",
+            "skills": "",
+            "timelineType" : "work"
+        },
+        {
+            "jobTitle": "job title #3",
+            "description": "job #3 description",
+            "location": "New York   ",
+            "image": "",
+            "startDate": "2023",
+            "endDate": "present",
+            "employer": "",
+            "skills": "",
+            "timelineType" : "work"
+        }
     ],
     "Skills":[
         {

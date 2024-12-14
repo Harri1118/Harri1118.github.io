@@ -31,7 +31,7 @@ function Header() {
       </Typography>
       <Box sx={{ maxWidth: '600px', margin: '0 auto' }}>
         <Typography variant="body1" data-aos="fade-in">
-          I'm a passionate developer with a keen interest in creating dynamic,
+          My name is Harrison! I'm a passionate developer with a keen interest in creating dynamic,
           user-friendly web applications. With expertise in React.js and other
           modern technologies, I enjoy solving complex problems and delivering
           impactful solutions.
