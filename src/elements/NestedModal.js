@@ -107,8 +107,15 @@ export default function NestedModal(props) {
             sx={{ width: "30%", height: "50%", justifyContent: "center" }}
         />
         {
-          youtubeLink != "" &&
-            <ReactPlayer url={youtubeLink} />
+          (youtubeLink != null) &&
+            <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: 2,
+            }}
+            ><ReactPlayer url={youtubeLink}/></Box>
         }
         <Typography variant="body1" id="parent-modal-description">
             {date}
