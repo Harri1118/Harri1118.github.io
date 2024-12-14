@@ -40,7 +40,7 @@ function WorkExperience() {
           AOS.init({ duration: 1000 });
       }, []);
   return (
-    <Timeline>
+    <Timeline data-aos="fade-up">
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary" data-aos="fade-in">
@@ -54,7 +54,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff'}}>
+          <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff'}}>
             <Typography variant="h6" component="h1">
               Creative Director
             </Typography>
@@ -65,7 +65,7 @@ function WorkExperience() {
       </TimelineItem>
       <TimelineItem>
         <TimelineContent>
-          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Art Director
             </Typography>
@@ -98,7 +98,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Web Designer
             </Typography>
@@ -109,7 +109,7 @@ function WorkExperience() {
       </TimelineItem>
       <TimelineItem>
         <TimelineContent>
-          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: 'rgb(33, 150, 243)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Web Designer
             </Typography>
@@ -142,7 +142,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Content Marketing for Web, Mobile and Social Media
             </Typography>
@@ -153,7 +153,7 @@ function WorkExperience() {
       </TimelineItem>
       <TimelineItem>
         <TimelineContent>
-          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Agile Development Scrum Master
             </Typography>
@@ -186,7 +186,7 @@ function WorkExperience() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} data-aos="fade-in" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
+          <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: 'rgb(233, 30, 99)', color: '#fff' }}>
             <Typography variant="h6" component="h1">
               Bachelor of Science in Interactive Digital Media Visual Imaging
             </Typography>

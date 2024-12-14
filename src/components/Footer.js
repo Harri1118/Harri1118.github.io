@@ -22,10 +22,10 @@ function Footer() {
       sx={{ minHeight: '40vh', width: '100vh' }}
       width="100%"   
       paddingTop="1%"
-       data-aos="fade-in" 
+      data-aos="fade-up" 
        
       >
-        <Typography variant="h3" component="h2" data-aos="fade-in" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Typography variant="h3" component="h2" data-aos="fade-up" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             Socials
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: "5%" } }>

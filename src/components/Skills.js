@@ -14,10 +14,20 @@ function Skills() {
 
     return (
         <div>
-            <Typography variant="h3" component="h3" data-aos="fade-in" fontFamily={"Ring of Kerry, sans-serif"}>
+            <Typography variant="h3" component="h3" data-aos="fade-up" fontFamily={"Ring of Kerry, sans-serif"}>
                 Skills
             </Typography>
-            <SkillsIcons skills={objects.Skills} data-aos="fade-in"/>
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        marginTop: 2,
+                    }}
+                >
+                        <SkillsIcons skills={objects.Skills} animate="true"/>
+                </Box>
+            
         </div>
     );
 }

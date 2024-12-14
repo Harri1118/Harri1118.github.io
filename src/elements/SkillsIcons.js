@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
+import AOS from 'aos';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -17,14 +18,18 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function SkillsIcons(props) {
-  const {skills} = props
+  const {skills, animate} = props
 
   useEffect(() => {
-    console.log(skills)
-  }, [props]);
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
-    <Box sx={{ width: 500, minHeight: 393}}>
+    <Box 
+      container
+      sx={{ width: 500, minHeight: 393 }}
+      data-aos={animate=="true" ? "fade-up" : undefined}
+    >
       <Masonry columns={4} spacing={2}>
         {skills.map((skill, index) => (
           <Item key={index}>

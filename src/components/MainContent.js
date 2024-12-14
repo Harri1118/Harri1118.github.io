@@ -1,6 +1,5 @@
 // src/components/MainContent.js
 import React, { useEffect } from 'react';
-import Header from './Header'
 import WorkExperience from './WorkExperience'
 import Projects from './Projects'
 import Skills from './Skills'
