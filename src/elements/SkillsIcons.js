@@ -32,7 +32,15 @@ export default function SkillsIcons(props) {
     >
       <Masonry columns={4} spacing={2}>
         {skills.map((skill, index) => (
-          <Item key={index}>
+          <Item key={index}
+            sx={{
+              transition: "transform 0.3s ease, box-shadow 0.3s ease",
+              "&:hover": {
+                  transform: "scale(1.05)",
+                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+              },
+            }}
+          >
             <Box
               component="img"
               src={skill.image}

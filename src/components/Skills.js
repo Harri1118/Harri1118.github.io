@@ -13,21 +13,21 @@ function Skills() {
     }, []);
 
     return (
-        <div>
+        <div
+            style={{ 
+                display: 'flex', 
+                flexDirection: 'column', 
+                alignItems: 'center', 
+                justifyContent: 'center', 
+                //minHeight: '100vh' // or adjust as needed
+            }}
+        >
             <Typography variant="h3" component="h3" data-aos="fade-up" fontFamily={"Ring of Kerry, sans-serif"}>
                 Skills
             </Typography>
-                <Box
-                    sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        marginTop: 2,
-                    }}
-                >
-                        <SkillsIcons skills={objects.Skills} animate="true"/>
-                </Box>
-            
+            <Box paddingTop={5}>
+                <SkillsIcons skills={objects.Skills} animate="true"/>  
+            </Box>
         </div>
     );
 }
