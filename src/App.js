@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -43,9 +44,10 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
+      <Navbar/>
       <BackgroundBox>
         <Header />
-        <MainContent />
+        <MainContent id="mainContents"/>
         <Footer />
       </BackgroundBox>
       <Box sx={{ m: 10 }} />
