@@ -17,7 +17,7 @@ function Projects() {
                 projects.map(
                     project => (
                         <Grid2 item xs={12} sm={6} md={4} lg={3}>
-                        <MediaCard title={project.projectTitle} image={project.image} description={project.description} date={project.date} link={project.link} youtubeLink={project.youtubeLink} skills ={project.skills}/>
+                            <MediaCard title={project.projectTitle} image={project.image} description={project.description} date={project.date} link={project.link} youtubeLink={project.youtubeLink} skills ={project.skills}/>
                         </Grid2>
                     )
                 )

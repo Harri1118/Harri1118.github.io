@@ -18,8 +18,7 @@ function Skills() {
                 display: 'flex', 
                 flexDirection: 'column', 
                 alignItems: 'center', 
-                justifyContent: 'center', 
-                //minHeight: '100vh' // or adjust as needed
+                justifyContent: 'center'
             }}
         >
             <Typography variant="h3" component="h3" data-aos="fade-up" fontFamily={"Ring of Kerry, sans-serif"}>

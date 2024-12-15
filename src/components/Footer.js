@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import { Typography, Box, IconButton, Link } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 function Footer() {
     useEffect(() => {
@@ -33,7 +33,8 @@ function Footer() {
                    justifyContent: 'center', 
                    alignItems: 'center', 
                    paddingTop: "5%",
-                   } }>
+                   } }
+                   >
         <Link href="https://github.com/Harri1118" target="_blank" rel="noopener noreferrer" color="#fff"
         sx={{
           transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -44,7 +45,6 @@ function Footer() {
         }}
         >
             <GitHubIcon fontSize="large" data-aos="fade-in"/>
-            github.com/Harri1118
         </Link>
         <Box sx={{ m: 10 }} />
         <Link href="https://www.linkedin.com/in/harrison-mckenna-908104224/" target="_blank" rel="noopener noreferrer" color="#fff"
@@ -57,7 +57,19 @@ function Footer() {
                   }}
         >
             <LinkedInIcon data-aos="fade-in" fontSize="large"/>
-            linkedin.com/harrison-mckenna-908104224
+        </Link>
+        </Box>
+        <Box sx={{ m: 10 }}>
+        <Link href="https://www.linkedin.com/in/harrison-mckenna-908104224/" target="_blank" rel="noopener noreferrer" color="#fff"
+                  sx={{
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                        "&:hover": {
+                            transform: "scale(1.05)",
+                            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+                        }
+                  }}
+        >
+            <YouTubeIcon data-aos="fade-in" fontSize="large"/>
         </Link>
         </Box>
     </Box>

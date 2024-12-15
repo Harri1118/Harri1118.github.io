@@ -27,7 +27,7 @@ export default function SkillsIcons(props) {
   return (
     <Box 
       container
-      sx={{ width: 500, minHeight: 393 }}
+      sx={{ width: 500, minHeight: "auto", paddingBottom: 5}}
       data-aos={animate=="true" ? "fade-up" : undefined}
     >
       <Masonry columns={4} spacing={2}>

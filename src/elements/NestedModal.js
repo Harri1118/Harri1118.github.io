@@ -2,9 +2,7 @@ import * as React from 'react';
 import Modal from '@mui/material/Modal';
 import { Box, Typography, Button, Link } from '@mui/material';
 import objectMap from '../objectClassifications/objects.json'
-import { useState } from 'react';
 import { useEffect } from 'react';
-import SkillsIcons from './SkillsIcons'
 import AccordionExpandIcon from './AccordionExpandIcon';
 import ReactPlayer from 'react-player';
 
@@ -41,7 +39,6 @@ function ChildModal() {
         aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style, width: 200 }}>
-          {/* <h2 id="child-modal-title">Title in a child modal</h2> */}
           <Typography variant="h2" component="h2" data-aos="fade-in" fontFamily={"Ring of Kerry, sans-serif"}>
           Welcome
         </Typography>
@@ -100,12 +97,14 @@ export default function NestedModal(props) {
             <Typography variant="h2" id="parent-modal-title">
             {title}
             </Typography>
-        <Box
+        {
+          image != null && 
+            <Box
             component="img"
             src={image}
-            //alt="Girl in a jacket"
             sx={{ width: "30%", height: "50%", justifyContent: "center" }}
-        />
+            />
+        }
         {
           (youtubeLink != null) &&
             <Box
@@ -123,9 +122,12 @@ export default function NestedModal(props) {
         <Typography variant="body1" id="parent-modal-description">
             {description}
         </Typography>
-        <Link href={link} target="_blank" rel="noopener noreferrer" color="#fff">
-            Click here to view repo
-        </Link>
+        {
+          link != null && 
+          <Link href={link} target="_blank" rel="noopener noreferrer" color="#fff">
+          Click here to view repo
+          </Link>
+        }
         <br/>
         {putData()}
         <Box
@@ -137,10 +139,9 @@ export default function NestedModal(props) {
         }}
         >
         <AccordionExpandIcon skills={skillObjs}/>
-        {/* <SkillsIcons skills={skillObjs}/> */}
         </Box>
         <br/>
-        <Button onClick={handleClose}>Close</Button>
+        <Button onClick={handleClose} >Close</Button>
             </Box>
       </Modal>
     </div>

@@ -6,7 +6,6 @@ import MainContent from './components/MainContent';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box, styled } from '@mui/material';
-import ImageSlider from './elements/ImageSlider'
 import './App.css'
 const darkTheme = createTheme({
   palette: {
@@ -16,7 +15,6 @@ const darkTheme = createTheme({
 
 const BackgroundBox = styled(Box)(({ theme }) => ({
   position: 'relative',
-  fontFamily: 'Ring of Kerry',
   minHeight: '100vh',
   backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg)',
   backgroundSize: 'cover',
