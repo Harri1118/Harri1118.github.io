@@ -36,9 +36,11 @@ function Header() {
   style={{ display: 'inline-block', fontSize: '6rem' }}
   repeat={0}
   data-aos="fade-up"
-  />
-      <ImageSlider/>
-      <Typography variant="h2" component="h2" data-aos="fade-up">
+  />  
+      
+      <ImageSlider  />
+      <Box id="header" paddingTop={10} height="100px"/>
+      <Typography variant="h2" component="h2" data-aos="fade-up" >
         Goal
       </Typography>
       <SequentialAnimation/>

@@ -19,15 +19,18 @@ function MainContent() {
       className="header"
       sx={{ textAlign: 'center', padding: '2rem' }}
     >
-      <Typography id="projects" variant="h3" component="h2" data-aos="fade-in" justify-content="center">
+      <Box id="projects" paddingTop={10} height="160px"/>
+      <Typography  variant="h3" component="h2" data-aos="fade-in" justify-content="center">
         Projects
       </Typography>
       <Projects/>
-      <Typography id="work-experience" variant="h3" component="h2" data-aos="fade-in" justify-content="center">
+      <Box id="work-experience" paddingTop={10} height="160px"/>
+      <Typography variant="h3" component="h2" data-aos="fade-in" justify-content="center">
         Work Experience
       </Typography>
       <WorkExperience/>
-      <Typography id="skills" variant="h3" component="h3" data-aos="fade-up" fontFamily={"Ring of Kerry, sans-serif"}>
+      <Box id="skills" paddingTop={10} height="150px"/>
+      <Typography  variant="h3" component="h3" data-aos="fade-up" fontFamily={"Ring of Kerry, sans-serif"}>
         Skills
       </Typography>
       <Skills/>

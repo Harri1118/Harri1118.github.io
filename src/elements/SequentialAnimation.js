@@ -14,16 +14,16 @@ function SequentialAnimation() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSecondAnimation(true);
-    }, goal.length * 13 + 1000); // Adjust timing based on the animation duration and pause
+    }, goal.length * 17 + 1000); // Adjust timing based on the animation duration and pause
     return () => clearTimeout(timer); // Cleanup on component unmount
   }, []);
 
   return (
-    <Box sx={{ maxWidth: '600px', margin: '0 auto' }} data-aos="fade-up">
+    <Box sx={{ width: '600px', height: '300px', margin: '0 auto' }} data-aos="fade-up">
       <TypeAnimation
         sequence={[goal, 1000]}
         wrapper="p"
-        speed={100}
+        speed={80}
         cursor={false}
         style={{ display: 'inline-block', fontSize: '20px' }}
         repeat={1} // Only animate once

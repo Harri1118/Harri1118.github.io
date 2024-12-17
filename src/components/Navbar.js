@@ -34,7 +34,10 @@ function Navbar() {
         {/* Desktop Menu */}
         {!isMobile && (
           <div>
-            <Button component={Link} to="projects" smooth={true} duration={500} sx={{ color: 'white' }}>
+            <Button component={Link} to="header" smooth={true} duration={500} offet={-40} sx={{ color: 'white' }}>
+              Summary
+            </Button>
+            <Button component={Link} to="projects" smooth={true} duration={500} offet={-40} sx={{ color: 'white' }}>
               Projects
             </Button>
             <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ color: 'white' }}>
@@ -42,6 +45,9 @@ function Navbar() {
             </Button>
             <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'white' }}>
               Skills
+            </Button>
+            <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'white' }}>
+              Contact me
             </Button>
           </div>
         )}
@@ -57,6 +63,13 @@ function Navbar() {
       {/* Mobile Drawer (Hamburger Menu) */}
       <Drawer anchor="right" open={drawerOpen} onClose={() => toggleDrawer(false)}>
         <List sx={{ width: 250 }} role="presentation" onClick={() => toggleDrawer(false)}>
+        <ListItem button>
+            <ListItemText>
+              <Button component={Link} to="header" smooth={true} duration={500} sx={{ color: 'black' }}>
+                Summary
+              </Button>
+            </ListItemText>
+          </ListItem>
           <ListItem button>
             <ListItemText>
               <Button component={Link} to="projects" smooth={true} duration={500} sx={{ color: 'black' }}>
@@ -75,6 +88,13 @@ function Navbar() {
             <ListItemText>
               <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'black' }}>
                 Skills
+              </Button>
+            </ListItemText>
+          </ListItem>
+          <ListItem button>
+            <ListItemText>
+              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'black' }}>
+                Contact me
               </Button>
             </ListItemText>
           </ListItem>

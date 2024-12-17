@@ -46,8 +46,8 @@ function App() {
       <CssBaseline />
       <Navbar/>
       <BackgroundBox>
-        <Header />
-        <MainContent id="mainContents"/>
+        <Header/>
+        <MainContent/>
         <Footer />
       </BackgroundBox>
       <Box sx={{ m: 10 }} />
