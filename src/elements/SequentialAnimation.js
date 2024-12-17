@@ -14,22 +14,19 @@ function SequentialAnimation() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSecondAnimation(true);
-    }, goal.length * 30 + 1000); // Adjust timing based on the animation duration and pause
+    }, goal.length * 13 + 1000); // Adjust timing based on the animation duration and pause
     return () => clearTimeout(timer); // Cleanup on component unmount
   }, []);
 
   return (
-    <Box sx={{ maxWidth: '600px', margin: '0 auto' }}>
+    <Box sx={{ maxWidth: '600px', margin: '0 auto' }} data-aos="fade-up">
       <TypeAnimation
         sequence={[goal, 1000]}
         wrapper="p"
-        speed={70}
+        speed={100}
         cursor={false}
         style={{ display: 'inline-block', fontSize: '20px' }}
         repeat={1} // Only animate once
-        data-aos="fade-up"
-        
-        
       />
       {showSecondAnimation && (
         <Link
@@ -44,7 +41,6 @@ function SequentialAnimation() {
             cursor={false}
             style={{ display: 'inline-block', fontSize: '20px', textDecoration: "underline" }}
             repeat={Infinity}
-            data-aos="fade-up"
           />
         </Link>
       )}

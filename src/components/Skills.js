@@ -21,9 +21,6 @@ function Skills() {
                 justifyContent: 'center'
             }}
         >
-            <Typography variant="h3" component="h3" data-aos="fade-up" fontFamily={"Ring of Kerry, sans-serif"}>
-                Skills
-            </Typography>
             <Box paddingTop={5}>
                 <SkillsIcons skills={objects.Skills} animate="true"/>  
             </Box>

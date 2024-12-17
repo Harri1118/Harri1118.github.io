@@ -34,7 +34,7 @@ function Header() {
   wrapper="h1" // Wraps the animation in an h1 element
   speed={50}
   style={{ display: 'inline-block', fontSize: '6rem' }}
-  repeat={Infinity}
+  repeat={0}
   data-aos="fade-up"
   />
       <ImageSlider/>
