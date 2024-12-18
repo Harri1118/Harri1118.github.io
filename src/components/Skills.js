@@ -1,8 +1,6 @@
-import MediaCard from '../elements/MediaCard';
-import { Typography, Box, IconButton, Link } from '@mui/material';
+import { Box} from '@mui/material';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import { Grid2 } from '@mui/material';
 import objects from '../objectClassifications/objects.json'
 import SkillsIcons from '../elements/SkillsIcons';
 
@@ -16,7 +14,7 @@ function Skills() {
         <div
             style={{ 
                 display: 'flex', 
-                flexDirection: 'column', 
+                flexDirection: 'row', 
                 alignItems: 'center', 
                 justifyContent: 'center'
             }}

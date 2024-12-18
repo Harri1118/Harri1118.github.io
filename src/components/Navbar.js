@@ -1,6 +1,5 @@
-// src/components/Navbar.js
 import React, { useState, useEffect } from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemText, useMediaQuery } from '@mui/material';
+import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemText, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll';
 
@@ -28,42 +27,60 @@ function Navbar() {
   };
 
   return (
-    <AppBar position={isAtBottom ? "relative" : "fixed"} sx={{transition: 'position 0.3s ease' }}>
-      <Toolbar>
+    <AppBar 
+      position={isAtBottom ? "relative" : "fixed"} 
+      sx={{
+        transition: 'position 0.3s ease',
+        background: 'transparent',
+        boxShadow: 'none'
+      }}
+    >
+      <Toolbar sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
 
-        {/* Desktop Menu */}
-        {!isMobile && (
-          <div>
-            <Button component={Link} to="header" smooth={true} duration={500} offet={-40} sx={{ color: 'white' }}>
-              Summary
-            </Button>
-            <Button component={Link} to="projects" smooth={true} duration={500} offet={-40} sx={{ color: 'white' }}>
-              Projects
-            </Button>
-            <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ color: 'white' }}>
-              Work Experience
-            </Button>
-            <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'white' }}>
-              Skills
-            </Button>
-            <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'white' }}>
-              Contact me
-            </Button>
-          </div>
-        )}
+        {/* Container for navbar buttons with fixed width */}
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          width: '80%',  // Adjust the width as per your needs (e.g., 80% of the screen width)
+          maxWidth: '1200px', // Maximum width for large screens
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',  // Background color for the "box" around buttons
+          padding: '10px 20px',  // Padding inside the "box"
+          borderRadius: '8px', // Optional: rounded corners for the box
+        }}>
+          {/* Desktop Menu */}
+          {!isMobile && (
+            <>
+              <Button component={Link} to="header" smooth={true} duration={500} offset={-40} sx={{ color: '#ffff' }}>
+                Summary
+              </Button>
+              <Button component={Link} to="projects" smooth={true} duration={500} offset={-40} sx={{ color: '#ffff' }}>
+                Projects
+              </Button>
+              <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ color: '#ffff' }}>
+                Work Experience
+              </Button>
+              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: '#ffff' }}>
+                Skills
+              </Button>
+              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: '#ffff' }}>
+                Contact me
+              </Button>
+            </>
+          )}
 
-        {/* Mobile Menu Button (Hamburger Icon) */}
-        {isMobile && (
-          <IconButton edge="end" color="inherit" onClick={() => toggleDrawer(true)}>
-            <MenuIcon />
-          </IconButton>
-        )}
+          {/* Mobile Menu Button (Hamburger Icon) */}
+          {isMobile && (
+            <IconButton edge="end" color="inherit" onClick={() => toggleDrawer(true)}>
+              <MenuIcon />
+            </IconButton>
+          )}
+        </div>
       </Toolbar>
 
       {/* Mobile Drawer (Hamburger Menu) */}
       <Drawer anchor="right" open={drawerOpen} onClose={() => toggleDrawer(false)}>
         <List sx={{ width: 250 }} role="presentation" onClick={() => toggleDrawer(false)}>
-        <ListItem button>
+          <ListItem button>
             <ListItemText>
               <Button component={Link} to="header" smooth={true} duration={500} sx={{ color: 'black' }}>
                 Summary
