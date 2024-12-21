@@ -5,8 +5,8 @@
           "description": "Test description",
           "image": "https://images.freeimages.com/fic/images/icons/1265/doctor_who/256/the_tardis.png",
           "date": "10/17",
-          "link": "https://www.youtube.com/watch?v=bfoBArDgWak",
-          "youtubeLink": "https://www.youtube.com/watch?v=bfoBArDgWak",
+          "link": "https://www.youtube.com/watch?v=1BrhZBMOS8U",
+          "youtubeLink": "https://www.youtube.com/watch?v=1BrhZBMOS8U",
           "skills": ["Test Skill", "Test skill 2"]  
         },
         {
@@ -14,7 +14,7 @@
             "description": "Test description",
             "image": "https://images.freeimages.com/fic/images/icons/1265/doctor_who/256/the_tardis.png",
             "date": "10/17",
-            "link": "https://www.youtube.com/watch?v=bfoBArDgWak",
+            "link": "https://www.youtube.com/watch?v=1BrhZBMOS8U",
             "skills": ["Test Skill"]  
         },
         {
@@ -22,7 +22,7 @@
             "description": "Test description",
             "image": "https://images.freeimages.com/fic/images/icons/1265/doctor_who/256/the_tardis.png",
             "date": "10/17",
-            "link": "https://www.youtube.com/watch?v=bfoBArDgWak",
+            "link": "https://www.youtube.com/watch?v=1BrhZBMOS8U",
             "skills": ["Test Skill"]  
         }
     ],
@@ -64,10 +64,17 @@
     "Skills":[
         {
             "title": "Test Skill",
+            "type": "programming language",
             "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
         },
         {
             "title": "Test skill 2",
+            "type": "framework",
+            "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
+        },
+        {
+            "title": "Test skill 3",
+            "type": "tool",
             "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
         }
     ]

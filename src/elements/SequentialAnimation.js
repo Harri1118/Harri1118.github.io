@@ -1,7 +1,7 @@
 import { Box, Link } from '@mui/material';
 import { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-
+import '../App.css'
 const goal = `My name is Harrison! I'm a passionate developer with a keen interest in creating dynamic,
 user-friendly web applications. With expertise in React.js and other
 modern technologies, I enjoy solving complex problems and delivering
@@ -14,7 +14,7 @@ function SequentialAnimation() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSecondAnimation(true);
-    }, goal.length * 17 + 1000); // Adjust timing based on the animation duration and pause
+    }, goal.length * 22 + 1000); // Adjust timing based on the animation duration and pause
     return () => clearTimeout(timer); // Cleanup on component unmount
   }, []);
 
@@ -25,8 +25,9 @@ function SequentialAnimation() {
         wrapper="p"
         speed={80}
         cursor={false}
-        style={{ display: 'inline-block', fontSize: '20px' }}
+        style={{ display: 'inline-block', fontSize: '20px', fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', textAlign: 'left' }}
         repeat={1} // Only animate once
+        
       />
       {showSecondAnimation && (
         <Link
@@ -39,7 +40,7 @@ function SequentialAnimation() {
             wrapper="p"
             speed={70}
             cursor={false}
-            style={{ display: 'inline-block', fontSize: '20px', textDecoration: "underline" }}
+            style={{ display: 'inline-block', fontSize: '20px', textDecoration: "underline", fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}
             repeat={Infinity}
           />
         </Link>

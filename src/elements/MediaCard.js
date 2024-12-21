@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import AOS from 'aos';
 import NestedModal from './NestedModal';
-
+import '../App.css'
 const AnimatedCard = styled(Card)(({ theme }) => ({
   maxWidth: 345,
   transition: 'transform 0.2s, box-shadow 0.3s',
@@ -32,20 +32,20 @@ export default function MediaCard(props) {
   return (
     <AnimatedCard data-aos="fade-up">
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 140}}
         image={image}
         title={title}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
           {title}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+        <Typography variant="body2" sx={{ color: 'text.secondary', fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
           {description}
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
-        <NestedModal size="small" title={title} description={description} image={image} date={date} link={link} youtubeLink={youtubeLink} skills={skills} />
+        <NestedModal size="small" title={title} description={description} image={image} date={date} link={link} youtubeLink={youtubeLink} skills={skills}/>
       </CardActions>
     </AnimatedCard>
   );

@@ -6,41 +6,35 @@ import 'aos/dist/aos.css';
 import { TypeAnimation } from 'react-type-animation';
 import ImageSlider from '../elements/ImageSlider'
 import SequentialAnimation from '../elements/SequentialAnimation';
-const goal = `My name is Harrison! I'm a passionate developer with a keen interest in creating dynamic,
-user-friendly web applications. With expertise in React.js and other
-modern technologies, I enjoy solving complex problems and delivering
-impactful solutions.`
+import '../App.css'
 
 function Header() {
-
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-
-
   return (
     <Box
       component="header"
       data-aos="fade-up"
       className="header"
-      sx={{ textAlign: 'center', padding: '2rem' }}
+      sx={{ textAlign: 'center', padding: '2rem', backgroundColor: 'rgba(0, 0, 0, 0.7)'}}
     >
-    <TypeAnimation
+<TypeAnimation
   sequence={[
     'Welcome',
     1000,
   ]}
   wrapper="h1" // Wraps the animation in an h1 element
   speed={50}
-  style={{ display: 'inline-block', fontSize: '6rem' }}
+  style={{ display: 'inline-block', fontSize: '6rem', fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }} // Changed to Roboto
   repeat={0}
   data-aos="fade-up"
-  />  
-      
+/>  
       <ImageSlider  />
       <Box id="header" paddingTop={10} height="100px"/>
-      <Typography variant="h2" component="h2" data-aos="fade-up" >
+      <Typography variant="h2" component="h2" data-aos="fade-up"
+      style={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}
+      >
         Goal
       </Typography>
       <SequentialAnimation/>

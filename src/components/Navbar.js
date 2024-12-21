@@ -50,19 +50,19 @@ function Navbar() {
           {/* Desktop Menu */}
           {!isMobile && (
             <>
-              <Button component={Link} to="header" smooth={true} duration={500} offset={-40} sx={{ color: '#ffff' }}>
+              <Button component={Link} to="header" smooth={true} duration={500} offset={-40} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                 Summary
               </Button>
-              <Button component={Link} to="projects" smooth={true} duration={500} offset={-40} sx={{ color: '#ffff' }}>
+              <Button component={Link} to="projects" smooth={true} duration={500} offset={-40} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
                 Projects
               </Button>
-              <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ color: '#ffff' }}>
+              <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
                 Work Experience
               </Button>
-              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: '#ffff' }}>
+              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
                 Skills
               </Button>
-              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: '#ffff' }}>
+              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
                 Contact me
               </Button>
             </>

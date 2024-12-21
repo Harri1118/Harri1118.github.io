@@ -78,7 +78,7 @@ export default function NestedModal(props) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Learn more</Button>
+      <Button onClick={handleOpen} sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>Learn more</Button>
       <Modal
         open={open}
         onClose={handleClose}

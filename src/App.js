@@ -1,4 +1,4 @@
-// src/App.js
+// // src/App.js
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -8,12 +8,15 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box, styled } from '@mui/material';
 import ParticlesBackGround from './elements/ParticlesBackground';
-
 import './App.css'
+import { BackgroundMaskCover } from '@tsparticles/engine';
 
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
+  },
+  typography: {
+    //fontFamily: "'Roboto', sans-serif", // Use the font you want
   },
 });
 
@@ -34,7 +37,8 @@ const BackgroundBox = styled(Box)(({ theme }) => ({
     left: 0,
     right: 0,
     bottom: 0,
-    //backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the opacity as needed
+    //fontFamily: 'url(https://www.fontspace.https://see.fontimg.com/api/rf5/YzxE8/MTMwNGU5OGRhMDViNGMyMmFlYzYyMjEzZTYwOTZiY2EudHRm/V2VsY29tZQ/robot-9000-italic.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65)',
+    //backgroundColor: 'rgba(0, 0, 0, 0.5)',
     zIndex: 1,
   },
   '& > *': {
@@ -42,6 +46,7 @@ const BackgroundBox = styled(Box)(({ theme }) => ({
     zIndex: 2,
   },
 }));
+
 
 const App = () =>{
 
@@ -54,8 +59,8 @@ const App = () =>{
         <MainContent/>
         <Footer />
       </BackgroundBox>
-      <Box sx={{ m: 10 }} />
-    <ParticlesBackGround/>
+      <Box sx={{ m: 10 }} /> 
+     <ParticlesBackGround/>
     </ThemeProvider>
   );
 }

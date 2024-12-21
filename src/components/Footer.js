@@ -27,9 +27,9 @@ function Footer() {
         variant="h3" 
         component="h2" 
         data-aos="fade-up" 
-        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}
       >
-        Socials
+        Contact me
       </Typography>
   
       <Box 
@@ -45,7 +45,7 @@ function Footer() {
           href="https://github.com/Harri1118" 
           target="_blank" 
           rel="noopener noreferrer" 
-          color="#fff"
+          color="#7BAFD4"
           sx={{
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
             "&:hover": {
@@ -61,7 +61,7 @@ function Footer() {
           href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          color="#fff"
+          color="#7BAFD4"
           sx={{
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
             "&:hover": {
@@ -77,7 +77,7 @@ function Footer() {
           href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          color="#fff"
+          color="#7BAFD4"
           sx={{
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
             "&:hover": {
@@ -92,7 +92,7 @@ function Footer() {
           href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          color="#fff"
+          color="#7BAFD4"
           sx={{
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
             "&:hover": {
