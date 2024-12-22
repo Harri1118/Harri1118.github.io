@@ -92,7 +92,10 @@ export default function NestedModal(props) {
             height: 900, 
             alignContent: "center", 
             textAlign: "center" ,
-            overflow: 'auto'
+            overflow: 'auto',
+            fontFamily: 'Bruno Ace SC, serif', 
+            fontStyle: 'normal', 
+            color: '#7BAFD4'
           }}>
             <Typography variant="h2" id="parent-modal-title">
             {title}
@@ -113,18 +116,21 @@ export default function NestedModal(props) {
               justifyContent: "center",
               alignItems: "center",
               marginTop: 2,
+              fontFamily: 'Bruno Ace SC, serif', 
+              fontStyle: 'normal', 
+              color: '#7BAFD4'
             }}
             ><ReactPlayer url={youtubeLink}/></Box>
         }
-        <Typography variant="body1" id="parent-modal-description">
+        <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
             {date}
         </Typography>
-        <Typography variant="body1" id="parent-modal-description">
+        <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', textAlign: 'left', paddingLeft: "40%"}}>
             {description}
         </Typography>
         {
           link != null && 
-          <Link href={link} target="_blank" rel="noopener noreferrer" color="#fff">
+          <Link href={link} target="_blank" rel="noopener noreferrer">
           Click here to view repo
           </Link>
         }

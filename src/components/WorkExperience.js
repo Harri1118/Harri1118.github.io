@@ -11,7 +11,7 @@ import NestedModal from '../elements/NestedModal';
 
 function chooseBackGround(bg) {
   if (bg === "work") {
-    return 'rgb(33, 150, 243)';
+    return 'rgb(30, 30, 30)';
   } else if (bg === "education") {
     return 'rgb(233, 30, 99)';
   }
@@ -73,11 +73,15 @@ function WorkExperience() {
           <TimelineItem>
             <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'center' }}>
               <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: chooseBackGround(item.timelineType), color: '#fff' }}>
-                <Typography variant="h6" component="h1">
+                <Typography variant="h6" component="h1" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                   {item.jobTitle}
                 </Typography>
-                <Typography>{item.location}</Typography>
-                <Typography>{item.description}</Typography>
+                <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
+                  {item.location}
+                </Typography>
+                <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
+                  {item.description}
+                </Typography>
                 <CardActions sx={{ justifyContent: 'center' }}>
                   <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} />
                 </CardActions>
@@ -90,7 +94,7 @@ function WorkExperience() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent style={{ display: 'flex', justifyContent: 'center' }}>
-              <Typography variant="body2" color="textSecondary" data-aos="fade-up">
+              <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                 {item.startDate} - {item.endDate}
               </Typography>
             </TimelineContent>
@@ -98,7 +102,7 @@ function WorkExperience() {
         ) : (
           <TimelineItem>
             <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'center' }}>
-              <Typography variant="body2" color="textSecondary" data-aos="fade-up">
+              <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                 {item.startDate} - {item.endDate}
               </Typography>
             </TimelineOppositeContent>
@@ -110,11 +114,15 @@ function WorkExperience() {
             </TimelineSeparator>
             <TimelineContent style={{ display: 'flex', justifyContent: 'center' }}>
               <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: chooseBackGround(item.timelineType), color: '#fff' }}>
-                <Typography variant="h6" component="h1">
+                <Typography variant="h6" component="h1" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                   {item.jobTitle}
                 </Typography>
-                <Typography>{item.location}</Typography>
-                <Typography>{item.description}</Typography>
+                <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
+                  {item.location}
+                </Typography>
+                <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
+                  {item.description}
+                </Typography>
                 <CardActions sx={{ justifyContent: 'center' }}>
                   <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} />
                 </CardActions>

@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
 import AOS from 'aos';
+import { Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -51,7 +52,9 @@ export default function SkillsIcons(props) {
                 borderRadius: 1,
               }}
             />
+            <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
             {skill.title}
+            </Typography>
           </Item>
         ))}
       </Masonry>

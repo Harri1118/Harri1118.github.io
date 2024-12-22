@@ -16,7 +16,7 @@ export default function AccordionExpandIcon(props) {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Show Skills</Typography>
+          <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>Show Skills</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <SkillsIcons skills={skills}/>
