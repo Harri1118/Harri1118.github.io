@@ -32,11 +32,11 @@ function Skills() {
     style={{ 
         display: 'flex', 
         flexDirection: 'column',  // Change flexDirection to column to stack items
-        alignItems: 'center',     // Center align horizontally
-        justifyContent: 'center'  // Center align vertically
+        //alignItems: 'center',     // Center align horizontally
+        //justifyContent: 'center'  // Center align vertically
     }}
 >   
-<FormControl sx={{ m: 1, minWidth: 120 }} size="small" data-aos="fade-up">
+<FormControl sx={{ m: 1, maxWidth: "20%" }} size="small" data-aos="fade-up">
       <InputLabel id="demo-select-small-label">Filter by...</InputLabel>
       <Select
         labelId="demo-select-small-label"

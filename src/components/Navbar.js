@@ -3,10 +3,12 @@ import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemTe
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll';
 import NavBarButton from '../elements/NavBarButton';
+import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
   const isMobile = useMediaQuery('(max-width:768px)');
+  const navigate = useNavigate();
 
   // Track scroll position to check if the user is at the bottom
   useEffect(() => {
@@ -25,6 +27,7 @@ function Navbar() {
   const toggleDrawer = (open) => {
     setDrawerOpen(open);
   };
+
 
   return (
     <AppBar 
@@ -55,6 +58,9 @@ function Navbar() {
               <NavBarButton to="work-experience" text="Work Experience"/>
               <NavBarButton to="skills" text="Skills"/>
               <NavBarButton to="skills" text="Contact me"/>
+              <Button onClick={() => navigate('/gm')}>
+                Play
+              </Button>
             </>
           )}
 
