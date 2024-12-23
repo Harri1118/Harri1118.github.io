@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemText, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll';
-
+import NavBarButton from '../elements/NavBarButton';
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
@@ -50,21 +50,11 @@ function Navbar() {
           {/* Desktop Menu */}
           {!isMobile && (
             <>
-              <Button component={Link} to="header" smooth={true} duration={500} offset={-40} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
-                Summary
-              </Button>
-              <Button component={Link} to="projects" smooth={true} duration={500} offset={-40} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
-                Projects
-              </Button>
-              <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
-                Work Experience
-              </Button>
-              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
-                Skills
-              </Button>
-              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
-                Contact me
-              </Button>
+              <NavBarButton to="header" text="Summary"/>
+              <NavBarButton to="projects" text="Projects"/>
+              <NavBarButton to="work-experience" text="Work Experience"/>
+              <NavBarButton to="skills" text="Skills"/>
+              <NavBarButton to="skills" text="Contact me"/>
             </>
           )}
 

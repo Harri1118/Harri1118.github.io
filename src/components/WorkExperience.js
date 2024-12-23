@@ -139,7 +139,7 @@ function WorkExperience() {
           {jobs.map((job, index) => displayTimeLineItem(job, index))}
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot color="success">
+              <TimelineDot color="primary">
                 <StarIcon />
               </TimelineDot>
             </TimelineSeparator>

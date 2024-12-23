@@ -64,12 +64,12 @@
     "Skills":[
         {
             "title": "Test Skill",
-            "type": "programming language",
+            "type": "plang",
             "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
         },
         {
             "title": "Test skill 2",
-            "type": "framework",
+            "type": "frwork",
             "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
         },
         {

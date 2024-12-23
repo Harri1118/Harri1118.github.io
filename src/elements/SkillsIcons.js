@@ -19,10 +19,11 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function SkillsIcons(props) {
-  const {skills, animate} = props
+  const {skills, animate, filter} = props
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    console.log(skills)
   }, []);
 
   return (
@@ -32,7 +33,8 @@ export default function SkillsIcons(props) {
       data-aos={animate=="true" ? "fade-up" : undefined}
     >
       <Masonry columns={4} spacing={2}>
-        {skills.map((skill, index) => (
+        {skills.map((skill, index) => ((filter != "" && skill.type == filter) || !filter)&&
+          
           <Item key={index}
             sx={{
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -56,7 +58,8 @@ export default function SkillsIcons(props) {
             {skill.title}
             </Typography>
           </Item>
-        ))}
+          
+      )}
       </Masonry>
     </Box>
   );

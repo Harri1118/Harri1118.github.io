@@ -78,7 +78,31 @@ export default function NestedModal(props) {
 
   return (
     <div>
-      <Button onClick={handleOpen} sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>Learn more</Button>
+      <Button onClick={handleOpen} 
+        sx={{
+          fontFamily: 'Bruno Ace SC, serif', 
+          fontStyle: 'normal', 
+          color: '#7BAFD4',
+          transition: 'transform 0.3s ease, opacity 0.3s ease', // Add additional styles
+          "&:hover": {
+            color: '#ffff'
+          },
+          "&:before": {
+            content: "''",
+            position: "absolute",
+            top: "100%",
+            left: 0,
+            width: "100%",
+            height: "2px",
+            backgroundColor: "#ffff",
+            transform: "scaleX(0)",
+            transformOrigin: 'left',
+            transition: 'transform 0.3s ease',
+          },
+          '&:hover::before': {
+          transform: "scaleX(1)"
+          }
+          }}>Learn more</Button>
       <Modal
         open={open}
         onClose={handleClose}
