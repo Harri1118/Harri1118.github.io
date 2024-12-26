@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Typography, Box } from '@mui/material';
 import CanvasComponent from './engine/Canvas'; // Match the export name
+import Sprite from './engine/Sprite'
 
 const PlayGame = () => {
+  const [shapes,setShapes] = useState([])
+
+    useEffect(() => {
+      const spr = new Sprite(0,0,50,50,5)
+      console.log(spr)
+  }, []);
   return (
-    <Box display="flex" flexDirection="column" alignItems="center">
+    <div>
       <Typography 
         variant="h3" 
         component="h2" 
@@ -12,8 +19,8 @@ const PlayGame = () => {
       >
         Title
       </Typography>
-      <CanvasComponent width={900} height={800} /> {/* Consistent naming */}
-    </Box>
+      <CanvasComponent shapes="Test"/> 
+    </div>
   );
 };
 
