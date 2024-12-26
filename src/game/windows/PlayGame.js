@@ -8,7 +8,7 @@ const PlayGame = () => {
 
     useEffect(() => {
       const spr = new Sprite(0,0,50,50,5)
-      console.log(spr)
+      
   }, []);
   return (
     <div>
