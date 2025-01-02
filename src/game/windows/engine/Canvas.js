@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 
-const CanvasComponent = () => {
+const CanvasComponent = (props) => {
   const canvasRef = useRef(null);
-
+  const {shapes} = props
   function drawCircle(ctx, x, y, radius) {
     ctx.fillStyle = 'blue'; // Set the color of the rectangle
     ctx.beginPath();
@@ -17,6 +17,7 @@ const CanvasComponent = () => {
   }
 
   useEffect(() => {
+    console.log(shapes)
     const canvas = canvasRef.current;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight * 0.7;
@@ -57,6 +58,31 @@ const CanvasComponent = () => {
       requestAnimationFrame(animate);
     };
 
+    //let mouseX = 0;
+
+    let mouseY = 0;
+    function drawCircle() {
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+  
+      ctx.beginPath();
+  
+      ctx.arc((canvas.width * .9), mouseY, 20, 0, 2 * Math.PI); // Draw circle at mouse position
+  
+      ctx.fillStyle = "blue";
+  
+      ctx.fill();
+  
+  }
+    canvas.addEventListener("mousemove", (event) => {
+
+      //mouseX = event.clientX - canvas.offsetLeft;
+  
+      mouseY = event.clientY - canvas.offsetTop;
+  
+      drawCircle();
+  
+    });
     animate();
 
     return () => {
