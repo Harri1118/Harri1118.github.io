@@ -7,6 +7,7 @@ const PlayGame = () => {
   const [shapes,setShapes] = useState([])
 
     useEffect(() => {
+      alert("test")
       const spr = new Sprite(0,0,50,50,5)
       let list = []
       list.push(spr)

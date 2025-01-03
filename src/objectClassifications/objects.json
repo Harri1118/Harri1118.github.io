@@ -63,19 +63,54 @@
     ],
     "Skills":[
         {
-            "title": "Test Skill",
+            "title": "Python",
             "type": "plang",
-            "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
+            "image": "https://cdn.svgporn.com/logos/python.svg"
         },
         {
-            "title": "Test skill 2",
-            "type": "frwork",
-            "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
+            "title": "Java",
+            "type": "plang",
+            "image": "https://cdn.svgporn.com/logos/java.svg"
         },
         {
-            "title": "Test skill 3",
+            "title": "Javascript",
+            "type": "plang",
+            "image": "https://cdn.svgporn.com/logos/javascript.svg"
+        },
+        {
+            "title": "SQL",
+            "type": "plang",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwuqWn7rCVhqZ_pSlxwVUzlZtFWaOMdbm28A&s"
+        },
+        {
+            "title": "VS Code",
             "type": "tool",
-            "image": "https://cdn-icons-png.flaticon.com/512/1600/1600771.png"
+            "image": "https://cdn.svgporn.com/logos/visual-studio-code.svg"
+        },
+        {
+            "title": "Eclipse",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/eclipse-icon.svg"
+        },
+        {
+            "title": "Intellij",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/intellij-idea.svg"
+        },
+        {
+            "title": "Google Colab",
+            "type": "tool",
+            "image": "https://i.namu.wiki/i/zKS7LsOc2A4ZZR64XnAm8S88HbszoXQPH_T7CY3KFwfwJtemXQwc4Nu3tx5GavmyG-wmgcKs_PfqYbY8xg3iow.webp"
+        },
+        {
+            "title": "Jupyter Notebook",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/jupyter.svg"
+        },
+        {
+            "title": "C",
+            "type": "plang",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
         }
     ]
 

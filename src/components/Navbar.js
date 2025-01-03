@@ -58,9 +58,9 @@ function Navbar() {
               <NavBarButton to="work-experience" text="Work Experience"/>
               <NavBarButton to="skills" text="Skills"/>
               <NavBarButton to="skills" text="Contact me"/>
-              <Button onClick={() => navigate('/gm')}>
+              {/* <Button onClick={() => navigate('/gm')}>
                 Play
-              </Button>
+              </Button> */}
             </>
           )}
 
