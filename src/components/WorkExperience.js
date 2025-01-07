@@ -71,7 +71,7 @@ function WorkExperience() {
      <div>
         {isOdd ? (
           <TimelineItem>
-            <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'center' }}>
+            <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'right' }}>
               <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: chooseBackGround(item.timelineType), color: '#fff' }}>
                 <Typography variant="h6" component="h1" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                   {item.jobTitle}
@@ -80,7 +80,7 @@ function WorkExperience() {
                   {item.location}
                 </Typography>
                 <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
-                  {item.description}
+                  {item.employer}
                 </Typography>
                 <CardActions sx={{ justifyContent: 'center' }}>
                   <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} />
@@ -93,7 +93,7 @@ function WorkExperience() {
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent style={{ display: 'flex', justifyContent: 'center' }}>
+            <TimelineContent style={{ display: 'flex', justifyContent: 'left' }}>
               <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                 {item.startDate} - {item.endDate}
               </Typography>
@@ -101,7 +101,7 @@ function WorkExperience() {
           </TimelineItem>
         ) : (
           <TimelineItem>
-            <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'center' }}>
+            <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'right' }}>
               <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                 {item.startDate} - {item.endDate}
               </Typography>
@@ -112,7 +112,7 @@ function WorkExperience() {
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent style={{ display: 'flex', justifyContent: 'center' }}>
+            <TimelineContent style={{ display: 'flex', justifyContent: 'left' }}>
               <Paper elevation={3} data-aos="fade-up" style={{ padding: '6px 16px', background: chooseBackGround(item.timelineType), color: '#fff' }}>
                 <Typography variant="h6" component="h1" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                   {item.jobTitle}
@@ -121,7 +121,7 @@ function WorkExperience() {
                   {item.location}
                 </Typography>
                 <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
-                  {item.description}
+                  {item.employer}
                 </Typography>
                 <CardActions sx={{ justifyContent: 'center' }}>
                   <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} />
