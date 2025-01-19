@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
@@ -15,11 +15,15 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.applyStyles('dark', {
     backgroundColor: '#1A2027',
   }),
-  height: 100
+  height: 100,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
 }));
 
 export default function SkillsIcons(props) {
-  const {skills, animate, filter} = props
+  const { skills, animate, filter } = props;
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -29,18 +33,17 @@ export default function SkillsIcons(props) {
   return (
     <Box 
       container
-      sx={{ width: 500, minHeight: "auto", paddingBottom: 5}}
-      data-aos={animate=="true" ? "fade-up" : undefined}
+      sx={{ width: 500, minHeight: "auto", paddingBottom: 5 }}
+      data-aos={animate === "true" ? "fade-up" : undefined}
     >
       <Masonry columns={4} spacing={2}>
-        {skills.map((skill, index) => ((filter != "" && skill.type == filter) || !filter)&&
-          
+        {skills.map((skill, index) => ((filter !== "" && skill.type === filter) || !filter) &&
           <Item key={index}
             sx={{
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
               "&:hover": {
-                  transform: "scale(1.05)",
-                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+                transform: "scale(1.05)",
+                boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
               },
             }}
           >
@@ -48,18 +51,17 @@ export default function SkillsIcons(props) {
               component="img"
               src={skill.image}
               sx={{
-                width: '100%',
-                height: 'auto',
-                objectFit: 'cover',
+                width: '70%',
+                height: '70%',
+                objectFit: 'resize',
                 borderRadius: 1,
               }}
             />
-            <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
-            {skill.title}
+            <Typography sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
+              {skill.title}
             </Typography>
           </Item>
-          
-      )}
+        )}
       </Masonry>
     </Box>
   );

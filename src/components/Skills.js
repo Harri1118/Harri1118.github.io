@@ -7,7 +7,7 @@ import SkillsIcons from '../elements/SkillsIcons';
 
 function Skills() {
     const filterOptions = ['Languages', 'Frameworks', 'Tools']
-    const [filter, setFilter] = useState('');
+    const [filter, setFilter] = useState('all');
 
     const handleChange = (event) => {
       setFilter(event.target.value);
@@ -32,11 +32,11 @@ function Skills() {
     style={{ 
         display: 'flex', 
         flexDirection: 'column',  // Change flexDirection to column to stack items
-        //alignItems: 'center',     // Center align horizontally
+        alignItems: 'center',     // Center align horizontally
         //justifyContent: 'center'  // Center align vertically
     }}
 >   
-<FormControl sx={{ m: 1, maxWidth: "20%" }} size="small" data-aos="fade-up">
+<FormControl sx={{ m: 1, width: "10%" }} size="small" data-aos="fade-up">
       <InputLabel id="demo-select-small-label">Filter by...</InputLabel>
       <Select
         labelId="demo-select-small-label"
@@ -45,14 +45,14 @@ function Skills() {
         label="Age"
         onChange={handleChange}
       >
-        <MenuItem value="">All</MenuItem>
+        <MenuItem value={"all"}>All</MenuItem>
         <MenuItem value={"plang"}>Languages</MenuItem>
         <MenuItem value={"frwork"}>Frameworks</MenuItem>
         <MenuItem value={"tool"}>Tools</MenuItem>
       </Select>
     </FormControl>
     {
-        filter ? (
+        (filter == 'all') ? (
             <div>
             <Typography  
             variant="h6" 
@@ -67,7 +67,7 @@ function Skills() {
         {getFilterTitle(filter)}
         </Typography>
         <Box paddingTop={5}>
-                <SkillsIcons skills={objects.Skills} animate="true" filter={filter}/>
+                <SkillsIcons skills={objects.Skills} animate="true"/>
         </Box>
         </div>
         ):(
