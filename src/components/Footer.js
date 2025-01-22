@@ -15,18 +15,18 @@ function Footer() {
       }, []);
 
   return (
+    <div >
     <Box 
       container
       spacing={20}
       sx={{ minHeight: '40vh', width: '100vh' }}
       width="100%"   
       paddingTop="1%" 
-      data-aos="fade-up"
+      // data-aos="fade-up"
     >
       <Typography 
         variant="h3" 
         component="h2" 
-        data-aos="fade-up" 
         sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}
       >
         Contact me
@@ -54,7 +54,7 @@ function Footer() {
             }
           }}
         >
-          <GitHubIcon fontSize="large" data-aos="fade-in"/>
+          <GitHubIcon fontSize="large"/>
         </Link>
   
         <Link 
@@ -70,7 +70,7 @@ function Footer() {
             }
           }}
         >
-          <LinkedInIcon fontSize="large" data-aos="fade-in"/>
+          <LinkedInIcon fontSize="large" />
         </Link>
   
         <Link 
@@ -86,7 +86,7 @@ function Footer() {
             }
           }}
         >
-          <YouTubeIcon fontSize="large" data-aos="fade-in"/>
+          <YouTubeIcon fontSize="large" />
         </Link>
         <Link 
           href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
@@ -101,10 +101,11 @@ function Footer() {
             }
           }}
         >
-          <EmailIcon fontSize="large" data-aos="fade-in"/>
+          <EmailIcon fontSize="large" />
         </Link>
       </Box>
     </Box>
+    </div>
   );
   
 }

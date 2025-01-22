@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
-import AOS from 'aos';
 import { Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -23,10 +22,11 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function SkillsIcons(props) {
-  const { skills, animate, filter } = props;
+  const { skills, filter } = props;
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+
+    console.log(filter)
     console.log(skills)
   }, []);
 
@@ -34,7 +34,6 @@ export default function SkillsIcons(props) {
     <Box 
       container
       sx={{ width: 500, minHeight: "auto", paddingBottom: 5 }}
-      data-aos={animate === "true" ? "fade-up" : undefined}
     >
       <Masonry columns={4} spacing={2}>
         {skills.map((skill, index) => ((filter !== "" && skill.type === filter) || !filter) &&

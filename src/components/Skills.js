@@ -19,16 +19,21 @@ function Skills() {
         else if(s == "frwork"){
             return filterOptions[1]
         }
-        else
+        else if(s == "tool")
             return filterOptions[2]
+        else{
+            return "NULL"
+        }
     }
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
     }, []);
 
+
     return (
     <div
+    data-aos="fade-up"
     style={{ 
         display: 'flex', 
         flexDirection: 'column',  // Change flexDirection to column to stack items
@@ -36,13 +41,12 @@ function Skills() {
         //justifyContent: 'center'  // Center align vertically
     }}
 >   
-<FormControl sx={{ m: 1, width: "10%" }} size="small" data-aos="fade-up">
+<FormControl sx={{ m: 1, width: "10%" }} size="small">
       <InputLabel id="demo-select-small-label">Filter by...</InputLabel>
       <Select
         labelId="demo-select-small-label"
         id="demo-select-small"
         value={filter}
-        label="Age"
         onChange={handleChange}
       >
         <MenuItem value={"all"}>All</MenuItem>
@@ -53,80 +57,70 @@ function Skills() {
     </FormControl>
     {
         (filter == 'all') ? (
-            <div>
-            <Typography  
-            variant="h6" 
-            component="h6" 
-            data-aos="fade-up" 
-            sx={{
-                fontFamily: 'Bruno Ace SC, serif', 
-                fontStyle: 'normal', 
-                color: '#7BAFD4'
-            }}
+        <div>
+        <Typography  
+        variant="h6" 
+        component="h6" 
+        sx={{
+            fontFamily: 'Bruno Ace SC, serif', 
+            fontStyle: 'normal', 
+            color: '#7BAFD4'
+        }}
+        > 
+        Languages
+    </Typography>
+        <Box paddingTop={5} >
+                <SkillsIcons skills={objects.Skills} filter="plang"/>
+        </Box>
+    <Typography  
+        variant="h6" 
+        component="h6" 
+        sx={{
+            fontFamily: 'Bruno Ace SC, serif', 
+            fontStyle: 'normal', 
+            color: '#7BAFD4'
+        }}
+        > 
+        Frameworks
+    </Typography>
+        <Box paddingTop={5}>
+                <SkillsIcons skills={objects.Skills} filter="frwork"/>
+        </Box>
+    <Typography  
+        variant="h6" 
+        component="h6" 
+        
+        sx={{
+            fontFamily: 'Bruno Ace SC, serif', 
+            fontStyle: 'normal', 
+            color: '#7BAFD4'
+        }}
+        > 
+        Tools
+    </Typography>
+        <Box paddingTop={5}>
+                <SkillsIcons skills={objects.Skills} filter="tool"/>
+        </Box>
+    </div>
+        ):(
+        <div>
+    <Typography  
+        variant="h6" 
+        component="h6" 
+        sx={{
+            fontFamily: 'Bruno Ace SC, serif', 
+            fontStyle: 'normal', 
+            color: '#7BAFD4'
+        }}
         > 
         {getFilterTitle(filter)}
-        </Typography>
+    </Typography>
         <Box paddingTop={5}>
-                <SkillsIcons skills={objects.Skills} animate="true"/>
-        </Box>
-        </div>
-        ):(
-            <div>
-                <Typography  
-            variant="h6" 
-            component="h6" 
-            data-aos="fade-up" 
-            sx={{
-                fontFamily: 'Bruno Ace SC, serif', 
-                fontStyle: 'normal', 
-                color: '#7BAFD4'
-            }}
-        >
-            Languages
-        </Typography>
-        <Box paddingTop={5}>
-
-            
-                <SkillsIcons skills={objects.Skills} animate="true" filter="plang"/>
-            
-        </Box>
-        
-        <Typography  
-            variant="h6" 
-            component="h6" 
-            data-aos="fade-up" 
-            sx={{
-                fontFamily: 'Bruno Ace SC, serif', 
-                fontStyle: 'normal', 
-                color: '#7BAFD4'
-            }}
-        >
-            Frameworks
-        </Typography>
-        <Box paddingTop={5}>
-            <SkillsIcons skills={objects.Skills} animate="true" filter="frwork"/>  
-        </Box>
-        
-        <Typography  
-            variant="h6" 
-            component="h6" 
-            data-aos="fade-up" 
-            sx={{
-                fontFamily: 'Bruno Ace SC, serif', 
-                fontStyle: 'normal', 
-                color: '#7BAFD4'
-            }}
-        >
-            Tools
-        </Typography>
-        <Box paddingTop={5}>
-            <SkillsIcons skills={objects.Skills} animate="true" filter="tool"/>  
+                <SkillsIcons skills={objects.Skills} animate="true" filter={filter}/>
         </Box>
         </div>
         )
-    }
-    
-    
+    } 
 </div>
 
     );
