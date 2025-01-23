@@ -9,7 +9,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Box, styled } from '@mui/material';
 import ParticlesBackGround from './elements/ParticlesBackground';
 import './App.css'
-
+import AOS from 'aos';
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -48,7 +48,6 @@ const BackgroundBox = styled(Box)(({ theme }) => ({
 
 
 const Home = () =>{
-
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
@@ -56,7 +55,7 @@ const Home = () =>{
       <BackgroundBox>
         <Header/>
         <MainContent/>
-        <Footer />
+        <Footer/>
       </BackgroundBox>
       <Box sx={{ m: 10 }} /> 
      <ParticlesBackGround/>

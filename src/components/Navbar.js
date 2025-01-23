@@ -57,7 +57,7 @@ function Navbar() {
               <NavBarButton to="projects" text="Projects"/>
               <NavBarButton to="work-experience" text="Work Experience"/>
               <NavBarButton to="skills" text="Skills"/>
-              <NavBarButton to="skills" text="Contact me"/>
+              <NavBarButton to="footer" text="Contact me"/>
               {/* <Button onClick={() => navigate('/gm')}>
                 Play
               </Button> */}

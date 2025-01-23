@@ -30,10 +30,10 @@ function MainContent() {
       </Typography>
       <WorkExperience/>
       <Box id="skills" paddingTop={10} height="150px"/>
-      <Typography  variant="h3" component="h3" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
+      <Typography  variant="h3" component="h3" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', marginBottom: '20px'}}>
         Skills
       </Typography>
-      <Skills/>
+      <Skills sx={{marginBottom: '20px'}}/>
     </Box>
     </div>
   );
