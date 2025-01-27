@@ -18,7 +18,7 @@ function Footer() {
   return (
     <div id="footer" >
       <Box paddingTop="100px"/>
-      <Typography  variant="h3" component="h3" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', marginBottom: '20px'}}>
+      <Typography  variant="h3" component="h3" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', marginBottom: '20px'}}>
         Contact Me
       </Typography>
   
