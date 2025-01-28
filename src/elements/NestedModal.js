@@ -149,7 +149,7 @@ export default function NestedModal(props) {
         <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
             {date}
         </Typography>
-        <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', textAlign: 'left', paddingLeft: "30%", paddingRight: "30%"}}>
+        <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', textAlign: 'left', paddingLeft: "30%", paddingRight: "30%", paddingTop: "5%", paddingBottom: "2%"}}>
             {description}
         </Typography>
         {
@@ -168,7 +168,7 @@ export default function NestedModal(props) {
           marginTop: 2,
         }}
         >
-        <AccordionExpandIcon skills={skillObjs}/>
+        <AccordionExpandIcon skills={skillObjs} />
         </Box>
         <br/>
         <Button onClick={handleClose} >Close</Button>

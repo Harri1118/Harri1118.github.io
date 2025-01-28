@@ -17,7 +17,7 @@ function MainContent() {
       component="header"
       data-aos="fade-up"
       className="header"
-      sx={{ textAlign: 'center', padding: '2rem', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
+      sx={{ textAlign: 'center', padding: '2rem' }}
     >
       <Box id="projects" paddingTop={10} height="160px"/>
       <Typography  variant="h3" component="h2" data-aos="fade-in" justify-content="center" style={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
@@ -28,7 +28,7 @@ function MainContent() {
       <Typography variant="h3" component="h2" data-aos="fade-in" justify-content="center" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
         Work Experience
       </Typography>
-      <WorkExperience/>
+      <WorkExperience />
       <Box id="skills" paddingTop={10} height="150px"/>
       <Typography  variant="h3" component="h3" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', marginBottom: '20px'}}>
         Skills

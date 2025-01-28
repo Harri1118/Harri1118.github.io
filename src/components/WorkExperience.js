@@ -8,6 +8,7 @@ import AOS from 'aos';
 import '../css/WorkExperience.css';
 import objects from '../objectClassifications/objects';
 import NestedModal from '../elements/NestedModal';
+import { Image } from '@mui/icons-material';
 
 function chooseBackGround(bg) {
   if (bg === "work") {
@@ -82,8 +83,9 @@ function WorkExperience() {
                 <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                   {item.employer}
                 </Typography>
+                <Image src={item.image}/>
                 <CardActions sx={{ justifyContent: 'center' }}>
-                  <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} />
+                  <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image}/>
                 </CardActions>
               </Paper>
             </TimelineOppositeContent>
@@ -94,7 +96,7 @@ function WorkExperience() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent style={{ display: 'flex', justifyContent: 'left' }}>
-              <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
+              <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', backgroundColor: "rgb(0,0,0,0.7)"}}>
                 {item.startDate} - {item.endDate}
               </Typography>
             </TimelineContent>
@@ -102,7 +104,7 @@ function WorkExperience() {
         ) : (
           <TimelineItem>
             <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'right' }}>
-              <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
+              <Typography variant="body2" color="textSecondary" data-aos="fade-up" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', backgroundColor: "rgb(0,0,0,0.7)"}}>
                 {item.startDate} - {item.endDate}
               </Typography>
             </TimelineOppositeContent>
@@ -123,8 +125,9 @@ function WorkExperience() {
                 <Typography sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
                   {item.employer}
                 </Typography>
+                <Image src={item.image}/>
                 <CardActions sx={{ justifyContent: 'center' }}>
-                  <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} />
+                  <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image}/>
                 </CardActions>
               </Paper>
             </TimelineContent>
