@@ -43,7 +43,7 @@ const ImageSlider = () => {
             left: 0,
             borderRadius: '0.5rem'
           }}
-          alt="The house from the offer."
+          alt=""
           src={images[currentImage]}
           data-aos="fade-in"
         />
