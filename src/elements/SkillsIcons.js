@@ -24,11 +24,11 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function SkillsIcons(props) {
   const { skills, filter } = props;
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    console.log(filter)
-    console.log(skills)
-  }, []);
+  //   console.log(filter)
+  //   console.log(skills)
+  // }, []);
 
   return (
     <Box 

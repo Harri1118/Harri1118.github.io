@@ -66,7 +66,14 @@ function Navbar() {
 
           {/* Mobile Menu Button (Hamburger Icon) */}
           {isMobile && (
-            <IconButton edge="end" color="inherit" onClick={() => toggleDrawer(true)}>
+            <IconButton edge="end" color="white" onClick={() => toggleDrawer(true)}
+            sx={{
+              position: 'absolute',  // Absolute positioning
+              top: 10,               // Positioning from the top (adjust as needed)
+              left: 10,             // Positioning from the right
+              zIndex: 1300,          // Ensures the button is on top of other elements (default AppBar zIndex is 1100)
+            }}
+            >
               <MenuIcon />
             </IconButton>
           )}
@@ -75,38 +82,38 @@ function Navbar() {
 
       {/* Mobile Drawer (Hamburger Menu) */}
       <Drawer anchor="right" open={drawerOpen} onClose={() => toggleDrawer(false)}>
-        <List sx={{ width: 250 }} role="presentation" onClick={() => toggleDrawer(false)}>
+        <List sx={{ width: 230 }} role="presentation" onClick={() => toggleDrawer(false)}>
           <ListItem button>
             <ListItemText>
-              <Button component={Link} to="header" smooth={true} duration={500} sx={{ color: 'black' }}>
+              <Button component={Link} to="header" smooth={true} duration={500} sx={{ color: 'white' }}>
                 Summary
               </Button>
             </ListItemText>
           </ListItem>
           <ListItem button>
             <ListItemText>
-              <Button component={Link} to="projects" smooth={true} duration={500} sx={{ color: 'black' }}>
+              <Button component={Link} to="projects" smooth={true} duration={500} sx={{ color: 'white' }}>
                 Projects
               </Button>
             </ListItemText>
           </ListItem>
           <ListItem button>
             <ListItemText>
-              <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ color: 'black' }}>
+              <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ color: 'white' }}>
                 Work Experience
               </Button>
             </ListItemText>
           </ListItem>
           <ListItem button>
             <ListItemText>
-              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'black' }}>
+              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'white' }}>
                 Skills
               </Button>
             </ListItemText>
           </ListItem>
           <ListItem button>
             <ListItemText>
-              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'black' }}>
+              <Button component={Link} to="footer" smooth={true} duration={500} sx={{ color: 'white' }}>
                 Contact me
               </Button>
             </ListItemText>

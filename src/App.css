@@ -106,3 +106,14 @@ html {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 12vw; 
+  }
+}
+@media (min-width: 769px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
