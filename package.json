@@ -1,7 +1,7 @@
 {
   "name": "websiteportfolio",
   "version": "0.1.0",
-  "homepage": "https://Harri1118/harri1118.github.io/",
+  "homepage": "https://harri1118.github.io/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
