@@ -215,6 +215,11 @@
             "title": "ReactJS",
             "type": "frwork",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s"
+        },
+        {
+            "title": "GoLang",
+            "type": "plang",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4W4k4zseh-AKurUNiz98TiScprGtQNykdQ&s"
         }
     ]
 
