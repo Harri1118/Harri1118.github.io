@@ -82,6 +82,17 @@
             "timelineType" : "work"
         },
         {
+            "jobTitle": "Volunteer",
+            "description": "Developed a gpt-based onboarding bot which gives new users useful information regarding the common tools which are used by various teams, and provides answers of commonly asked questions. Created with python’s Openai API and langchain API to develop the bot which pulls the useful information off a vectorstore database, and uses the Flask API to host the bots’ services. Utilized ReactJS, Javascript, Figma, and storybook for developing the UI for the bot. Collaborated with team members to manage version control using Github and docker.",
+            "location": "Remote",
+            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQHuPqkZsc0wqQ/company-logo_200_200/company-logo_200_200/0/1630579843190/devlaunchers_logo?e=2147483647&v=beta&t=IuaiaAz_6Oq1IoiKMGlQ7ayp-FpDrObFyu7RJT7HNWQ",
+            "startDate": "Augut 2023",
+            "endDate": "January 2025",
+            "employer": "Dev Launchers",
+            "skills": "",
+            "timelineType" : "work"
+        },
+        {
             "jobTitle": "Student Assistant",
             "description": "Assisted in tabletop exercises of recovery plan and helped prepare written reports for the DR (Disaster Recovery) team, which has the objective of documenting emergency plans for organizations to follow. Participated in tabletop exercises in which we would simulate disasters for the critical applications to then implement their recovery plan. Analyzed system specifications in order to document and formalize a recovery plan.",
             "location": "Albany, New York",
@@ -104,13 +115,13 @@
             "timelineType" : "work"
         },
         {
-            "jobTitle": "Volunteer",
-            "description": "Developed a gpt-based onboarding bot which gives new users useful information regarding the common tools which are used by various teams, and provides answers of commonly asked questions. Created with python’s Openai API and langchain API to develop the bot which pulls the useful information off a vectorstore database, and uses the Flask API to host the bots’ services. Utilized ReactJS, Javascript, Figma, and storybook for developing the UI for the bot. Collaborated with team members to manage version control using Github and docker.",
-            "location": "Remote",
-            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQHuPqkZsc0wqQ/company-logo_200_200/company-logo_200_200/0/1630579843190/devlaunchers_logo?e=2147483647&v=beta&t=IuaiaAz_6Oq1IoiKMGlQ7ayp-FpDrObFyu7RJT7HNWQ",
-            "startDate": "Augut 2023",
+            "jobTitle": "Teaching Assistant",
+            "description": "Assisted students in Information to databases (CINF 202) at the University at Albany",
+            "location": "Albany, New York",
+            "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
+            "startDate": "January 2024",
             "endDate": "Present",
-            "employer": "Dev Launchers",
+            "employer": "University at Albany",
             "skills": "",
             "timelineType" : "work"
         }
