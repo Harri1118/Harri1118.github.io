@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 const images = [
-    'https://media.licdn.com/dms/image/v2/D4E35AQHdsxZsWWeGNw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1724352473197?e=1736730000&v=beta&t=F8pOTs1kJOwFcjFXsmj45Wk0Xfg58d6al2OffBzkqaM',
+    'https://media.licdn.com/dms/image/v2/D4E35AQHdsxZsWWeGNw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1724352473197?e=1738872000&v=beta&t=bDr5eguum5r8p8TGcibkJsNwnEk7Hs7hdz7YduPRLfE',
     'https://i.ytimg.com/vi/i3p42HhTjvw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDfPlbs1cWl6zOzdzgQfeXgP9MdKA',
     'https://i.ytimg.com/vi/mtOD19C7J48/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD5cyiU8QVwf-HMwgOgERM6JluUnw'
   ];
