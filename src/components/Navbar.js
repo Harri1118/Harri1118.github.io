@@ -3,14 +3,14 @@ import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemTe
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll';
 import NavBarButton from '../elements/NavBarButton';
-import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
   const isMobile = useMediaQuery('(max-width:768px)');
   const navigate = useNavigate();
 
-  // Track scroll position to check if the user is at the bottom
   useEffect(() => {
     const handleScroll = () => {
       const isBottom = window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight;
@@ -23,11 +23,9 @@ function Navbar() {
     };
   }, []);
 
-  // Toggle the drawer open/close
   const toggleDrawer = (open) => {
     setDrawerOpen(open);
   };
-
 
   return (
     <AppBar 
@@ -35,22 +33,19 @@ function Navbar() {
       sx={{
         transition: 'position 0.3s ease',
         background: 'transparent',
-        boxShadow: 'none'
+        boxShadow: 'none',
+        top: 0,  // Ensure the navbar is stuck to the top
       }}
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-
-        {/* Container for navbar buttons with fixed width */}
         <div style={{ 
           display: 'flex', 
           justifyContent: 'space-between', 
-          width: '80%',  // Adjust the width as per your needs (e.g., 80% of the screen width)
-          maxWidth: '1200px', // Maximum width for large screens
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',  // Background color for the "box" around buttons
-          padding: '10px 20px',  // Padding inside the "box"
-          borderRadius: '8px', // Optional: rounded corners for the box
+          width: '80%',
+          maxWidth: '1200px',
+          padding: '10px 20px',
+          borderRadius: '8px',
         }}>
-          {/* Desktop Menu */}
           {!isMobile && (
             <>
               <NavBarButton to="header" text="Summary"/>
@@ -58,21 +53,18 @@ function Navbar() {
               <NavBarButton to="work-experience" text="Work Experience"/>
               <NavBarButton to="skills" text="Skills"/>
               <NavBarButton to="footer" text="Contact me"/>
-              {/* <Button onClick={() => navigate('/gm')}>
-                Play
-              </Button> */}
             </>
           )}
 
-          {/* Mobile Menu Button (Hamburger Icon) */}
           {isMobile && (
-            <IconButton edge="end" color="white" onClick={() => toggleDrawer(true)}
-            sx={{
-              position: 'absolute',  // Absolute positioning
-              top: 10,               // Positioning from the top (adjust as needed)
-              left: 10,             // Positioning from the right
-              zIndex: 1300,          // Ensures the button is on top of other elements (default AppBar zIndex is 1100)
-            }}
+            <IconButton edge="end" color="inherit" onClick={() => toggleDrawer(true)}
+              
+              sx={{
+                position: "fixed",
+                top: 10,
+                left: 10,
+                zIndex: 1300,
+              }}
             >
               <MenuIcon />
             </IconButton>
@@ -80,44 +72,17 @@ function Navbar() {
         </div>
       </Toolbar>
 
-      {/* Mobile Drawer (Hamburger Menu) */}
       <Drawer anchor="right" open={drawerOpen} onClose={() => toggleDrawer(false)}>
         <List sx={{ width: 230 }} role="presentation" onClick={() => toggleDrawer(false)}>
-          <ListItem button>
-            <ListItemText>
-              <Button component={Link} to="header" smooth={true} duration={500} sx={{ color: 'white' }}>
-                Summary
-              </Button>
-            </ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemText>
-              <Button component={Link} to="projects" smooth={true} duration={500} sx={{ color: 'white' }}>
-                Projects
-              </Button>
-            </ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemText>
-              <Button component={Link} to="work-experience" smooth={true} duration={500} sx={{ color: 'white' }}>
-                Work Experience
-              </Button>
-            </ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemText>
-              <Button component={Link} to="skills" smooth={true} duration={500} sx={{ color: 'white' }}>
-                Skills
-              </Button>
-            </ListItemText>
-          </ListItem>
-          <ListItem button>
-            <ListItemText>
-              <Button component={Link} to="footer" smooth={true} duration={500} sx={{ color: 'white' }}>
-                Contact me
-              </Button>
-            </ListItemText>
-          </ListItem>
+          {['Summary', 'Projects', 'Work Experience', 'Skills', 'Contact me'].map((text, index) => (
+            <ListItem button key={index}>
+              <ListItemText>
+                <Button component={Link} to={text.toLowerCase().replace(/ /g, '-')} smooth={true} duration={500} sx={{ color: 'black' }}>
+                  {text}
+                </Button>
+              </ListItemText>
+            </ListItem>
+          ))}
         </List>
       </Drawer>
     </AppBar>
