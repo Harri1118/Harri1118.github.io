@@ -82,6 +82,7 @@ function Header() {
       component="h2"
       data-aos="fade-up"
       style={{
+        fontSize: '13vw',
         fontFamily: 'Bruno Ace SC, serif',
         fontStyle: 'normal',
         color: '#7BAFD4',
