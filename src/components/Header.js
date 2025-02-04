@@ -18,7 +18,7 @@ function Header() {
   return (
     <div>
     { !isMobile &&
-    <Box
+      <Box
       component="header"
       data-aos="fade-up"
       className="header"
@@ -31,7 +31,7 @@ function Header() {
   ]}
   wrapper="h1" // Wraps the animation in an h1 element
   speed={50}
-  style={{ display: 'inline-block', fontSize: '10vw', fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }} // Changed to Roboto
+  style={{ display: 'inline-block', fontSize: '6rem', fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }} // Changed to Roboto
   repeat={0}
   data-aos="fade-up"
 />  
@@ -45,46 +45,56 @@ function Header() {
       <SequentialAnimation/>
     </Box>
   }
-  {isMobile &&
-    <Box
+  {isMobile && (
+  <Box
     component="header"
     data-aos="fade-up"
     className="header"
-    sx={{textAlign: 'center', padding: '2rem', backgroundColor: 'rgba(0, 0, 0, 0.7)',
-      display: "flex",
-      justifyContent: "center",
+    sx={{
+      textAlign: 'center',
+      padding: '2rem',
+      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      display: "block", // Changes display to block to stack elements vertically
+      justifyContent: "center", 
       alignItems: "center"
-      
     }}
   >
-<TypeAnimation
-  sequence={['Welcome', 1000]}
-  wrapper="h1"
-  speed={50}
-  style={{
-    display: 'inline-block',
-    fontSize: '13vw', // Default for small devices
-    fontFamily: 'Bruno Ace SC, serif',
-    fontStyle: 'normal',
-    color: '#7BAFD4',
-    textAlign: 'center',
-    width: '100%'
-  }}
-  repeat={0}
-  data-aos="fade-up"
-/>
+    <TypeAnimation
+      sequence={['Welcome', 1000]}
+      wrapper="h1"
+      speed={50}
+      style={{
+        fontSize: '13vw', // Default for small devices
+        fontFamily: 'Bruno Ace SC, serif',
+        fontStyle: 'normal',
+        color: '#7BAFD4',
+        textAlign: 'center',
+        width: '100%',
+        display: 'block' // Ensure TypeAnimation takes up full width and is block-level
+      }}
+      repeat={0}
+      data-aos="fade-up"
+    />
 
-{/* Place the ImageSlider right below */}
-{/* <ImageSlider/> */}
-    {/* <Box id="header" paddingTop={10} height="100px"/> */}
-    {/* <Typography variant="h2" component="h2" data-aos="fade-up"
-    style={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}
+  <ImageSlider  />
+    <Typography
+      variant="h2"
+      component="h2"
+      data-aos="fade-up"
+      style={{
+        fontFamily: 'Bruno Ace SC, serif',
+        fontStyle: 'normal',
+        color: '#7BAFD4',
+        marginTop: '20px', // Adds some spacing between elements if needed
+      }}
     >
       Goal
     </Typography>
-    <SequentialAnimation/> */}
+
+    <SequentialAnimation />
   </Box>
-  }
+)}
+
 </div>
   );
 }
