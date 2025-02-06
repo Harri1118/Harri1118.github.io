@@ -138,7 +138,7 @@ function WorkExperience() {
           </div>
         }
         {isMobile &&
-          <div style={{ paddingLeft: '48px' }}>
+          <div>
             {isOdd ? (
               <TimelineItem>
                 <TimelineOppositeContent style={{ display: 'flex', justifyContent: 'right' }}>
@@ -152,8 +152,8 @@ function WorkExperience() {
                     <Typography sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', fontSize: '0.75rem' }}>
                       {item.employer}
                     </Typography>
-                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '150px', height: '100px', objectFit: 'contain' }} />
-                    <CardActions sx={{ justifyContent: 'center' }}>
+                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                    <CardActions >
                       <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} />
                     </CardActions>
                   </Paper>
@@ -194,7 +194,7 @@ function WorkExperience() {
                     <Typography sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', fontSize: '0.75rem' }}>
                       {item.employer}
                     </Typography>
-                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '150px', height: '100px', objectFit: 'contain' }} />
+                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
                     <CardActions sx={{ justifyContent: 'center' }}>
                       <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} />
                     </CardActions>
