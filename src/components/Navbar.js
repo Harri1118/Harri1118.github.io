@@ -77,7 +77,7 @@ function Navbar() {
           {['Summary', 'Projects', 'Work Experience', 'Skills', 'Contact me'].map((text, index) => (
             <ListItem button key={index}>
               <ListItemText>
-                <Button component={Link} to={text.toLowerCase().replace(/ /g, '-')} smooth={true} duration={500} sx={{ color: 'black' }}>
+                <Button component={Link} to={text.toLowerCase().replace(/ /g, '-')} smooth={true} duration={500} sx={{ color: 'white' }}>
                   {text}
                 </Button>
               </ListItemText>
