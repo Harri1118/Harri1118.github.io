@@ -25,40 +25,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Silkscreen:wght@400;700&family=VT323&display=swap');
-.vt323-regular {
-  font-family: "VT323", serif;
-  font-weight: 400;
-  font-style: normal;
-
-  fontFamily: 'VT323, serif' 
-} */
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&family=VT323&display=swap');
-
-.quantico-regular {
-  font-family: "Quantico", serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-
-
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Playwrite+MX+Guides&family=Press+Start+2P&family=Quantico&family=Silkscreen:wght@400;700&family=Sixtyfour&family=Tiny5&family=VT323&display=swap');
-.sixtyfour-regular {
-  font-family: "Sixtyfour", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0;
-} */
-
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Jersey+10+Charted&family=Micro+5&family=Playwrite+MX+Guides&family=Press+Start+2P&family=Quantico&family=Silkscreen:wght@400;700&family=Sixtyfour&family=Tiny5&family=VT323&family=Workbench&display=swap');
 
@@ -104,5 +70,16 @@ html {
 @keyframes fadeInAnimation {
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 12vw; 
+  }
+}
+@media (min-width: 769px) {
+  h1 {
+    font-size: 4rem;
   }
 }

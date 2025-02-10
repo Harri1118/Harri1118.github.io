@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Box, IconButton, Link } from '@mui/material';
+import { Typography, Box, IconButton, Link, useMediaQuery } from '@mui/material';
 import AOS from 'aos';
 import '../css/Header.css';
 import 'aos/dist/aos.css';
@@ -9,11 +9,16 @@ import SequentialAnimation from '../elements/SequentialAnimation';
 import '../App.css'
 
 function Header() {
+  const isMobile = useMediaQuery('(max-width:768px)');
+
+  
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <Box
+    <div>
+    { !isMobile &&
+      <Box
       component="header"
       data-aos="fade-up"
       className="header"
@@ -39,6 +44,59 @@ function Header() {
       </Typography>
       <SequentialAnimation/>
     </Box>
+  }
+  {isMobile && (
+  <Box
+    component="header"
+    data-aos="fade-up"
+    className="header"
+    sx={{
+      textAlign: 'center',
+      padding: '2rem',
+      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      display: "block", // Changes display to block to stack elements vertically
+      justifyContent: "center", 
+      alignItems: "center"
+    }}
+  >
+    <TypeAnimation
+      sequence={['Welcome', 1000]}
+      wrapper="h1"
+      speed={50}
+      style={{
+        fontSize: '13vw', // Default for small devices
+        fontFamily: 'Bruno Ace SC, serif',
+        fontStyle: 'normal',
+        color: '#7BAFD4',
+        textAlign: 'center',
+        width: '100%',
+        display: 'block' // Ensure TypeAnimation takes up full width and is block-level
+      }}
+      repeat={0}
+      data-aos="fade-up"
+    />
+
+  <ImageSlider  />
+    <Typography
+      variant="h2"
+      component="h2"
+      data-aos="fade-up"
+      style={{
+        fontSize: '13vw',
+        fontFamily: 'Bruno Ace SC, serif',
+        fontStyle: 'normal',
+        color: '#7BAFD4',
+        marginTop: '20px', // Adds some spacing between elements if needed
+      }}
+    >
+      Goal
+    </Typography>
+
+    <SequentialAnimation />
+  </Box>
+)}
+
+</div>
   );
 }
 

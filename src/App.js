@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Home from './Home';
-import Game from './game/Game'
+import Game from './game/Game';
+import './App.css';
 import { Route, Routes } from "react-router-dom";
 const App = () =>{
 

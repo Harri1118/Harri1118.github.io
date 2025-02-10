@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
-import { Box, Typography, Button, Link } from '@mui/material';
-import objectMap from '../objectClassifications/objects.json'
+import { Box, Typography, Button, Link, useMediaQuery } from '@mui/material';
+import SkillsObjects from '../objectClassifications/Skills.json'
 import { useEffect } from 'react';
 import AccordionExpandIcon from './AccordionExpandIcon';
 import ReactPlayer from 'react-player';
@@ -56,6 +56,8 @@ export default function NestedModal(props) {
   const {title, description, image, date, link, youtubeLink, skills} = props
   const skillObjs = []
   const [open, setOpen] = React.useState(false);
+  const isMobile = useMediaQuery('(max-width:768px)');
+
   const handleOpen = () => {
     setOpen(true);
   };
@@ -68,7 +70,7 @@ export default function NestedModal(props) {
   }, [skills]);
 
   function putData(){
-    let Skills = objectMap.Skills
+    let Skills = SkillsObjects.Skills
     for(let skillEntry of Skills){
       if(skills.includes(skillEntry.title)){
         skillObjs.push(skillEntry)
@@ -77,6 +79,7 @@ export default function NestedModal(props) {
   }
 
   return (
+    
     <div>
       <Button onClick={handleOpen} 
         sx={{
@@ -103,12 +106,14 @@ export default function NestedModal(props) {
           transform: "scaleX(1)"
           }
           }}>Learn more</Button>
+      
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
+        
         <Box 
           sx={{ 
             ...style, 
@@ -121,16 +126,44 @@ export default function NestedModal(props) {
             fontStyle: 'normal', 
             color: '#7BAFD4'
           }}>
-            <Typography variant="h2" id="parent-modal-title">
+            { !isMobile &&
+            <Typography variant="h2" id="parent-modal-title"
+            sx={{            
+              fontFamily: 'Bruno Ace SC, serif', 
+              fontStyle: 'normal', 
+            }}
+            >
             {title}
             </Typography>
+            }
+            { isMobile &&
+            <Typography variant="h3" id="parent-modal-title" 
+              sx={{
+                paddingTop: "30px",
+                paddingBottom: "15px",          
+                fontFamily: 'Bruno Ace SC, serif', 
+                fontStyle: 'normal', 
+              }}>
+            {title}
+            </Typography>
+            }
         {
-          image != null && 
+          (image != null) && !isMobile && 
             <Box
             component="img"
             src={image}
-            sx={{ width: "30%", height: "50%", justifyContent: "center" }}
+            sx={{height: "50%", justifyContent: "center" }}
             />
+            
+        }
+                {
+          (image != null) && isMobile && 
+            <Box
+            component="img"
+            src={image}
+            sx={{height: "30%", justifyContent: "center" }}
+            />
+            
         }
         {
           (youtubeLink != null) &&
@@ -142,16 +175,23 @@ export default function NestedModal(props) {
               marginTop: 2,
               fontFamily: 'Bruno Ace SC, serif', 
               fontStyle: 'normal', 
-              color: '#7BAFD4'
+              color: '#7BAFD4',
             }}
             ><ReactPlayer url={youtubeLink}/></Box>
         }
         <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4'}}>
             {date}
         </Typography>
-        <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', textAlign: 'left', paddingLeft: "30%", paddingRight: "30%", paddingTop: "5%", paddingBottom: "2%"}}>
+        { !isMobile &&
+        <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', textAlign: 'left', paddingLeft: "20%", paddingRight: "20%", paddingTop: "5%", paddingBottom: "4%"}}>
             {description}
         </Typography>
+        }
+        { isMobile &&
+        <Typography variant="body1" id="parent-modal-description" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', textAlign: 'left', paddingLeft: "2%", paddingRight: "2%", paddingTop: "5%", paddingBottom: "7%"}}>
+            {description}
+        </Typography>
+        }
         {
           link != null && 
           <Link href={link} target="_blank" rel="noopener noreferrer">
@@ -171,9 +211,11 @@ export default function NestedModal(props) {
         <AccordionExpandIcon skills={skillObjs} />
         </Box>
         <br/>
-        <Button onClick={handleClose} >Close</Button>
+        <Button onClick={handleClose} sx={{paddingBottom: "20px"}}>Close</Button>
             </Box>
       </Modal>
+      
+      
     </div>
   );
 }
