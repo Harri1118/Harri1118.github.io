@@ -22,7 +22,6 @@ const darkTheme = createTheme({
 const BackgroundBox = styled(Box)(({ theme }) => ({
   position: 'relative',
   minHeight: '100vh',
-  //backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',
@@ -36,8 +35,6 @@ const BackgroundBox = styled(Box)(({ theme }) => ({
     left: 0,
     right: 0,
     bottom: 0,
-    //fontFamily: 'url(https://www.fontspace.https://see.fontimg.com/api/rf5/YzxE8/MTMwNGU5OGRhMDViNGMyMmFlYzYyMjEzZTYwOTZiY2EudHRm/V2VsY29tZQ/robot-9000-italic.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65)',
-    //backgroundColor: 'rgba(0, 0, 0, 0.5)',
     zIndex: 1,
   },
   '& > *': {

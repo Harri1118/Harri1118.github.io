@@ -6,7 +6,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
 import AOS from 'aos';
 import '../css/WorkExperience.css';
-import objects from '../objectClassifications/objects';
+import jobObjects from '../objectClassifications/Jobs.json';
 import NestedModal from '../elements/NestedModal';
 
 function chooseBackgroundImage(bg) {
@@ -35,7 +35,7 @@ function WorkExperience() {
   const isMobile = useMediaQuery('(max-width:768px)');
 
   useEffect(() => {
-    setJobs(objects.Jobs);
+    setJobs(jobObjects.Jobs);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

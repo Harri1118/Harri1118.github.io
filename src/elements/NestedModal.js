@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
 import { Box, Typography, Button, Link, useMediaQuery } from '@mui/material';
-import objectMap from '../objectClassifications/objects.json'
+import SkillsObjects from '../objectClassifications/Skills.json'
 import { useEffect } from 'react';
 import AccordionExpandIcon from './AccordionExpandIcon';
 import ReactPlayer from 'react-player';
@@ -70,7 +70,7 @@ export default function NestedModal(props) {
   }, [skills]);
 
   function putData(){
-    let Skills = objectMap.Skills
+    let Skills = SkillsObjects.Skills
     for(let skillEntry of Skills){
       if(skills.includes(skillEntry.title)){
         skillObjs.push(skillEntry)
