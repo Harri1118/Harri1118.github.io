@@ -87,7 +87,7 @@ function WorkExperience() {
                     </Typography>
                     <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '200px', height: '150px', objectFit: 'contain' }} />
                     <CardActions sx={{ justifyContent: 'center' }}>
-                      <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} />
+                      <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} link={item.link} />
                     </CardActions>
                   </Paper>
                 </TimelineOppositeContent>
@@ -129,7 +129,7 @@ function WorkExperience() {
                     </Typography>
                     <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '200px', height: '150px', objectFit: 'contain' }} />
                     <CardActions sx={{ justifyContent: 'center' }}>
-                      <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} />
+                      <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} link={item.link} />
                     </CardActions>
                   </Paper>
                 </TimelineContent>

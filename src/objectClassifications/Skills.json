@@ -52,17 +52,17 @@
         },
         {
             "title": "Linux",
-            "type": "frwork",
+            "type": "tool",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUXYtZGaSVpgszvcdic5jZKt2rhQZqPGEng&s"
         },
         {
             "title": "Github",
-            "type": "frwork",
+            "type": "tool",
             "image": "https://cdn.svgporn.com/logos/github-icon.svg"
         },
         {
             "title": "Wireshark",
-            "type": "frwork",
+            "type": "tool",
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Wireshark_icon_new.png"
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "title": "Roboflow",
-            "type": "frwork",
+            "type": "tool",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC9pl1f0FUgfttU7hr0ZZcxaGCTMTGO1ZNrA&s"
         },
         {
@@ -117,7 +117,7 @@
         },
         {
             "title": "MongoDB",
-            "type": "frwork",
+            "type": "tool",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/640px-Mongodb-svgrepo-com.svg.png"
         },
         {
@@ -129,6 +129,16 @@
             "title": "Tensorflow",
             "type": "frwork",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Tensorflow-svgrepo-com.svg/640px-Tensorflow-svgrepo-com.svg.png"
+        },
+        {
+            "title": "Docker",
+            "type": "tool",
+            "image": "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000"
+        },
+        {
+            "title": "Microsoft Excel",
+            "type": "tool",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
         }
     ]
 
