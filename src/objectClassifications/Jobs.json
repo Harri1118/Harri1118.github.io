@@ -19,7 +19,8 @@
             "startDate": "March 2023",
             "endDate": "November 2023",
             "employer": "University at Albany",
-            "skills": ["VS Code", "Linux", "Google colab", "Jupyter Notebook", "Python"],
+            "skills": ["VS Code", "Linux", "Google Colab", "Jupyter Notebook", "Python", "Github"],
+            "link": "https://github.com/mabdullahcanbaz/ObjectDetectionModels",
             "timelineType" : "work"
         },
         {
@@ -30,7 +31,8 @@
             "startDate": "Augut 2023",
             "endDate": "January 2025",
             "employer": "Dev Launchers",
-            "skills": "",
+            "skills": ["Python", "Javascript", "Langchain", "Google Colab", "Github", "VS Code", "Docker", "OpenAi", "ReactJS"],
+            "link": "https://github.com/dev-launchers/onboarding-bot",
             "timelineType" : "work"
         },
         {
@@ -41,7 +43,7 @@
             "startDate": "September 2023",
             "endDate": "December 2023",
             "employer": "New York ITS",
-            "skills": "",
+            "skills": ["Microsoft Excel"],
             "timelineType" : "work"
         },
         {
@@ -52,18 +54,18 @@
             "startDate": "March 2024",
             "endDate": "August 2024",
             "employer": "New York ITS",
-            "skills": "",
+            "skills": ["Microsoft Excel", "Java", "Eclipse", "SQL", "Javascript"],
             "timelineType" : "work"
         },
         {
             "jobTitle": "Teaching Assistant",
-            "description": "Assisted students in Information in the 21st Century (CINF 101x) at the University at Albany",
+            "description": "Teaching Assistant for professor Crnkic in CINF 202 (Intro to databases). Assisted in teaching database concepts, as well as familiarizing students with SQL, NoSQL, and other database tools.",
             "location": "Albany, New York",
             "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
             "startDate": "January 2025",
             "endDate": "Present",
             "employer": "University at Albany",
-            "skills": "",
+            "skills": ["SQL", "MongoDB"],
             "timelineType" : "work"
         }
     ]
