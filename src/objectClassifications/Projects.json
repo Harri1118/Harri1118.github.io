@@ -36,7 +36,7 @@
             "description": "Created an AWK compiler by coding Lexer, Parser, and Interpreter classes to run awk scripts and congruently interpret input files. Utilized HashMaps to store variable data (within the awk scripts), deployed Java’s Optional class to parse through awk scripts, and applied JUnit tests to test functionality. Github Repo for this project is available upon request.",
             "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/awkCompiler.png",
             "date": "10/17",
-            "link": "https://www.youtube.com/watch?v=1BrhZBMOS8U",
+            "link": "https://github.com/Harri1118/Awk-Compiler",
             "skills": ["Intellij", "Java"]  
         },
         {
@@ -45,7 +45,7 @@
             "description": "Created an AWK compiler by coding Lexer, Parser, and Interpreter classes to run awk scripts and congruently interpret input files. Utilized HashMaps to store variable data (within the awk scripts), deployed Java’s Optional class to parse through awk scripts, and applied JUnit tests to test functionality. Github Repo for this project is available upon request.",
             "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/OperatingSystem.png",
             "date": "10/17",
-            "link": "https://www.youtube.com/watch?v=1BrhZBMOS8U",
+            "link": "https://github.com/Harri1118/ICSI-412-Operating-System",
             "skills": ["Intellij", "Java"]  
         },
         {
@@ -54,7 +54,7 @@
             "description": "Created an AWK compiler by coding Lexer, Parser, and Interpreter classes to run awk scripts and congruently interpret input files. Utilized HashMaps to store variable data (within the awk scripts), deployed Java’s Optional class to parse through awk scripts, and applied JUnit tests to test functionality. Github Repo for this project is available upon request.",
             "image": "https://raw.githubusercontent.com/Harri1118/418-Final-Project/refs/heads/main/Client/adamai/src/Images/adamai_logo.jpg",
             "date": "10/17",
-            "link": "https://www.youtube.com/watch?v=1BrhZBMOS8U",
+            "link": "https://github.com/Harri1118/418-Final-Project",
             "youtubeLink": "https://youtu.be/hcCmfYX2C_U",
             "skills": ["ReactJS", "Javascript", "MongoDB", "NodeJS", "VS Code", "OpenAi", "Langchain", "Github"]  
         }
