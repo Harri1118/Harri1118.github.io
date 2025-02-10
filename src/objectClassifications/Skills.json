@@ -1,0 +1,135 @@
+{
+    "Skills":[
+        {
+            "title": "Python",
+            "type": "plang",
+            "image": "https://cdn.svgporn.com/logos/python.svg"
+        },
+        {
+            "title": "Java",
+            "type": "plang",
+            "image": "https://cdn.svgporn.com/logos/java.svg"
+        },
+        {
+            "title": "Javascript",
+            "type": "plang",
+            "image": "https://cdn.svgporn.com/logos/javascript.svg"
+        },
+        {
+            "title": "SQL",
+            "type": "plang",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwuqWn7rCVhqZ_pSlxwVUzlZtFWaOMdbm28A&s"
+        },
+        {
+            "title": "VS Code",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/visual-studio-code.svg"
+        },
+        {
+            "title": "Eclipse",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/eclipse-icon.svg"
+        },
+        {
+            "title": "Intellij",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/intellij-idea.svg"
+        },
+        {
+            "title": "Google Colab",
+            "type": "tool",
+            "image": "https://i.namu.wiki/i/zKS7LsOc2A4ZZR64XnAm8S88HbszoXQPH_T7CY3KFwfwJtemXQwc4Nu3tx5GavmyG-wmgcKs_PfqYbY8xg3iow.webp"
+        },
+        {
+            "title": "Jupyter Notebook",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/jupyter.svg"
+        },
+        {
+            "title": "C",
+            "type": "plang",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
+        },
+        {
+            "title": "Linux",
+            "type": "frwork",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUXYtZGaSVpgszvcdic5jZKt2rhQZqPGEng&s"
+        },
+        {
+            "title": "Github",
+            "type": "frwork",
+            "image": "https://cdn.svgporn.com/logos/github-icon.svg"
+        },
+        {
+            "title": "Wireshark",
+            "type": "frwork",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Wireshark_icon_new.png"
+        },
+        {
+            "title": "Yolov8",
+            "type": "frwork",
+            "image": "https://cdn.prod.website-files.com/646dd1f1a3703e451ba81ecc/64994922cf2a6385a4bf4489_UltralyticsYOLO_mark_blue.svg"
+        },
+        {
+            "title": "Roboflow",
+            "type": "frwork",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC9pl1f0FUgfttU7hr0ZZcxaGCTMTGO1ZNrA&s"
+        },
+        {
+            "title": "Langchain",
+            "type": "frwork",
+            "image": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/langchain-ipuhh4qo1jz5ssl4x0g2a.png/langchain-dp1uxj2zn3752pntqnpfu2.png?_a=DAJFJtWIZAAC"
+        },
+        {
+            "title": "OpenAi",
+            "type": "frwork",
+            "image": "https://www.solodev.com/file/132db9f1-8eb9-11ed-b378-0eaef3759f5f/openai-icon.png"
+        },
+        {
+            "title": "Unity",
+            "type": "frwork",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMEpvhQOuCkjQFYaax3e8BMa9yk4Y6xt_HUQ&s"
+        },
+        {
+            "title": "Unreal Engine",
+            "type": "frwork",
+            "image": "https://static-00.iconduck.com/assets.00/unreal-engine-icon-512x512-0mwtjk1x.png"
+        },
+        {
+            "title": "ReactJS",
+            "type": "frwork",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
+        },
+        {
+            "title": "GoLang",
+            "type": "plang",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4W4k4zseh-AKurUNiz98TiScprGtQNykdQ&s"
+        },
+        {
+            "title": "HTML5",
+            "type": "frwork",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+        },
+        {
+            "title": "CSS",
+            "type": "frwork",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+        },
+        {
+            "title": "MongoDB",
+            "type": "frwork",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/640px-Mongodb-svgrepo-com.svg.png"
+        },
+        {
+            "title": "NodeJS",
+            "type": "frwork",
+            "image": "https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png"
+        },
+        {
+            "title": "Tensorflow",
+            "type": "frwork",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Tensorflow-svgrepo-com.svg/640px-Tensorflow-svgrepo-com.svg.png"
+        }
+    ]
+
+}
