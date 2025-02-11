@@ -6,7 +6,7 @@
           "shortDescription": "Computer vision Sign language game",
           "description": "Developed a game which tests a user’s skill in sign language using machine learning. Trained an object detection algorithm by utilizing Tensorflow API. Used python to create a menu, game mechanics, and point system.",
           "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/SignQuest.png",
-          "date": "10/17",
+          "date": "02/24 - 05/24",
           "link": "https://github.com/Harri1118/ASL-Game",
           "youtubeLink": "https://youtu.be/1LeNdbWmp3k",
           "skills": ["Python", "Jupyter Notebook", "Google Colab", "VS Code", "Github", "Tensorflow"]  
@@ -16,7 +16,7 @@
             "shortDescription": "Home page for Kellogg's Doll Houses",
             "description": "Developed an exclusively front-end website which displays basic information about the company in texts and provides. galleries of Dollhouse commissions. Deployed Cyberduck to create web pages and make the website public.",
             "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/Kelloggs.PNG",
-            "date": "10/17",
+            "date": "07/23",
             "link": "https://github.com/Harri1118/Kelloggs-Dollhouses",
             "skills": ["HTML5", "CSS", "Javascript", "VS Code"]  
         },
@@ -35,7 +35,7 @@
             "shortDescription": "Awk Compiler coded in Java",
             "description": "Created an AWK compiler by coding Lexer, Parser, and Interpreter classes to run awk scripts and congruently interpret input files. Utilized HashMaps to store variable data (within the awk scripts), deployed Java’s Optional class to parse through awk scripts, and applied JUnit tests to test functionality. Github Repo for this project is available upon request.",
             "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/awkCompiler.png",
-            "date": "10/17",
+            "date": "09/23 - 12/23",
             "link": "https://github.com/Harri1118/Awk-Compiler",
             "skills": ["Intellij", "Java"]  
         },
@@ -44,7 +44,7 @@
             "shortDescription": "Operating system coded in java",
             "description": "Created an AWK compiler by coding Lexer, Parser, and Interpreter classes to run awk scripts and congruently interpret input files. Utilized HashMaps to store variable data (within the awk scripts), deployed Java’s Optional class to parse through awk scripts, and applied JUnit tests to test functionality. Github Repo for this project is available upon request.",
             "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/OperatingSystem.png",
-            "date": "10/17",
+            "date": "09/24 - 12/24",
             "link": "https://github.com/Harri1118/ICSI-412-Operating-System",
             "skills": ["Intellij", "Java"]  
         },
@@ -53,7 +53,7 @@
             "shortDescription": "Automated AI chatbot creator application",
             "description": "Created an AWK compiler by coding Lexer, Parser, and Interpreter classes to run awk scripts and congruently interpret input files. Utilized HashMaps to store variable data (within the awk scripts), deployed Java’s Optional class to parse through awk scripts, and applied JUnit tests to test functionality. Github Repo for this project is available upon request.",
             "image": "https://raw.githubusercontent.com/Harri1118/418-Final-Project/refs/heads/main/Client/adamai/src/Images/adamai_logo.jpg",
-            "date": "10/17",
+            "date": "09/24 - 12/24",
             "link": "https://github.com/Harri1118/418-Final-Project",
             "youtubeLink": "https://youtu.be/hcCmfYX2C_U",
             "skills": ["ReactJS", "Javascript", "MongoDB", "NodeJS", "VS Code", "OpenAi", "Langchain", "Github"]  
