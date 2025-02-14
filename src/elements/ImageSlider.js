@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Box, IconButton, useMediaQuery } from '@mui/material'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
-
+// If expires again, use htis link: https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/harrison.jpeg
 const images = [
     'https://media.licdn.com/dms/image/v2/D4E35AQHdsxZsWWeGNw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1724352473197?e=1740164400&v=beta&t=gXdmivJv3gAsOSFMv-SLY63ujgbR4c6YaRjXWumtKPg',
     'https://i.ytimg.com/vi/i3p42HhTjvw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDfPlbs1cWl6zOzdzgQfeXgP9MdKA',
