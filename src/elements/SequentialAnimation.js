@@ -34,7 +34,7 @@ function SequentialAnimation() {
       />
       {showSecondAnimation && (
         <Link
-          href="https://github.com/Harri1118/Harri1118.github.io/blob/master/src/resume/Harrison_McKenna_Resume_2025.pdf"
+          href="https://drive.google.com/file/d/1WqcnOVMhnEjOj5563100YjJp23drWgLR/preview"
           target="_blank"
           color="#fff"
         >
@@ -79,7 +79,7 @@ function SequentialAnimation() {
     />
     {showSecondAnimation && (
       <Link
-        href="https://www.overleaf.com/project/66fb66249304752bb0d0559a"
+        href="https://drive.google.com/file/d/1WqcnOVMhnEjOj5563100YjJp23drWgLR/preview"
         target="_blank"
         color="#fff"
         style={{ display: 'block', marginTop: '10px' }} // Better spacing
