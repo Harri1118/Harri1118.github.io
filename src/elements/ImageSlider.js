@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import { Box, IconButton, useMediaQuery } from '@mui/material'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
-
 const images = [
     'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/harrison.jpeg',
-    'https://i.ytimg.com/vi/i3p42HhTjvw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDfPlbs1cWl6zOzdzgQfeXgP9MdKA',
-    'https://i.ytimg.com/vi/mtOD19C7J48/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD5cyiU8QVwf-HMwgOgERM6JluUnw'
+    'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/bridge.jpg',
+    'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/knight.png'
   ];
 
   
