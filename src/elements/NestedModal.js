@@ -193,7 +193,7 @@ export default function NestedModal(props) {
         </Typography>
         }
         {
-          link != null && 
+          link != "" && 
           <Link href={link} target="_blank" rel="noopener noreferrer">
           Click here to view repo
           </Link>
