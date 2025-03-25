@@ -70,7 +70,7 @@ function Footer() {
       </Link>
 
       <Link 
-        href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
+        href="https://www.youtube.com/@Harrisonkm20202" 
         target="_blank" 
         rel="noopener noreferrer" 
         color="#7BAFD4"
@@ -85,7 +85,7 @@ function Footer() {
         <YouTubeIcon fontSize="large" />
       </Link>
       <Link 
-        href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
+        href="mailto:hkmckenna@albany.edu" 
         target="_blank" 
         rel="noopener noreferrer" 
         color="#7BAFD4"
@@ -151,7 +151,7 @@ function Footer() {
       </Link>
 
       <Link 
-        href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
+        href="https://www.youtube.com/@Harrisonkm20202" 
         target="_blank" 
         rel="noopener noreferrer" 
         color="#7BAFD4"
@@ -166,7 +166,7 @@ function Footer() {
         <YouTubeIcon fontSize="medium" />
       </Link>
       <Link 
-        href="https://www.linkedin.com/in/harrison-mckenna-908104224/" 
+        href="mailto:hkmckenna@albany.edu" 
         target="_blank" 
         rel="noopener noreferrer" 
         color="#7BAFD4"
