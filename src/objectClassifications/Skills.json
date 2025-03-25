@@ -139,6 +139,26 @@
             "title": "Microsoft Excel",
             "type": "tool",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
+        },
+        {
+            "title": "TypeScript",
+            "type": "frwork",
+            "image": "https://static-00.iconduck.com/assets.00/typescript-icon-icon-2048x2048-2rhh1z66.png"
+        },
+        {
+            "title": "Postman",
+            "type": "tool",
+            "image": "https://w7.pngwing.com/pngs/28/245/png-transparent-postman-hd-logo.png"
+        },
+        {
+            "title": "Gin-Gonic",
+            "type": "frwork",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuh3xC2anblIfdZYggZw3sKKG3dX9HX_K89Q&s"
+        },
+        {
+            "title": ".NET",
+            "type": "frwork",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzemPW2zVigKv44mjIDfGwrf_Rgzcyu07m_A&s"
         }
     ]
 
