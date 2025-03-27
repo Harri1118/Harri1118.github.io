@@ -36,6 +36,7 @@ function SequentialAnimation() {
         <Link
           href="https://drive.google.com/file/d/1WqcnOVMhnEjOj5563100YjJp23drWgLR/preview"
           target="_blank"
+          rel="noopener noreferrer"
           color="#fff"
         >
           <TypeAnimation
@@ -81,6 +82,7 @@ function SequentialAnimation() {
       <Link
         href="https://drive.google.com/file/d/1WqcnOVMhnEjOj5563100YjJp23drWgLR/preview"
         target="_blank"
+        rel="noopener noreferrer"
         color="#fff"
         style={{ display: 'block', marginTop: '10px' }} // Better spacing
       >
