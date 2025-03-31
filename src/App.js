@@ -4,7 +4,7 @@ import Game from './game/Game';
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Blog from './blog/blog';
-
+// Added comment
 const App = () => {
   return (
     <BrowserRouter>
