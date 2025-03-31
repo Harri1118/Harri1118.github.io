@@ -2,10 +2,8 @@ import { Box, Link, useMediaQuery } from '@mui/material';
 import { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import '../App.css'
-const goal = `My name is Harrison! I'm a passionate developer with a keen interest in creating dynamic,
-user-friendly web applications. With expertise in React.js and other
-modern technologies, I enjoy solving complex problems and delivering
-impactful solutions.`
+const goal = `Hi, I'm Harrison! As a passionate web developer, I specialize in building dynamic, user-friendly web applications. 
+With expertise in both front-end and back-end technologies, I thrive on solving complex problems and crafting impactful digital solutions.`
 
 
 function SequentialAnimation() {
