@@ -1,19 +1,12 @@
-import { Button } from "@mui/material"
 import { Link } from 'react-scroll';
 import React, { useState, useEffect } from 'react';
+import { Redirect } from 'react-router-dom';
+import { Button } from '@mui/material';
 
 export default function NavBarButton(props){
-    const {to, text} = props
-return(              
-    <Button 
-    component={Link} 
-    to={to} 
-    smooth={true} 
-    duration={500} 
-    offset={-40} 
-    spy={true} 
-    activeClass="active"
-    sx={{ 
+    const {to, text, isLink} = props
+
+  const SX = {
       display: "inline",
       fontFamily: 'Bruno Ace SC, serif', 
       fontStyle: 'normal', 
@@ -37,11 +30,38 @@ return(
     '&:hover::before': {
       transform: "scaleX(1)"
     }
-    }
-    }
+  }
+
+return(   
+  <div>
+    { isLink == "true" &&
+    <Button 
+    component={Link} 
+    onClick={() => window.open(to, '_self')} 
+    smooth={true} 
+    duration={500} 
+    offset={-40} 
+    spy={true} 
+    activeClass="active"
+    sx={SX}
     >
     {text}
-  </Button>
+  </Button>  
+  }
+      { isLink != "true" &&
+    <Button 
+    component={Link} 
+    to={to} 
+    smooth={true} 
+    duration={500} 
+    offset={-40} 
+    spy={true} 
+    activeClass="active"
+    sx={SX}
+    >
+    {text}
+  </Button>  
+  }
+  </div> 
   )
 }
-  //export default NavBarButton

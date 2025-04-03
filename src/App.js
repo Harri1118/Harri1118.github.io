@@ -1,23 +1,38 @@
-import React from 'react';
-import Home from './Home';
+import React, { Suspense, useEffect, lazy } from 'react';
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Game from './game/Game';
-import './App.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Blog from './blog/blog';
+import './App.css';
+
+const Home = lazy(() => import('./Home'));
+
+const RedirectHandler = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirectPath = urlParams.get('redirect');
+    if (redirectPath) {
+      navigate(redirectPath, { replace: true });
+    }
+  }, [navigate]);
+
+  return null;
+};
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="container">
+      <RedirectHandler />
+      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Harri1118" element={<Home />} />
           <Route path="/gm" element={<Game />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-      </div>
-    </BrowserRouter> 
+      </Suspense>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

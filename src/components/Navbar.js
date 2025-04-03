@@ -48,11 +48,13 @@ function Navbar() {
         }}>
           {!isMobile && (
             <>
-              <NavBarButton to="header" text="Summary"/>
-              <NavBarButton to="projects" text="Projects"/>
-              <NavBarButton to="work-experience" text="Work Experience"/>
-              <NavBarButton to="skills" text="Skills"/>
-              <NavBarButton to="footer" text="Contact me"/>
+              <NavBarButton to="header" text="Summary" isLink="false"/>
+              <NavBarButton to="projects" text="Projects" isLink="false"/>
+              <NavBarButton to="work-experience" text="Work Experience" isLink="false"/>
+              <NavBarButton to="skills" text="Skills" isLink="false"/>
+              <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
+              <NavBarButton to="footer" text="Contact me" isLink="false"/>
+              {/* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */}
             </>
           )}
 

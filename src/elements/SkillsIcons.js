@@ -28,7 +28,7 @@ export default function SkillsIcons(props) {
   return (
     <div>
     {
-      !isMobile &&
+      !isMobile && skills != "none" &&
       <Box 
       container
       sx={{ width: 500, minHeight: "auto", paddingBottom: 5, paddingLeft: 5, justifyContent: "center" }}
@@ -62,7 +62,7 @@ export default function SkillsIcons(props) {
       </Masonry>
     </Box>
     }
-    {isMobile &&
+    {isMobile && skills != "none" &&
         <Box 
         container
         sx={{ width: 300, minHeight: "auto", paddingBottom: 5}}
