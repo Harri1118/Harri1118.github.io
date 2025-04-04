@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback, useRef } from 'react';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesBackGround = (props) =>{
+const ParticlesBackGround = React.memo(function ParticlesBackGround(props){
     const [ init, setInit ] = useState(false);
     const particlesRef = useRef(null);
     const {direction} = props
@@ -89,6 +89,6 @@ const ParticlesBackGround = (props) =>{
             
         />
     );
-  }
+  })
 
   export default ParticlesBackGround

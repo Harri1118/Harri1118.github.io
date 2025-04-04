@@ -1,4 +1,5 @@
 import { Box, Link, useMediaQuery } from '@mui/material';
+import React from 'react'
 import { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import '../App.css'
@@ -6,7 +7,7 @@ const goal = `Hi, I'm Harrison! As a passionate web developer, I specialize in b
 With expertise in both front-end and back-end technologies, I thrive on solving complex problems and crafting impactful digital solutions.`
 
 
-function SequentialAnimation() {
+const SequentialAnimation = React.memo(function SequentialAnimation() {
   let [showSecondAnimation, setShowSecondAnimation] = useState(false);
   const isMobile = useMediaQuery('(max-width:768px)');
 
@@ -106,6 +107,6 @@ function SequentialAnimation() {
 )}
     </div>
   );
-}
+})
 
 export default SequentialAnimation;

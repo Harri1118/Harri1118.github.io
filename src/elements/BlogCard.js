@@ -95,6 +95,17 @@ export default function BlogCard(props) {
               color: '#7BAFD4',
             }}
           >
+            {date}
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'text.secondary',
+              fontFamily: 'Bruno Ace SC, serif',
+              fontStyle: 'normal',
+              color: '#7BAFD4',
+            }}
+          >
             {shortDescription}
           </Typography>
         </CardContent>

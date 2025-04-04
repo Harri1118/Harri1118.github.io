@@ -2,7 +2,8 @@ import { Box, Button, createTheme, FormControl, FormControlLabel, Grid2, InputLa
 import React, { useEffect, useState } from 'react';
 import Blogs from '../objectClassifications/Blogs';
 import BlogCard from '../elements/BlogCard';
-
+import Footer from '../components/Footer'
+import NavBarButton from '../elements/NavBarButton'
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const filterOptions = ['Technology', 'Writing', 'Videogames'];
@@ -55,14 +56,11 @@ const Blog = () => {
     return (
         <ThemeProvider theme={darkTheme}>
         <div className="container" style={sectionStyle}>
-                <Button  
-                onClick={() => window.open('/', '_self')} 
-                >
-                Return home
-              </Button>  
+                        <Typography  variant="h3" component="h2" data-aos="fade-in" justify-content="center" style={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', paddingBottom: "5%"}}>
+                          Welcome to my blog!
+                        </Typography>
+              <NavBarButton to="/?redirect=/" text="Return home" isLink="true"/> 
               <br/>
-            <label>Welcome to my blog!</label>
-            <br />
             <br />
             <FormControl sx={{ m: 1, width: "10%" }} size="small">
                 <Box sx={{ marginBottom: 2 }}>
@@ -98,13 +96,14 @@ const Blog = () => {
                     {blogs.map((blog, index) => (
                         <Grid2 item xs={12} sm={6} md={4} lg={3} key={index}>
                                                     <Grid2 item xs={12} sm={6} md={4} lg={3}>
-                                                        <BlogCard title={blog.title} date={blog.date} shortDescription={blog.shortDescription} link={blog.link}/>
+                                                        <BlogCard title={blog.title} date={blog.date} shortDescription={blog.shortDescription} image={blog.image} link={blog.link}/>
                                                     </Grid2>
                         </Grid2>
                     ))}
                 </Grid2>
                 <Box height="1000px"/>
             </div>
+            <Footer/>
         </div>
         </ThemeProvider>
     );

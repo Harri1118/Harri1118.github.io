@@ -52,8 +52,9 @@ function Navbar() {
               <NavBarButton to="projects" text="Projects" isLink="false"/>
               <NavBarButton to="work-experience" text="Work Experience" isLink="false"/>
               <NavBarButton to="skills" text="Skills" isLink="false"/>
-              <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
               <NavBarButton to="footer" text="Contact me" isLink="false"/>
+              {/* <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
+              <NavBarButton to="/?redirect=/gm" text="Play game" isLink="true"/> */}
               {/* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */}
             </>
           )}

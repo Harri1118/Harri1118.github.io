@@ -24,7 +24,7 @@ function Footer() {
       <div>
     <Box paddingTop="100px"/>
 
-          <Typography  variant="h3" component="h3" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', marginBottom: '20px'}}>
+          <Typography  variant="h3" component="h3" sx={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', marginBottom: '20px', textAlign: 'center'}}>
             Contact Me
           </Typography>
     <Box 
@@ -190,9 +190,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
-/**
- * 
- *       
- */
