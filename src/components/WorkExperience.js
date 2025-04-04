@@ -85,7 +85,7 @@ function WorkExperience() {
                     <Typography sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
                       {item.employer}
                     </Typography>
-                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '200px', height: '150px', objectFit: 'contain' }} />
+                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '200px', height: '150px', objectFit: 'contain' }} loading="lazy"/>
                     <CardActions sx={{ justifyContent: 'center' }}>
                       <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} link={item.link} />
                     </CardActions>
@@ -127,7 +127,7 @@ function WorkExperience() {
                     <Typography sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4' }}>
                       {item.employer}
                     </Typography>
-                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '200px', height: '150px', objectFit: 'contain' }} />
+                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '200px', height: '150px', objectFit: 'contain' }} loading="lazy"/>
                     <CardActions sx={{ justifyContent: 'center' }}>
                       <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} link={item.link} />
                     </CardActions>
@@ -152,7 +152,7 @@ function WorkExperience() {
                     <Typography sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', fontSize: '0.75rem' }}>
                       {item.employer}
                     </Typography>
-                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '100px', height: '100px', objectFit: 'contain' }} loading="lazy"/>
                     <CardActions >
                       <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} />
                     </CardActions>
@@ -194,7 +194,7 @@ function WorkExperience() {
                     <Typography sx={{ fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', fontSize: '0.75rem' }}>
                       {item.employer}
                     </Typography>
-                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                    <img src={item.image} alt={item.alt || 'Image description'} style={{ width: '100px', height: '100px', objectFit: 'contain' }} loading="lazy"/>
                     <CardActions sx={{ justifyContent: 'center' }}>
                       <NestedModal size="small" title={item.jobTitle} description={item.description} skills={item.skills} image={item.image} />
                     </CardActions>

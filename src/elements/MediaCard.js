@@ -56,7 +56,7 @@ export default function MediaCard(props) {
 
   return (
     <AnimatedCard data-aos="fade-up">
-      <BackgroundImage style={{ backgroundImage: `url(${image})` }} />
+      <BackgroundImage style={{ backgroundImage: `url(${image})` }} loading="lazy"/>
       <ContentWrapper>
         <CardContent
           sx={{

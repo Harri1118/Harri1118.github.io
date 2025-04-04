@@ -20,38 +20,6 @@ const style = {
   pb: 3,
 };
 
-function ChildModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  return (
-    <React.Fragment>
-      <Button onClick={handleOpen}>Open Child Modal</Button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="child-modal-title"
-        aria-describedby="child-modal-description"
-      >
-        <Box sx={{ ...style, width: 200 }}>
-          <Typography variant="h2" component="h2" data-aos="fade-in" fontFamily={"Ring of Kerry, sans-serif"}>
-          Welcome
-        </Typography>
-          <p id="child-modal-description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-          <Button onClick={handleClose}>Close Child Modal</Button>
-        </Box>
-      </Modal>
-    </React.Fragment>
-  );
-}
-
 export default function NestedModal(props) {
   const {title, description, image, date, link, youtubeLink, skills} = props
   const skillObjs = []
@@ -151,6 +119,7 @@ export default function NestedModal(props) {
           (image != null) && !isMobile && 
             <Box
             component="img"
+            loading="lazy"
             src={image}
             sx={{height: "50%", justifyContent: "center" }}
             />
@@ -160,6 +129,7 @@ export default function NestedModal(props) {
           (image != null) && isMobile && 
             <Box
             component="img"
+            loading="lazy"
             src={image}
             sx={{height: "30%", justifyContent: "center" }}
             />

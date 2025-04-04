@@ -35,6 +35,7 @@ const ImageSlider = () => {
       >
         <Box
           component="img"
+          loading="lazy"
           sx={{
             width: '100%',
             height: '100%',

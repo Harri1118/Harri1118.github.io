@@ -1,9 +1,8 @@
 import { Link } from 'react-scroll';
-import React, { useState, useEffect } from 'react';
-import { Redirect } from 'react-router-dom';
+import React from 'react';
 import { Button } from '@mui/material';
 
-export default function NavBarButton(props){
+ const NavBarButton = React.memo(function NavBarButton(props){
     const {to, text, isLink} = props
 
   const SX = {
@@ -33,10 +32,10 @@ export default function NavBarButton(props){
   }
 
 return(   
-  <div>
+  <div loading="lazy">
     { isLink == "true" &&
     <Button 
-    component={Link} 
+    component={Link}
     onClick={() => window.open(to, '_self')} 
     smooth={true} 
     duration={500} 
@@ -50,7 +49,7 @@ return(
   }
       { isLink != "true" &&
     <Button 
-    component={Link} 
+    component={Link}
     to={to} 
     smooth={true} 
     duration={500} 
@@ -64,4 +63,6 @@ return(
   }
   </div> 
   )
-}
+})
+
+export default NavBarButton

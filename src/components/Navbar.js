@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import NavBarButton from '../elements/NavBarButton';
 import { useNavigate } from 'react-router-dom';
 
-function Navbar() {
+const Navbar = React.memo(function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -53,8 +53,8 @@ function Navbar() {
               <NavBarButton to="work-experience" text="Work Experience" isLink="false"/>
               <NavBarButton to="skills" text="Skills" isLink="false"/>
               <NavBarButton to="footer" text="Contact me" isLink="false"/>
-              {/* <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
-              <NavBarButton to="/?redirect=/gm" text="Play game" isLink="true"/> */}
+              <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
+              <NavBarButton to="/?redirect=/gm" text="Play game" isLink="true"/>
               {/* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */}
             </>
           )}
@@ -90,6 +90,6 @@ function Navbar() {
       </Drawer>
     </AppBar>
   );
-}
+})
 
 export default Navbar;
