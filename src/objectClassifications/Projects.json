@@ -67,6 +67,16 @@
             "link": "",
             "youtubeLink": "",
             "skills": ["ReactJS", "TypeScript", "Javascript", "MongoDB", "VS Code", "OpenAi", "Langchain", "Github", "GoLang", "Postman", "Gin-Gonic", ".NET" ]  
+        },
+        {
+            "projectTitle": "CPU Processor / Cache Simulator",
+            "shortDescription": "Created a processor simulator in java",
+            "description": "",
+            "image": "",
+            "date": "01/25 - 04/25",
+            "link": "",
+            "youtubeLink": "",
+            "skills": ["IntelliJ, Java"]
         }
     ],
     "Unused Photos" : [{

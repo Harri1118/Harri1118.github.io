@@ -41,7 +41,11 @@ const Blog = () => {
         width: "100%",
         height: "100%",
         backgroundImage: "url(https://e0.pxfuel.com/wallpapers/554/364/desktop-wallpaper-star-trek-and-background-lcars.jpg)",
-        backgroundSize: '100%'
+        backgroundSize: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        display: "flex",
+        position: 'relative'
       };
 
       const darkTheme = createTheme({
@@ -55,7 +59,7 @@ const Blog = () => {
 
     return (
         <ThemeProvider theme={darkTheme}>
-        <div className="container" style={sectionStyle}>
+        <div className="container" style={sectionStyle} >
                         <Typography  variant="h3" component="h2" data-aos="fade-in" justify-content="center" style={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', paddingBottom: "5%"}}>
                           Welcome to my blog!
                         </Typography>
