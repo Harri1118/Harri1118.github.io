@@ -70,13 +70,23 @@
         },
         {
             "projectTitle": "CPU Processor / Cache Simulator",
-            "shortDescription": "Created a processor simulator in java",
-            "description": "",
+            "shortDescription": "Processor simulator created in java",
+            "description": "Created a processor simulator in java. Utilized binary input and output data for the processor to utilize. Created an ALU, assembler, and a cache hit system to simulate the advantages of utilizing cache. Created Read-Only cache and L2 Cache.",
             "image": "",
             "date": "01/25 - 04/25",
-            "link": "",
+            "link": "https://github.com/Harri1118/CPU-Processor-Simulator",
             "youtubeLink": "",
             "skills": ["IntelliJ, Java"]
+        },
+        {
+            "projectTitle": "Encryption algorithms",
+            "shortDescription": "Series of encryption algorithms used for CSI 426",
+            "description": "Coming soon!",
+            "image": "",
+            "date": "01/25 - 05/25",
+            "link": "",
+            "youtubeLink": "",
+            "skills": []
         }
     ],
     "Unused Photos" : [{
