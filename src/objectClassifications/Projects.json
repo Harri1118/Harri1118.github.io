@@ -59,6 +59,16 @@
             "skills": ["ReactJS", "Javascript", "MongoDB", "NodeJS", "VS Code", "OpenAi", "Langchain", "Github"]  
         },
         {
+            "projectTitle": "CPU Processor Simulator",
+            "shortDescription": "Processor simulator created in java",
+            "description": "Created a processor simulator in java. Utilized binary input and output data for the processor to utilize. Created an ALU, assembler, and a cache hit system to simulate the advantages of utilizing cache. Created Read-Only cache and L2 Cache.",
+            "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/CPUSimulator.png",
+            "date": "01/25 - 04/25",
+            "link": "https://github.com/Harri1118/CPU-Processor-Simulator",
+            "youtubeLink": "",
+            "skills": ["IntelliJ, Java"]
+        },
+        {
             "projectTitle": "Alpha Tracker",
             "shortDescription": "Fitness Tracker Application (Coming soon)",
             "description": "Coming soon!",
@@ -67,16 +77,6 @@
             "link": "",
             "youtubeLink": "",
             "skills": ["ReactJS", "TypeScript", "Javascript", "MongoDB", "VS Code", "OpenAi", "Langchain", "Github", "GoLang", "Postman", "Gin-Gonic", ".NET" ]  
-        },
-        {
-            "projectTitle": "CPU Processor / Cache Simulator",
-            "shortDescription": "Processor simulator created in java",
-            "description": "Created a processor simulator in java. Utilized binary input and output data for the processor to utilize. Created an ALU, assembler, and a cache hit system to simulate the advantages of utilizing cache. Created Read-Only cache and L2 Cache.",
-            "image": "https://github.com/Harri1118/Harri1118.github.io/blob/master/src/images/CPUSimulator.png",
-            "date": "01/25 - 04/25",
-            "link": "https://github.com/Harri1118/CPU-Processor-Simulator",
-            "youtubeLink": "",
-            "skills": ["IntelliJ, Java"]
         }
     ],
     "Unused Photos" : [{
