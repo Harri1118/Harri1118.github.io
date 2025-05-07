@@ -72,7 +72,7 @@
             "projectTitle": "CPU Processor / Cache Simulator",
             "shortDescription": "Processor simulator created in java",
             "description": "Created a processor simulator in java. Utilized binary input and output data for the processor to utilize. Created an ALU, assembler, and a cache hit system to simulate the advantages of utilizing cache. Created Read-Only cache and L2 Cache.",
-            "image": "",
+            "image": "https://github.com/Harri1118/Harri1118.github.io/blob/master/src/images/CPUSimulator.png",
             "date": "01/25 - 04/25",
             "link": "https://github.com/Harri1118/CPU-Processor-Simulator",
             "youtubeLink": "",
