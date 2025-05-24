@@ -70,12 +70,12 @@
         },
         {
             "projectTitle": "Alpha Tracker",
-            "shortDescription": "Fitness Tracker Application (Coming soon)",
-            "description": "Coming soon!",
+            "shortDescription": "Fitness Tracker Application",
+            "description": "Developed a fitness tracking app to help athletes monitor progress and achieve fitness goals.  Implemented backend using Go with the Gin-Gonic framework with MongoDB to store data.  Integrated with Rest API  developed middleware for user session authentication.  Enhanced the front end using Typescript, creating a robust and immersive user interface.  Created cross platform code for the app to also be viewable on mobile devices using Swift. ",
             "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:exxdcplb2ozev5lvw5ohnejq/bafkreifuscezj5dv4fcnt6csmp3j6tdly53ly3wnk6dpabbtj5pi3q6vce@jpeg",
             "date": "01/25 - 05/25",
-            "link": "",
-            "youtubeLink": "",
+            "link": "https://github.com/User0x646D616E/Alpha-Tracker",
+            "youtubeLink": "https://youtu.be/lrdNfrQdavQ",
             "skills": ["ReactJS", "TypeScript", "Javascript", "MongoDB", "VS Code", "OpenAi", "Langchain", "Github", "GoLang", "Postman", "Gin-Gonic", ".NET" ]  
         }
     ],
