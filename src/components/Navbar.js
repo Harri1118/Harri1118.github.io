@@ -9,6 +9,9 @@ const Navbar = React.memo(function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
   const isMobile = useMediaQuery('(max-width:768px)');
+  const LABELS = ["Summary","Projects","Work Experience","Skills","Contact me"]
+  const TO = ["header","projects","work-experience","skills","footer"]
+  const LINKS = ["false","false","false","false","false"]
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -46,6 +49,7 @@ const Navbar = React.memo(function Navbar() {
           padding: '10px 20px',
           borderRadius: '8px',
         }}>
+<<<<<<< HEAD
           {!isMobile && (
             <>
               <NavBarButton to="header" text="Summary" isLink="false"/>
@@ -58,6 +62,21 @@ const Navbar = React.memo(function Navbar() {
               {/* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */}
             </>
           )}
+=======
+        {!isMobile && (
+          <>
+            {LABELS.map((text, index) => (
+              <NavBarButton
+                key={index}
+                to={TO[index]}
+                text={text}
+                isLink={LINKS[index]}
+              />
+            ))}
+          </>
+        )}
+
+>>>>>>> dev
 
           {isMobile && (
             <IconButton edge="end" color="inherit" onClick={() => toggleDrawer(true)}
@@ -77,10 +96,10 @@ const Navbar = React.memo(function Navbar() {
 
       <Drawer anchor="right" open={drawerOpen} onClose={() => toggleDrawer(false)}>
         <List sx={{ width: 230 }} role="presentation" onClick={() => toggleDrawer(false)}>
-          {['Summary', 'Projects', 'Work Experience', 'Skills', 'Contact me'].map((text, index) => (
+          {LABELS.map((text, index) => (
             <ListItem button key={index}>
               <ListItemText>
-                <Button component={Link} to={text.toLowerCase().replace(/ /g, '-')} smooth={true} duration={500} sx={{ color: 'white' }}>
+                <Button component={Link} to={TO[index]} smooth={true} duration={500} sx={{ color: 'white' }}>
                   {text}
                 </Button>
               </ListItemText>
