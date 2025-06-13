@@ -49,21 +49,19 @@ const Navbar = React.memo(function Navbar() {
           padding: '10px 20px',
           borderRadius: '8px',
         }}>
-          {!isMobile && (
-            <>
-            {
-              LABELS.map((text, index) => {
-                <NavBarButton to={TO[index]} text={text} isLink={LINKS[index]}/>
-              }
-              /**
-               *               {/* <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
-              <NavBarButton to="/?redirect=/gm" text="Play game" isLink="true"/> */
-              /* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */
-              )
-              
-            }
-            </>
-          )}
+        {!isMobile && (
+          <>
+            {LABELS.map((text, index) => (
+              <NavBarButton
+                key={index}
+                to={TO[index]}
+                text={text}
+                isLink={LINKS[index]}
+              />
+            ))}
+          </>
+        )}
+
 
           {isMobile && (
             <IconButton edge="end" color="inherit" onClick={() => toggleDrawer(true)}
