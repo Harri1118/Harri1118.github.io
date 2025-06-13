@@ -49,7 +49,6 @@ const Navbar = React.memo(function Navbar() {
           padding: '10px 20px',
           borderRadius: '8px',
         }}>
-<<<<<<< HEAD
           {!isMobile && (
             <>
               <NavBarButton to="header" text="Summary" isLink="false"/>
@@ -62,21 +61,6 @@ const Navbar = React.memo(function Navbar() {
               {/* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */}
             </>
           )}
-=======
-        {!isMobile && (
-          <>
-            {LABELS.map((text, index) => (
-              <NavBarButton
-                key={index}
-                to={TO[index]}
-                text={text}
-                isLink={LINKS[index]}
-              />
-            ))}
-          </>
-        )}
-
->>>>>>> dev
 
           {isMobile && (
             <IconButton edge="end" color="inherit" onClick={() => toggleDrawer(true)}
