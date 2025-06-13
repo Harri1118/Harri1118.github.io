@@ -1,26 +1,47 @@
 {
     "Jobs":[
         {
-            "jobTitle": "Teaching Assistant",
-            "description": "Assisted students in Information in the 21st Century (CINF 101x) at the University at Albany",
+            "jobTitle": "Independent Contractor",
+            "description": "",
             "location": "Albany, New York",
             "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
-            "startDate": "August 2022",
-            "endDate": "December 2022",
+            "startDate": "May 2025",
+            "endDate": "Present",
             "employer": "University at Albany",
-            "skills": ["Wireshark"],
+            "skills": [],
             "timelineType" : "work"
         },
         {
-            "jobTitle": "Research Internship",
-            "description": "Developing application using virtual reality, computer vision, and machine learning to help firefighters detect and protect themselves from fire hazards",
+            "jobTitle": "Teaching Assistant",
+            "description": "Teaching Assistant for professor Crnkic in CINF 202 (Intro to databases). Assisted in teaching database concepts, as well as familiarizing students with SQL, NoSQL, and other database tools.",
             "location": "Albany, New York",
             "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
-            "startDate": "March 2023",
-            "endDate": "November 2023",
+            "startDate": "January 2025",
+            "endDate": "May 2025",
             "employer": "University at Albany",
-            "skills": ["VS Code", "Linux", "Google Colab", "Jupyter Notebook", "Python", "Github"],
-            "link": "https://github.com/mabdullahcanbaz/ObjectDetectionModels",
+            "skills": ["SQL", "MongoDB"],
+            "timelineType" : "work"
+        },
+        {
+            "jobTitle": "Java Internship",
+            "description": "Participate on teams for projects that have a Web functional component. Prepare size and scope analysis and timeline documentation. Perform development tasks on all areas of applications including front, middle, and back-end. Front-end web technologies include JSP, JSF, HTML, JavaScript, and Cascading Style Sheets. Middle-tier technologies include Servlet, JSP, Action-based frameworks, and Ajax/web-services. Back-end technologies include SQL/JDBC/JPA with DB2/SQL Server, CICS, and JMS/MQ. Create development test plans and prepare and/or refresh test conditions and associated accounts. Following the test plan, execute unit, run stream, subsystem, and regression tests as needed. Review all test results, comparing the results to the identified conditions. Debug and rerun as needed.",
+            "location": "Albany, New York",
+            "image": "https://avatars.githubusercontent.com/u/3894610?s=200&v=4",
+            "startDate": "March 2024",
+            "endDate": "August 2024",
+            "employer": "New York ITS",
+            "skills": ["Microsoft Excel", "Java", "Eclipse", "SQL", "Javascript"],
+            "timelineType" : "work"
+        },
+        {
+            "jobTitle": "Internship",
+            "description": "Assisted in tabletop exercises of recovery plan and helped prepare written reports for the DR (Disaster Recovery) team, which has the objective of documenting emergency plans for organizations to follow. Participated in tabletop exercises in which we would simulate disasters for the critical applications to then implement their recovery plan. Analyzed system specifications in order to document and formalize a recovery plan.",
+            "location": "Albany, New York",
+            "image": "https://avatars.githubusercontent.com/u/3894610?s=200&v=4",
+            "startDate": "September 2023",
+            "endDate": "December 2023",
+            "employer": "New York ITS",
+            "skills": ["Microsoft Excel"],
             "timelineType" : "work"
         },
         {
@@ -36,37 +57,30 @@
             "timelineType" : "work"
         },
         {
-            "jobTitle": "Internship",
-            "description": "Assisted in tabletop exercises of recovery plan and helped prepare written reports for the DR (Disaster Recovery) team, which has the objective of documenting emergency plans for organizations to follow. Participated in tabletop exercises in which we would simulate disasters for the critical applications to then implement their recovery plan. Analyzed system specifications in order to document and formalize a recovery plan.",
+            "jobTitle": "Research Internship",
+            "description": "Developing application using virtual reality, computer vision, and machine learning to help firefighters detect and protect themselves from fire hazards",
             "location": "Albany, New York",
-            "image": "https://avatars.githubusercontent.com/u/3894610?s=200&v=4",
-            "startDate": "September 2023",
-            "endDate": "December 2023",
-            "employer": "New York ITS",
-            "skills": ["Microsoft Excel"],
-            "timelineType" : "work"
-        },
-        {
-            "jobTitle": "Java Internship",
-            "description": "Participate on teams for projects that have a Web functional component. Prepare size and scope analysis and timeline documentation. Perform development tasks on all areas of applications including front, middle, and back-end. Front-end web technologies include JSP, JSF, HTML, JavaScript, and Cascading Style Sheets. Middle-tier technologies include Servlet, JSP, Action-based frameworks, and Ajax/web-services. Back-end technologies include SQL/JDBC/JPA with DB2/SQL Server, CICS, and JMS/MQ. Create development test plans and prepare and/or refresh test conditions and associated accounts. Following the test plan, execute unit, run stream, subsystem, and regression tests as needed. Review all test results, comparing the results to the identified conditions. Debug and rerun as needed.",
-            "location": "Albany, New York",
-            "image": "https://avatars.githubusercontent.com/u/3894610?s=200&v=4",
-            "startDate": "March 2024",
-            "endDate": "August 2024",
-            "employer": "New York ITS",
-            "skills": ["Microsoft Excel", "Java", "Eclipse", "SQL", "Javascript"],
+            "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
+            "startDate": "March 2023",
+            "endDate": "November 2023",
+            "employer": "University at Albany",
+            "skills": ["VS Code", "Linux", "Google Colab", "Jupyter Notebook", "Python", "Github"],
+            "link": "https://github.com/mabdullahcanbaz/ObjectDetectionModels",
             "timelineType" : "work"
         },
         {
             "jobTitle": "Teaching Assistant",
-            "description": "Teaching Assistant for professor Crnkic in CINF 202 (Intro to databases). Assisted in teaching database concepts, as well as familiarizing students with SQL, NoSQL, and other database tools.",
+            "description": "Assisted students in Information in the 21st Century (CINF 101x) at the University at Albany",
             "location": "Albany, New York",
             "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
-            "startDate": "January 2025",
-            "endDate": "Present",
+            "startDate": "August 2022",
+            "endDate": "December 2022",
             "employer": "University at Albany",
-            "skills": ["SQL", "MongoDB"],
+            "skills": ["Wireshark"],
             "timelineType" : "work"
         }
+
+
+
     ]
 }

@@ -9,6 +9,9 @@ const Navbar = React.memo(function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
   const isMobile = useMediaQuery('(max-width:768px)');
+  const LABELS = ["Summary","Projects","Work Experience","Skills","Contact me"]
+  const TO = ["header","projects","work-experience","skills","footer"]
+  const LINKS = ["false","false","false","false","false"]
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -48,14 +51,17 @@ const Navbar = React.memo(function Navbar() {
         }}>
           {!isMobile && (
             <>
-              <NavBarButton to="header" text="Summary" isLink="false"/>
-              <NavBarButton to="projects" text="Projects" isLink="false"/>
-              <NavBarButton to="work-experience" text="Work Experience" isLink="false"/>
-              <NavBarButton to="skills" text="Skills" isLink="false"/>
-              <NavBarButton to="footer" text="Contact me" isLink="false"/>
-              <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
-              <NavBarButton to="/?redirect=/gm" text="Play game" isLink="true"/>
-              {/* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */}
+            {
+              LABELS.map((text, index) => {
+                <NavBarButton to={TO[index]} text={text} isLink={LINKS[index]}/>
+              }
+              /**
+               *               {/* <NavBarButton to="/?redirect=/blog" text="View my blog" isLink="true"/>
+              <NavBarButton to="/?redirect=/gm" text="Play game" isLink="true"/> */
+              /* <NavBarButton component="https://harri1118.github.io/?redirect=/gm" text="Play game" isLink="true"/> */
+              )
+              
+            }
             </>
           )}
 
@@ -77,10 +83,10 @@ const Navbar = React.memo(function Navbar() {
 
       <Drawer anchor="right" open={drawerOpen} onClose={() => toggleDrawer(false)}>
         <List sx={{ width: 230 }} role="presentation" onClick={() => toggleDrawer(false)}>
-          {['Summary', 'Projects', 'Work Experience', 'Skills', 'Contact me'].map((text, index) => (
+          {LABELS.map((text, index) => (
             <ListItem button key={index}>
               <ListItemText>
-                <Button component={Link} to={text.toLowerCase().replace(/ /g, '-')} smooth={true} duration={500} sx={{ color: 'white' }}>
+                <Button component={Link} to={TO[index]} smooth={true} duration={500} sx={{ color: 'white' }}>
                   {text}
                 </Button>
               </ListItemText>
