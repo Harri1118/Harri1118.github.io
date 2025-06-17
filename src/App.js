@@ -23,6 +23,7 @@ const RedirectHandler = () => {
 const App = () => {
   return (
     <BrowserRouter>
+
       <RedirectHandler />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>

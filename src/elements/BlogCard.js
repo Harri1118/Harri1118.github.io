@@ -49,7 +49,7 @@ const ContentWrapper = styled('div')({
 });
 
 export default function BlogCard(props) {
-  const { title, shortDescription, image, date, link } = props;
+  const { title, body, image, date} = props;
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -106,18 +106,9 @@ export default function BlogCard(props) {
               color: '#7BAFD4',
             }}
           >
-            {shortDescription}
+            {body}
           </Typography>
         </CardContent>
-        <CardActions sx={{ justifyContent: 'center' }}>
-          <PdfModal
-            size="small"
-            title={title}
-            image={image}
-            date={date}
-            link={link}
-          />
-        </CardActions>
       </ContentWrapper>
     </AnimatedCard>
   );

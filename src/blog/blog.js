@@ -4,6 +4,9 @@ import Blogs from '../objectClassifications/Blogs';
 import BlogCard from '../elements/BlogCard';
 import Footer from '../components/Footer'
 import NavBarButton from '../elements/NavBarButton'
+import db from "../firebase/firebase"
+import {onSnapshot, collection} from "firebase/firestore"
+
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const filterOptions = ['Technology', 'Writing', 'Videogames'];
@@ -16,15 +19,31 @@ const Blog = () => {
         setFilter(event.target.value);
     };
 
-    useEffect(() => {
-        let filteredBlogs = Blogs.Blogs;
-        if (filter !== 'all') {
-            filteredBlogs = filteredBlogs.filter(blog => blog.category === filter);
-        }
-        setBlogs(sortByTimestamp(filteredBlogs, "date"));
-        setIsLoaded(true);
-    }, [filter, timeFrame]);
+    // useEffect(() => {
+    //     let filteredBlogs = Blogs.Blogs;
+    //     if (filter !== 'all') {
+    //         filteredBlogs = filteredBlogs.filter(blog => blog.category === filter);
+    //     }
+    //     setBlogs(sortByTimestamp(filteredBlogs, "date"));
+    //     setIsLoaded(true);
+    // }, [filter, timeFrame]);
 
+    useEffect(
+        () =>
+          onSnapshot(collection(db, "blogs"), (snapshot) => {
+            let filteredBlogs = snapshot.docs.map(doc => doc.data())
+            if (filter !== 'all') {
+            filteredBlogs = filteredBlogs.filter(blog => blog.category === filter);
+            }
+            console.log(filteredBlogs)
+            setBlogs(sortByTimestamp(filteredBlogs, "date"));
+            setIsLoaded(true);
+            console.log(blogs)
+        }
+          ),
+        [filter, timeFrame]
+      );
+      
     const sortByTimestamp = (jsonArray, timestampKey) => {
         return jsonArray.sort((a, b) => {
             return timeFrame === 'rec'
@@ -100,7 +119,7 @@ const Blog = () => {
                     {blogs.map((blog, index) => (
                         <Grid2 item xs={12} sm={6} md={4} lg={3} key={index}>
                                                     <Grid2 item xs={12} sm={6} md={4} lg={3}>
-                                                        <BlogCard title={blog.title} date={blog.date} shortDescription={blog.shortDescription} image={blog.image} link={blog.link}/>
+                                                        <BlogCard title={blog.title} date={blog.date} shortDescription={blog.body} image={blog.image_link} link={blog.link}/>
                                                     </Grid2>
                         </Grid2>
                     ))}
