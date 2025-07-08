@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import AOS from 'aos';
-import NestedModal from './NestedModal';
 import '../App.css';
-import PdfModal from './PdfModal';
+import HtmlModal from './HtmlModal';
 
 const AnimatedCard = styled(Card)(({ theme }) => ({
   width: 270, // Fixed width for all cards
@@ -49,10 +47,11 @@ const ContentWrapper = styled('div')({
 });
 
 export default function BlogCard(props) {
-  const { title, body, image, date} = props;
+  const { title, body, image, date, short_description} = props;
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    console.log(body)
   }, []);
 
   return (
@@ -86,6 +85,17 @@ export default function BlogCard(props) {
           >
             {title}
           </Typography>
+          {/* <Typography
+            variant="body2"
+            sx={{
+              color: 'text.secondary',
+              fontFamily: 'Bruno Ace SC, serif',
+              fontStyle: 'normal',
+              color: '#7BAFD4',
+            }}
+          >
+            {date.seconds}
+          </Typography> */}
           <Typography
             variant="body2"
             sx={{
@@ -95,19 +105,9 @@ export default function BlogCard(props) {
               color: '#7BAFD4',
             }}
           >
-            {date}
+            {short_description}
           </Typography>
-          <Typography
-            variant="body2"
-            sx={{
-              color: 'text.secondary',
-              fontFamily: 'Bruno Ace SC, serif',
-              fontStyle: 'normal',
-              color: '#7BAFD4',
-            }}
-          >
-            {body}
-          </Typography>
+          <HtmlModal title={title} date={""} body={body}/>
         </CardContent>
       </ContentWrapper>
     </AnimatedCard>

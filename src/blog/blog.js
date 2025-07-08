@@ -1,135 +1,162 @@
-import { Box, Button, createTheme, FormControl, FormControlLabel, Grid2, InputLabel, MenuItem, Radio, RadioGroup, Select, ThemeProvider, Typography, useMediaQuery } from '@mui/material';
-import React, { useEffect, useState } from 'react';
-import Blogs from '../objectClassifications/Blogs';
-import BlogCard from '../elements/BlogCard';
-import Footer from '../components/Footer'
-import NavBarButton from '../elements/NavBarButton'
-import db from "../firebase/firebase"
-import {onSnapshot, collection} from "firebase/firestore"
-
-const Blog = () => {
+import {
+    Box,
+    Button,
+    createTheme,
+    FormControl,
+    FormControlLabel,
+    Grid2,
+    InputLabel,
+    MenuItem,
+    Radio,
+    RadioGroup,
+    Select,
+    ThemeProvider,
+    Typography,
+    useMediaQuery,
+  } from '@mui/material';
+  import React, { useEffect, useState } from 'react';
+  import BlogCard from '../elements/BlogCard';
+  import Footer from '../components/Footer';
+  import NavBarButton from '../elements/NavBarButton';
+  import db from '../firebase/firebase';
+  import { onSnapshot, collection } from 'firebase/firestore';
+  
+  const Blog = () => {
     const [blogs, setBlogs] = useState([]);
-    const filterOptions = ['Technology', 'Writing', 'Videogames'];
     const [timeFrame, setTimeFrame] = useState('');
     const [filter, setFilter] = useState('all');
-    const [isLoaded, setIsLoaded] = useState(false);
     const isMobile = useMediaQuery('(max-width:768px)');
-
+  
     const handleChange = (event) => {
-        setFilter(event.target.value);
+      setFilter(event.target.value);
     };
-
-    // useEffect(() => {
-    //     let filteredBlogs = Blogs.Blogs;
-    //     if (filter !== 'all') {
-    //         filteredBlogs = filteredBlogs.filter(blog => blog.category === filter);
-    //     }
-    //     setBlogs(sortByTimestamp(filteredBlogs, "date"));
-    //     setIsLoaded(true);
-    // }, [filter, timeFrame]);
-
-    useEffect(
-        () =>
-          onSnapshot(collection(db, "blogs"), (snapshot) => {
-            let filteredBlogs = snapshot.docs.map(doc => doc.data())
-            if (filter !== 'all') {
-            filteredBlogs = filteredBlogs.filter(blog => blog.category === filter);
-            }
-            console.log(filteredBlogs)
-            setBlogs(sortByTimestamp(filteredBlogs, "date"));
-            setIsLoaded(true);
-            console.log(blogs)
-        }
-          ),
-        [filter, timeFrame]
-      );
-      
-    const sortByTimestamp = (jsonArray, timestampKey) => {
-        return jsonArray.sort((a, b) => {
-            return timeFrame === 'rec'
-                ? new Date(b[timestampKey]).getTime() - new Date(a[timestampKey]).getTime()
-                : new Date(a[timestampKey]).getTime() - new Date(b[timestampKey]).getTime();
-        });
-    };
-
+  
     const handleTimeFrameChange = (event) => {
-        setTimeFrame(event.target.value);
+      setTimeFrame(event.target.value);
     };
-
-    var sectionStyle = {
-        width: "100%",
-        height: "100%",
-        backgroundImage: "url(https://e0.pxfuel.com/wallpapers/554/364/desktop-wallpaper-star-trek-and-background-lcars.jpg)",
-        backgroundSize: '100%',
-        justifyContent: 'center',
-        alignItems: 'center',
-        display: "flex",
-        position: 'relative'
-      };
-
-      const darkTheme = createTheme({
-        palette: {
-          mode: 'dark',
-        },
-        typography: {
-          //fontFamily: "'Roboto', sans-serif", // Use the font you want
-        },
+  
+    const sortByTimestamp = (jsonArray, timestampKey) => {
+      return jsonArray.sort((a, b) => {
+        const aTime = new Date(a[timestampKey]?.toDate?.() ?? a[timestampKey]).getTime();
+        const bTime = new Date(b[timestampKey]?.toDate?.() ?? b[timestampKey]).getTime();
+        return timeFrame === 'rec' ? bTime - aTime : aTime - bTime;
       });
-
+    };
+  
+    useEffect(() => {
+      const unsubscribe = onSnapshot(collection(db, 'blogs'), (snapshot) => {
+        let filteredBlogs = snapshot.docs.map((doc) => doc.data());
+        if (filter !== 'all') {
+          filteredBlogs = filteredBlogs.filter((blog) => blog.category === filter);
+        }
+        setBlogs(sortByTimestamp(filteredBlogs, 'date'));
+      });
+      return () => unsubscribe();
+    }, [filter, timeFrame]);
+  
+    const sectionStyle = {
+      width: '100%',
+      minHeight: '100vh',
+      backgroundImage:
+        'url(https://e0.pxfuel.com/wallpapers/554/364/desktop-wallpaper-star-trek-and-background-lcars.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '2rem 1rem',
+    };
+  
+    const darkTheme = createTheme({
+      palette: {
+        mode: 'dark',
+      },
+    });
+  
     return (
-        <ThemeProvider theme={darkTheme}>
-        <div className="container" style={sectionStyle} >
-                        <Typography  variant="h3" component="h2" data-aos="fade-in" justify-content="center" style={{fontFamily: 'Bruno Ace SC, serif', fontStyle: 'normal', color: '#7BAFD4', paddingBottom: "5%"}}>
-                          Welcome to my blog!
-                        </Typography>
-              <NavBarButton to="/?redirect=/" text="Return home" isLink="true"/> 
-              <br/>
-            <br />
-            <FormControl sx={{ m: 1, width: "10%" }} size="small">
-                <Box sx={{ marginBottom: 2 }}>
-                    <InputLabel id="demo-select-small-label">Filter by...</InputLabel>
-                </Box>
-                <Select
-                    labelId="demo-select-small-label"
-                    id="demo-select-small"
-                    value={filter}
-                    onChange={handleChange}
-                >
-                    <MenuItem value={"all"}>All</MenuItem>
-                    <MenuItem value={"tech"}>Technology</MenuItem>
-                    <MenuItem value={"write"}>Writing</MenuItem>
-                    <MenuItem value={"vg"}>Video Games</MenuItem>
-                </Select>
-                <RadioGroup
-                    row
-                    aria-labelledby="demo-form-control-label-placement"
-                    name="position"
-                    defaultValue="top"
-                    value={timeFrame}
-                    onChange={handleTimeFrameChange}
-                >
-                    <FormControlLabel value="old" control={<Radio />} label="Most Recent" />
-                    <FormControlLabel value="rec" control={<Radio />} label="Oldest" />
-                </RadioGroup>
+      <ThemeProvider theme={darkTheme}>
+        <div className="container" style={sectionStyle}>
+          {/* Title */}
+          <Typography
+            variant="h3"
+            component="h2"
+            data-aos="fade-in"
+            style={{
+              fontFamily: 'Bruno Ace SC, serif',
+              color: '#7BAFD4',
+              marginBottom: '2rem',
+              textAlign: 'center',
+            }}
+          >
+            Welcome to my blog!
+          </Typography>
+  
+          {/* Nav button */}
+          <NavBarButton to="/?redirect=/" text="Return home" isLink="true" />
+          <br />
+  
+          {/* Filters */}
+          <Box
+            display="flex"
+            flexDirection={isMobile ? 'column' : 'row'}
+            alignItems="center"
+            justifyContent="center"
+            gap={2}
+            mb={4}
+          >
+            <FormControl size="small" sx={{ minWidth: 150 }}>
+              <InputLabel id="filter-label">Filter by...</InputLabel>
+              <Select
+                labelId="filter-label"
+                id="filter-select"
+                value={filter}
+                onChange={handleChange}
+                label="Filter by..."
+              >
+                <MenuItem value="all">All</MenuItem>
+                <MenuItem value="tech">Technology</MenuItem>
+                <MenuItem value="write">Writing</MenuItem>
+                <MenuItem value="vg">Video Games</MenuItem>
+              </Select>
             </FormControl>
-
-            <div id="blogsSection">
-                <label>My blogs</label>
-                <Grid2 container spacing={2} justifyContent="center" padding={2}>
-                    {blogs.map((blog, index) => (
-                        <Grid2 item xs={12} sm={6} md={4} lg={3} key={index}>
-                                                    <Grid2 item xs={12} sm={6} md={4} lg={3}>
-                                                        <BlogCard title={blog.title} date={blog.date} shortDescription={blog.body} image={blog.image_link} link={blog.link}/>
-                                                    </Grid2>
-                        </Grid2>
-                    ))}
-                </Grid2>
-                <Box height="1000px"/>
-            </div>
-            <Footer/>
+  
+            <FormControl component="fieldset">
+              <RadioGroup
+                row
+                aria-label="timeframe"
+                name="timeframe"
+                value={timeFrame}
+                onChange={handleTimeFrameChange}
+              >
+                <FormControlLabel value="old" control={<Radio />} label="Most Recent" />
+                <FormControlLabel value="rec" control={<Radio />} label="Oldest" />
+              </RadioGroup>
+            </FormControl>
+          </Box>
+  
+          {/* Blogs */}
+          <Grid2 container spacing={3} justifyContent="center">
+            {blogs.map((blog, index) => (
+              <Grid2 item xs={12} sm={6} md={4} lg={3} key={index}>
+                <BlogCard
+                  title={blog.title}
+                  date={blog.date}
+                  shortDescription={blog.short_description}
+                  image={blog.image_link}
+                  body={blog.body}
+                />
+              </Grid2>
+            ))}
+          </Grid2>
+  
+          {/* Footer */}
+          <Box mt={8} width="100%">
+            <Footer />
+          </Box>
         </div>
-        </ThemeProvider>
+      </ThemeProvider>
     );
-};
-
-export default Blog;
+  };
+  
+  export default Blog;
+  
