@@ -3,8 +3,8 @@ import { Box, IconButton, useMediaQuery } from '@mui/material'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 const images = [
-  'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/harrison.jpeg',
   'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/bridge.jpg',
+  'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/harrison.jpeg',
   'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/knight.png'
 ];
 
