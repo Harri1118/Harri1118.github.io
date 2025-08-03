@@ -77,6 +77,16 @@
             "link": "https://github.com/User0x646D616E/Alpha-Tracker",
             "youtubeLink": "https://youtu.be/lrdNfrQdavQ",
             "skills": ["ReactJS", "TypeScript", "Javascript", "MongoDB", "VS Code", "OpenAi", "Langchain", "Github", "GoLang", "Postman", "Gin-Gonic", ".NET" ]  
+        },
+        {
+            "projectTitle": "Worldbuilding.com",
+            "shortDescription": "Coming soon...",
+            "description": "",
+            "image": "",
+            "date": "07/25 - Present",
+            "link": "",
+            "youtubeLink": "",
+            "skills": []  
         }
     ],
     "Unused Photos" : [{
