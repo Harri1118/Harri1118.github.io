@@ -164,6 +164,10 @@
             "title": "Rest API",
             "type": "frwork",
             "image": "https://intrastage.com/wp-content/uploads/2019/09/rest-api-icon.png"
+        },
+        {"title": "Leaflet API",
+         "type": "frwork",
+         "image": "https://tse4.mm.bing.net/th/id/OIP.Z2xw6VC7c2EJIsfHn4XKVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
         }
     ]
 

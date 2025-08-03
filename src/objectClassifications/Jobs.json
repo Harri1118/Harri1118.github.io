@@ -8,7 +8,7 @@
             "startDate": "May 2025",
             "endDate": "Present",
             "employer": "University at Albany",
-            "skills": [],
+            "skills": ["Javascript", "TypeScript", "Leaflet API", "VS Code"],
             "timelineType" : "work"
         },
         {

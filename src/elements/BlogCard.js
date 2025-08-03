@@ -51,7 +51,8 @@ export default function BlogCard(props) {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    console.log(body)
+    const DDate = new Date(date)
+    console.log(DDate)
   }, []);
 
   return (
@@ -85,17 +86,6 @@ export default function BlogCard(props) {
           >
             {title}
           </Typography>
-          {/* <Typography
-            variant="body2"
-            sx={{
-              color: 'text.secondary',
-              fontFamily: 'Bruno Ace SC, serif',
-              fontStyle: 'normal',
-              color: '#7BAFD4',
-            }}
-          >
-            {date.seconds}
-          </Typography> */}
           <Typography
             variant="body2"
             sx={{
@@ -107,7 +97,7 @@ export default function BlogCard(props) {
           >
             {short_description}
           </Typography>
-          <HtmlModal title={title} date={""} body={body}/>
+          <HtmlModal title={title} date={date} body={body}/>
         </CardContent>
       </ContentWrapper>
     </AnimatedCard>

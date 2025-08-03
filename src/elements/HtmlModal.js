@@ -73,14 +73,14 @@ export default function HtmlModal(props) {
             fontFamily: 'Bruno Ace SC, serif',
             fontStyle: 'normal',
             color: '#7BAFD4',
-            backgroundColor: "#fff",
+            backgroundColor: "#000",
             borderRadius: 2
           }}
         >
           <Typography
             variant={isMobile ? "h4" : "h3"}
             id="html-modal-title"
-            sx={{ mb: 2 }}
+            sx={{ mb: 2, textAlign: "center", color: '#7BAFD4', fontFamily: 'Bruno Ace SC, serif',}}
           >
             {title}
           </Typography>
@@ -89,9 +89,11 @@ export default function HtmlModal(props) {
             <Typography
               variant="body1"
               id="html-modal-description"
-              sx={{ mb: 2, color: '#7BAFD4' }}
+              sx={{ mb: 2, color: '#7BAFD4', fontFamily: 'Bruno Ace SC, serif', }}
             >
-              {date}
+          {(date && typeof date.toDate === 'function')
+          ? date.toDate().toLocaleString()
+          : '—'}
             </Typography>
           )}
 
