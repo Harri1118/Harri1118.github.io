@@ -156,8 +156,8 @@ import {
                 value={timeFrame}
                 onChange={handleTimeFrameChange}
               >
-                <FormControlLabel value="old" control={<Radio />} label="Most Recent" style={{color: 'white'}}/>
-                <FormControlLabel value="rec" control={<Radio />} label="Oldest" style={{color: 'white'}} />
+                <FormControlLabel value="old" control={<Radio />} label="Oldest" style={{color: 'white'}}/>
+                <FormControlLabel value="rec" control={<Radio />} label="Most Recent" style={{color: 'white'}} />
               </RadioGroup>
             </FormControl>
           </Box>
