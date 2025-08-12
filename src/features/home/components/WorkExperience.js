@@ -5,9 +5,9 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
 import AOS from 'aos';
-import '../css/WorkExperience.css';
-import jobObjects from '../objectClassifications/Jobs.json';
-import NestedModal from '../elements/NestedModal';
+import 'assets/styles/WorkExperience.css';
+import jobObjects from 'data/objectClassifications/Jobs.json';
+import NestedModal from 'components/NestedModal';
 
 function chooseBackgroundImage(bg) {
   if (bg === "work") {

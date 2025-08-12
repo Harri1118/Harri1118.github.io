@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemText, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll';
-import NavBarButton from '../elements/NavBarButton';
+import NavBarButton from 'components/NavBarButton';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = React.memo(function Navbar() {

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Box, IconButton, Link, useMediaQuery } from '@mui/material';
 import AOS from 'aos';
-import '../css/Header.css';
+import 'assets/styles/Header.css';
 import 'aos/dist/aos.css';
 import { TypeAnimation } from 'react-type-animation';
-import ImageSlider from '../elements/ImageSlider'
-import SequentialAnimation from '../elements/SequentialAnimation';
-import '../App.css'
+import ImageSlider from 'components/ImageSlider'
+import SequentialAnimation from 'components/SequentialAnimation';
 
 function Header() {
   const isMobile = useMediaQuery('(max-width:768px)');

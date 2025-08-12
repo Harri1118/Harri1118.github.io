@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
 import { Box, Typography, Button, Link, useMediaQuery } from '@mui/material';
-import SkillsObjects from '../objectClassifications/Skills.json'
+import SkillsObjects from 'data/objectClassifications/Skills.json'
 import { useEffect } from 'react';
-import AccordionExpandIcon from './AccordionExpandIcon';
+import AccordionExpandIcon from 'components/AccordionExpandIcon';
 import ReactPlayer from 'react-player';
 
 const style = {

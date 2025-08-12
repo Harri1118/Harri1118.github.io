@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import AOS from 'aos';
-import NestedModal from './NestedModal';
-import '../App.css';
+import HtmlModal from '../../components/HtmlModal';
 
 const AnimatedCard = styled(Card)(({ theme }) => ({
   width: 270, // Fixed width for all cards
@@ -47,16 +45,17 @@ const ContentWrapper = styled('div')({
   backgroundColor: 'rgba(0, 0, 0, 0.6)', // Optional: Add a semi-transparent background to enhance text legibility
 });
 
-export default function MediaCard(props) {
-  const { title, shortDescription, description, image, date, link, youtubeLink, skills } = props;
+export default function BlogCard(props) {
+  const { title, body, image, date, short_description} = props;
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    console.log(body)
   }, []);
 
   return (
     <AnimatedCard data-aos="fade-up">
-      <BackgroundImage style={{ backgroundImage: `url(${image})` }} loading="lazy"/>
+      <BackgroundImage style={{ backgroundImage: `url(${image})` }} />
       <ContentWrapper>
         <CardContent
           sx={{
@@ -85,6 +84,17 @@ export default function MediaCard(props) {
           >
             {title}
           </Typography>
+          {/* <Typography
+            variant="body2"
+            sx={{
+              color: 'text.secondary',
+              fontFamily: 'Bruno Ace SC, serif',
+              fontStyle: 'normal',
+              color: '#7BAFD4',
+            }}
+          >
+            {date.seconds}
+          </Typography> */}
           <Typography
             variant="body2"
             sx={{
@@ -94,21 +104,10 @@ export default function MediaCard(props) {
               color: '#7BAFD4',
             }}
           >
-            {shortDescription}
+            {short_description}
           </Typography>
+          <HtmlModal title={title} date={""} body={body}/>
         </CardContent>
-        <CardActions sx={{ justifyContent: 'center' }}>
-          <NestedModal
-            size="small"
-            title={title}
-            description={description}
-            image={image}
-            date={date}
-            link={link}
-            youtubeLink={youtubeLink}
-            skills={skills}
-          />
-        </CardActions>
       </ContentWrapper>
     </AnimatedCard>
   );

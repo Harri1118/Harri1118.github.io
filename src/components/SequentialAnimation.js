@@ -2,7 +2,7 @@ import { Box, Link, useMediaQuery } from '@mui/material';
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import '../App.css'
+
 const goal = `Hi, I'm Harrison! As a passionate web developer, I specialize in building dynamic, user-friendly web applications. 
 With expertise in both front-end and back-end technologies, I thrive on solving complex problems and crafting impactful digital solutions.`
 

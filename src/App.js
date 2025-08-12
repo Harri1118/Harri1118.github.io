@@ -1,10 +1,10 @@
 import React, { Suspense, useEffect, lazy } from 'react';
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
-import Game from './game/Game';
-import Blog from './blog/blog';
-import './App.css';
+import 'assets/styles/App.css'
 
-const Home = lazy(() => import('./Home'));
+const Home = lazy(() => import('pages/Home'));
+const Game = lazy(() => import('pages/Game'));
+const Blog = lazy(() => import('pages/blog'));
 
 const RedirectHandler = () => {
   const navigate = useNavigate();
@@ -23,7 +23,6 @@ const RedirectHandler = () => {
 const App = () => {
   return (
     <BrowserRouter>
-
       <RedirectHandler />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
