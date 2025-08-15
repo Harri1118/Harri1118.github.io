@@ -1,14 +1,13 @@
 // // src/App.js
 import React, { useEffect, useState } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import MainContent from './components/MainContent';
+import Header from 'features/home/components/Header';
+import Footer from 'components/Footer';
+import Navbar from 'features/home/components/Navbar';
+import MainContent from 'features/home/components/MainContent';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box, styled } from '@mui/material';
-import ParticlesBackGround from './elements/ParticlesBackground';
-import './App.css'
+import ParticlesBackGround from 'components/ParticlesBackground';
 import AOS from 'aos';
 const darkTheme = createTheme({
   palette: {

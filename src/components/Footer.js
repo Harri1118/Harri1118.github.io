@@ -1,7 +1,6 @@
 // src/components/Header.js
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import '../App.css'
 import 'aos/dist/aos.css';
 import { Typography, Box, Link, useMediaQuery } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';

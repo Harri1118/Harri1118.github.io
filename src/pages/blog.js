@@ -10,7 +10,6 @@ import {
     Radio,
     RadioGroup,
     Select,
-    styled,
     ThemeProvider,
     Typography,
     useMediaQuery,
@@ -21,32 +20,6 @@ import {
   import NavBarButton from '../elements/NavBarButton';
   import db from '../firebase/firebase';
   import { onSnapshot, collection } from 'firebase/firestore';
-  import ParticlesBackGround from '../elements/ParticlesBackground'
-
-  const BackgroundBox = styled(Box)(({ theme }) => ({
-    position: 'relative',
-    minHeight: '100vh',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    '&::before': {
-      content: '""',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      zIndex: 1,
-    },
-    '& > *': {
-      position: 'relative',
-      zIndex: 2,
-    },
-  }));
-
   
   const Blog = () => {
     const [blogs, setBlogs] = useState([]);
@@ -102,8 +75,7 @@ import {
   
     return (
       <ThemeProvider theme={darkTheme}>
-        {/* <div className="container" style={sectionStyle}> */}
-        <BackgroundBox>
+        <div className="container" style={sectionStyle}>
           {/* Title */}
           <Typography
             variant="h3"
@@ -144,7 +116,7 @@ import {
                 <MenuItem value="all">All</MenuItem>
                 <MenuItem value="tech">Technology</MenuItem>
                 <MenuItem value="write">Writing</MenuItem>
-                <MenuItem value="game">Video Games</MenuItem>
+                <MenuItem value="vg">Video Games</MenuItem>
               </Select>
             </FormControl>
   
@@ -156,8 +128,8 @@ import {
                 value={timeFrame}
                 onChange={handleTimeFrameChange}
               >
-                <FormControlLabel value="old" control={<Radio />} label="Oldest" style={{color: 'white'}}/>
-                <FormControlLabel value="rec" control={<Radio />} label="Most Recent" style={{color: 'white'}} />
+                <FormControlLabel value="old" control={<Radio />} label="Most Recent" />
+                <FormControlLabel value="rec" control={<Radio />} label="Oldest" />
               </RadioGroup>
             </FormControl>
           </Box>
@@ -169,7 +141,7 @@ import {
                 <BlogCard
                   title={blog.title}
                   date={blog.date}
-                  short_description={blog.short_description}
+                  shortDescription={blog.short_description}
                   image={blog.image_link}
                   body={blog.body}
                 />
@@ -181,9 +153,7 @@ import {
           <Box mt={8} width="100%">
             <Footer />
           </Box>
-        {/* </div> */}
-        </BackgroundBox>
-        <ParticlesBackGround/>
+        </div>
       </ThemeProvider>
     );
   };

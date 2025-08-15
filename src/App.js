@@ -4,7 +4,9 @@ import Game from './game/Game';
 import Blog from './blog/blog';
 import './App.css';
 
-const Home = lazy(() => import('./Home'));
+const Home = lazy(() => import('pages/Home'));
+const Game = lazy(() => import('pages/Game'));
+const Blog = lazy(() => import('pages/blog'));
 
 const RedirectHandler = () => {
   const navigate = useNavigate();
