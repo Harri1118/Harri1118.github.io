@@ -16,10 +16,10 @@ import {
     useMediaQuery,
   } from '@mui/material';
   import React, { useEffect, useState } from 'react';
-  import BlogCard from '../elements/BlogCard';
-  import Footer from '../components/Footer';
-  import NavBarButton from '../elements/NavBarButton';
-  import db from '../firebase/firebase';
+  import BlogCard from 'features/blog/BlogCard';
+  import Footer from 'components/Footer';
+  import NavBarButton from 'components/NavBarButton';
+  import db from 'config/firebase/firebase';
   import { onSnapshot, collection } from 'firebase/firestore';
   import ParticlesBackGround from '../elements/ParticlesBackground'
 

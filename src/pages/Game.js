@@ -1,12 +1,10 @@
 // // src/App.js
 import React, { useEffect, useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+//import CssBaseline from '@mui/material/CssBaseline';
 import { Box, styled } from '@mui/material';
-import ParticlesBackGround from '../elements/ParticlesBackground';
-import '../App.css'
-import Menu from './windows/Menu'
-import PlayGame from './windows/PlayGame'
+//import Menu from './windows/Menu'
+//import PlayGame from './windows/PlayGame'
 
 const darkTheme = createTheme({
   palette: {
@@ -49,7 +47,7 @@ const Game = () =>{
   let mode = 'play'
   return (
     <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
+      {/* <CssBaseline />
       <BackgroundBox>
         {
           mode == "menu" &&
@@ -61,7 +59,7 @@ const Game = () =>{
         }
       </BackgroundBox>
       <Box sx={{ m: 10 }} /> 
-     <ParticlesBackGround/>
+     <ParticlesBackGround/> */}
     </ThemeProvider>
   );
 }

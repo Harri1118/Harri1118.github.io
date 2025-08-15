@@ -4,8 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import AOS from 'aos';
-import '../App.css';
-import HtmlModal from './HtmlModal';
+import HtmlModal from '../../components/HtmlModal';
 
 const AnimatedCard = styled(Card)(({ theme }) => ({
   width: 270, // Fixed width for all cards

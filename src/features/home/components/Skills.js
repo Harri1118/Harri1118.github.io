@@ -1,8 +1,8 @@
 import { Box, FormControl, InputLabel, MenuItem, Select, Typography, useMediaQuery } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
-import SkillsObjects from '../objectClassifications/Skills.json'
-import SkillsIcons from '../elements/SkillsIcons';
+import SkillsObjects from 'data/objectClassifications/Skills.json'
+import SkillsIcons from 'components/SkillsIcons';
 
 function Skills() {
     const filterOptions = ['Languages', 'Frameworks', 'Tools'];
