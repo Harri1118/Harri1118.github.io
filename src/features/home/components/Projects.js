@@ -2,7 +2,7 @@ import MediaCard from 'components/MediaCard';
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import { Grid2 } from '@mui/material';
-import projectsOrigin from 'data/objectClassifications/Projects.json'
+import projectsOrigin from 'data/objectClassifications/Projects'
 
 function Projects() {
     const[projects, setProjects] = useState([])
