@@ -20,11 +20,8 @@ import {
   import NavBarButton from '../elements/NavBarButton';
   import db from '../firebase/firebase';
   import { onSnapshot, collection } from 'firebase/firestore';
-<<<<<<<<< Temporary merge branch 1:src/blog/blog.js
   import ParticlesBackGround from '../elements/ParticlesBackground'
-=========
   import ParticlesBackGround from 'components/ParticlesBackground'
->>>>>>>>> Temporary merge branch 2:src/pages/blog.js
 
   const BackgroundBox = styled(Box)(({ theme }) => ({
     position: 'relative',
