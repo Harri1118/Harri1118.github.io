@@ -16,7 +16,7 @@ const Navbar = React.memo(function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isBottom = window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight;
+      const isBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
       setIsAtBottom(isBottom);
     };
 
@@ -80,9 +80,7 @@ const Navbar = React.memo(function Navbar() {
           {LABELS.map((text, index) => (
             <ListItem button key={index}>
               <ListItemText>
-                <Button component={Link} to={TO[index]} smooth={true} duration={500} sx={{ color: 'white' }}>
-                  {text}
-                </Button>
+                <NavBarButton to={TO[index]} text={text} isLink={LINKS[index]}/>
               </ListItemText>
             </ListItem>
           ))}

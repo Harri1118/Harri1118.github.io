@@ -1,9 +1,6 @@
 import React, { Suspense, useEffect, lazy } from 'react';
 import { BrowserRouter, HashRouter, Route, Routes, useNavigate } from "react-router-dom";
-import Game from './game/Game';
-import Blog from './blog/blog';
-import './App.css';
-
+import 'assets/styles/App.css'
 const Home = lazy(() => import('pages/Home'));
 const Game = lazy(() => import('pages/Game'));
 const Blog = lazy(() => import('pages/blog'));

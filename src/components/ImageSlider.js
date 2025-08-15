@@ -3,15 +3,9 @@ import { Box, IconButton, useMediaQuery } from '@mui/material'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 const images = [
-<<<<<<< HEAD:src/elements/ImageSlider.js
-  'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/bridge.jpg',
-  'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/knight.png',
-  'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/images/harrison.jpeg'
-=======
   'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/assets/images/bridge.jpg',
   'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/assets/images/harrison.jpeg',
   'https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/assets/images/knight.png'
->>>>>>> bbe4b36864e574ff7848cc5a9c7f2ed34af57c7a:src/components/ImageSlider.js
 ];
 
   

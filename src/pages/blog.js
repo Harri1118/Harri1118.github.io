@@ -14,38 +14,37 @@ import {
     Typography,
     useMediaQuery,
   } from '@mui/material';
-  import React, { useEffect, useState } from 'react';
-  import BlogCard from '../elements/BlogCard';
-  import Footer from '../components/Footer';
-  import NavBarButton from '../elements/NavBarButton';
-  import db from '../firebase/firebase';
+  import React, { lazy, useEffect, useState } from 'react';
+  import BlogCard from 'features/blog/BlogCard';
+  import Footer from 'components/Footer';
+  import NavBarButton from 'components/NavBarButton';
+  import db from 'config/firebase/firebase';
   import { onSnapshot, collection } from 'firebase/firestore';
-  import ParticlesBackGround from '../elements/ParticlesBackground'
-  import ParticlesBackGround from 'components/ParticlesBackground'
+  const ParticlesBackGround = lazy(() => import('components/ParticlesBackground'));
 
-  const BackgroundBox = styled(Box)(({ theme }) => ({
-    position: 'relative',
-    minHeight: '100vh',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    '&::before': {
-      content: '""',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      zIndex: 1,
-    },
-    '& > *': {
-      position: 'relative',
-      zIndex: 2,
-    },
-  }));
+  // const BackgroundBox = styled(Box)(({ theme }) => ({
+  //   position: 'relative',
+  //   minHeight: '100vh',
+  //   backgroundSize: 'cover',
+  //   backgroundPosition: 'center',
+  //   display: 'flex',
+  //   flexDirection: 'column',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  //   '&::before': {
+  //     content: '""',
+  //     position: 'absolute',
+  //     top: 0,
+  //     left: 0,
+  //     right: 0,
+  //     bottom: 0,
+  //     zIndex: 1,
+  //   },
+  //   '& > *': {
+  //     position: 'relative',
+  //     zIndex: 2,
+  //   },
+  // }));
 
   
   const Blog = () => {
@@ -102,6 +101,7 @@ import {
   
     return (
       <ThemeProvider theme={darkTheme}>
+        <ParticlesBackGround/>
         <div className="container" style={sectionStyle}>
           {/* Title */}
           <Typography
