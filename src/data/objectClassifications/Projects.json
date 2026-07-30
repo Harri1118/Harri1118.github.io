@@ -79,11 +79,21 @@
             "skills": ["ReactJS", "TypeScript", "Javascript", "MongoDB", "VS Code", "OpenAi", "Langchain", "Github", "GoLang", "Postman", "Gin-Gonic", ".NET" ]  
         },
         {
+            "projectTitle": "Reticulum Vpn",
+            "shortDescription": "Coming soon...",
+            "description": "",
+            "image": "",
+            "date": "05 / 2026 - Present",
+            "link": "",
+            "youtubeLink": "",
+            "skills": []
+        },
+        {
             "projectTitle": "Worldbuilding.com",
             "shortDescription": "Coming soon...",
             "description": "",
             "image": "",
-            "date": "07/25 - Present",
+            "date": "???",
             "link": "",
             "youtubeLink": "",
             "skills": []  

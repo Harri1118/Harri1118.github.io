@@ -83,7 +83,7 @@
         {
             "title": "OpenAi",
             "type": "frwork",
-            "image": "https://www.solodev.com/file/132db9f1-8eb9-11ed-b378-0eaef3759f5f/openai-icon.png"
+            "image": "https://us1.discourse-cdn.com/openai1/original/4X/3/2/1/321a1ba297482d3d4060d114860de1aa5610f8a9.png"
         },
         {
             "title": "Unity",
@@ -93,12 +93,12 @@
         {
             "title": "Unreal Engine",
             "type": "frwork",
-            "image": "https://static-00.iconduck.com/assets.00/unreal-engine-icon-512x512-0mwtjk1x.png"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWrMvgBmkpB9xVqt1ev2acEUc2KVKWzCxRs7CcHsYOa0sT0a7hHNP1qsbY&s=10"
         },
         {
             "title": "ReactJS",
             "type": "frwork",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/960px-React-icon.svg.png"
         },
         {
             "title": "GoLang",
@@ -118,17 +118,17 @@
         {
             "title": "MongoDB",
             "type": "tool",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/640px-Mongodb-svgrepo-com.svg.png"
+            "image": "https://images.seeklogo.com/logo-png/48/1/mongodb-logo-png_seeklogo-481256.png"
         },
         {
             "title": "NodeJS",
             "type": "frwork",
-            "image": "https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Os0zJwzhfavrr_gjKhCyREZswfpVEvlCUzvE0tZFjBg1FjMs6iUhxhk&s=10"
         },
         {
             "title": "Tensorflow",
             "type": "frwork",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Tensorflow-svgrepo-com.svg/640px-Tensorflow-svgrepo-com.svg.png"
+            "image": "https://icon2.cleanpng.com/20180531/xqy/avpv0lrdr.webp"
         },
         {
             "title": "Docker",
@@ -138,12 +138,12 @@
         {
             "title": "Microsoft Excel",
             "type": "tool",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
+            "image": "https://www.clipartmax.com/png/middle/211-2113829_s-microsoft-excel-logo.png"
         },
         {
             "title": "TypeScript",
             "type": "frwork",
-            "image": "https://static-00.iconduck.com/assets.00/typescript-icon-icon-2048x2048-2rhh1z66.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/960px-Typescript_logo_2020.svg.png"
         },
         {
             "title": "Postman",
@@ -163,11 +163,21 @@
         {
             "title": "Rest API",
             "type": "frwork",
-            "image": "https://intrastage.com/wp-content/uploads/2019/09/rest-api-icon.png"
+            "image": "https://img.icons8.com/nolan/1200/api-settings.jpg"
         },
         {"title": "Leaflet API",
          "type": "frwork",
          "image": "https://tse4.mm.bing.net/th/id/OIP.Z2xw6VC7c2EJIsfHn4XKVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            "title": "Rust",
+            "type": "plang",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1280px-Rust_programming_language_black_logo.svg.png"
+        },
+        {
+            "title": "Claude",
+            "type": "tool",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe_7n3WJOHmk5styrrW7rJe0cfs20bnm09DW_KUX8sr5C4hdE0R_weW--p&s=10"
         }
     ]
 

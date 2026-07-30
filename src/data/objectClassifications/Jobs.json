@@ -1,8 +1,28 @@
 {
     "Jobs":[
         {
+            "jobTitle": "Software Engineer",
+            "description": "Software Engineer for Avo",
+            "location": "Remote",
+            "image": "https://www.avo.so/apple-icon.png?apple-icon.70a9bc4d.png",
+            "startDate": "March 2026",
+            "employer": "Avo",
+            "skills": ["Rust", "Claude", "TypeScript"],
+            "timelineType": "work"
+        },
+        {
+            "jobTitle": "Founding Engineer",
+            "description": "Hydex founding engineer",
+            "location": "Remote",
+            "image": "https://pbs.twimg.com/profile_images/1992033186835218432/sfdMaWZD_400x400.jpg",
+            "startDate": "October 2025",
+            "employer": "Hydex",
+            "skills": ["Rust", "Vite", "TypeScript", "Python"],
+            "timelineType": "work"
+        },
+        {
             "jobTitle": "Independent Contractor",
-            "description": "",
+            "description": "Contributor to Albany ARCE Website",
             "location": "Albany, New York",
             "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
             "startDate": "May 2025",
