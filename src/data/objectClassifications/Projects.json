@@ -82,7 +82,7 @@
             "projectTitle": "AgentGrid",
             "shortDescription": "Agentic orchestrator for developer workflows",
             "description": "Contributor to AgentGrid, an agentic orchestrator application that facilitates workflows for developers. Developed the AgentGrid marketplace, an ecosystem that allows users to download and post their projects onto AgentGrid as downloadable modifications to the core architecture. Added a Google Chrome extension to AgentGrid which allows for Chrome-based browser usability within the app, allowing for more in-depth customization of agentic workflows.",
-            "image": "",
+            "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/assets/images/AgentGrid.png",
             "date": "2026",
             "link": "",
             "youtubeLink": "",
