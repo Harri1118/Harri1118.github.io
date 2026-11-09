@@ -84,7 +84,7 @@ function Footer() {
         <YouTubeIcon fontSize="large" />
       </Link>
       <Link 
-        href="mailto:hkmckenna@albany.edu" 
+        href="mailto:Harrisonkelloggmckenna18@gmail.com" 
         target="_blank" 
         rel="noopener noreferrer" 
         color="#7BAFD4"
@@ -165,7 +165,7 @@ function Footer() {
         <YouTubeIcon fontSize="medium" />
       </Link>
       <Link 
-        href="mailto:hkmckenna@albany.edu" 
+        href="mailto:Harrisonkelloggmckenna18@gmail.com" 
         target="_blank" 
         rel="noopener noreferrer" 
         color="#7BAFD4"

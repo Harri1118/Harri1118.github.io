@@ -178,6 +178,46 @@
             "title": "Claude",
             "type": "tool",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe_7n3WJOHmk5styrrW7rJe0cfs20bnm09DW_KUX8sr5C4hdE0R_weW--p&s=10"
+        },
+        {
+            "title": "PowerShell",
+            "type": "plang",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg"
+        },
+        {
+            "title": "NestJS",
+            "type": "frwork",
+            "image": "https://cdn.svgporn.com/logos/nestjs.svg"
+        },
+        {
+            "title": "Spring Boot",
+            "type": "frwork",
+            "image": "https://cdn.svgporn.com/logos/spring-icon.svg"
+        },
+        {
+            "title": "Solana",
+            "type": "frwork",
+            "image": "https://cryptologos.cc/logos/solana-sol-logo.svg"
+        },
+        {
+            "title": "PostgreSQL",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/postgresql.svg"
+        },
+        {
+            "title": "AWS",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/aws.svg"
+        },
+        {
+            "title": "Git",
+            "type": "tool",
+            "image": "https://cdn.svgporn.com/logos/git-icon.svg"
+        },
+        {
+            "title": "GeoJSON",
+            "type": "tool",
+            "image": "https://img.icons8.com/color/96/map-marker.png"
         }
     ]
 

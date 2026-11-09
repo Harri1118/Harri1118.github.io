@@ -3,8 +3,8 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-const goal = `Hi, I'm Harrison! As a passionate web developer, I specialize in building dynamic, user-friendly web applications. 
-With expertise in both front-end and back-end technologies, I thrive on solving complex problems and crafting impactful digital solutions.`
+const goal = `Hi, I'm Harrison! I'm a Web3 software developer with 2+ years of full-stack experience. 
+Skilled in a wide range of front-end and back-end technologies, I focus on building efficient, reliable, and scalable solutions.`
 
 
 const SequentialAnimation = React.memo(function SequentialAnimation() {

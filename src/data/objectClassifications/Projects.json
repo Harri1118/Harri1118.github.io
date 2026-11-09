@@ -42,7 +42,7 @@
         {
             "projectTitle": "Operating System",
             "shortDescription": "Operating system coded in java",
-            "description": "Created an AWK compiler by coding Lexer, Parser, and Interpreter classes to run awk scripts and congruently interpret input files. Utilized HashMaps to store variable data (within the awk scripts), deployed Java’s Optional class to parse through awk scripts, and applied JUnit tests to test functionality. Github Repo for this project is available upon request.",
+            "description": "Coded an operating system simulator in Java. Implemented an OS, kernel, and a userland process framework that enables users to code their own programs which interact with the kernel. Added memory, piping, simple Device IO, as well as process scheduling and sleeping.",
             "image": "https://raw.githubusercontent.com/Harri1118/Harri1118.github.io/refs/heads/master/src/assets/images/OperatingSystem.png",
             "date": "09/24 - 12/24",
             "link": "https://github.com/Harri1118/ICSI-412-Operating-System",
@@ -71,12 +71,22 @@
         {
             "projectTitle": "Alpha Tracker",
             "shortDescription": "Fitness Tracker Application",
-            "description": "Developed a fitness tracking app to help athletes monitor progress and achieve fitness goals.  Implemented backend using Go with the Gin-Gonic framework with MongoDB to store data.  Integrated with Rest API  developed middleware for user session authentication.  Enhanced the front end using Typescript, creating a robust and immersive user interface.  Created cross platform code for the app to also be viewable on mobile devices using Swift. ",
+            "description": "Developed a fitness tracking app to help athletes monitor progress and achieve fitness goals.  Implemented backend using Go with the Gin-Gonic framework with MongoDB to store data.  Integrated with Rest API  developed middleware for user session authentication.  Enhanced the front end using Typescript, creating a robust and immersive user interface.  Created cross platform code for the app to also be viewable on mobile devices using Swift. Deployed the app using AWS EC2.",
             "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:exxdcplb2ozev5lvw5ohnejq/bafkreifuscezj5dv4fcnt6csmp3j6tdly53ly3wnk6dpabbtj5pi3q6vce@jpeg",
             "date": "01/25 - 05/25",
             "link": "https://github.com/User0x646D616E/Alpha-Tracker",
             "youtubeLink": "https://youtu.be/lrdNfrQdavQ",
-            "skills": ["ReactJS", "TypeScript", "Javascript", "MongoDB", "VS Code", "OpenAi", "Langchain", "Github", "GoLang", "Postman", "Gin-Gonic", ".NET" ]  
+            "skills": ["ReactJS", "TypeScript", "Javascript", "MongoDB", "VS Code", "OpenAi", "Langchain", "Github", "GoLang", "Postman", "Gin-Gonic", ".NET", "AWS" ]  
+        },
+        {
+            "projectTitle": "AgentGrid",
+            "shortDescription": "Agentic orchestrator for developer workflows",
+            "description": "Contributor to AgentGrid, an agentic orchestrator application that facilitates workflows for developers. Developed the AgentGrid marketplace, an ecosystem that allows users to download and post their projects onto AgentGrid as downloadable modifications to the core architecture. Added a Google Chrome extension to AgentGrid which allows for Chrome-based browser usability within the app, allowing for more in-depth customization of agentic workflows.",
+            "image": "",
+            "date": "2026",
+            "link": "",
+            "youtubeLink": "",
+            "skills": ["TypeScript", "PostgreSQL", "Rest API"]
         },
         {
             "projectTitle": "Reticulum Vpn",

@@ -1,34 +1,36 @@
 {
     "Jobs":[
         {
-            "jobTitle": "Software Engineer",
-            "description": "Software Engineer for Avo",
+            "jobTitle": "Systems Engineer",
+            "description": "Developed Mantis, an all-in-one privacy tool for investors to shield and anonymize transactions on the Solana network. Built on-chain smart contracts in Rust using the Anchor framework to preserve transaction anonymity and prevent double spending. Engineered an off-chain TypeScript crank daemon to drive scheduled payouts, sealed destinations, and inject decoy cover-traffic to strengthen anonymity guarantees.",
             "location": "Remote",
             "image": "https://www.avo.so/apple-icon.png?apple-icon.70a9bc4d.png",
             "startDate": "March 2026",
+            "endDate": "Present",
             "employer": "Avo",
-            "skills": ["Rust", "Claude", "TypeScript"],
+            "skills": ["Rust", "Solana", "Claude", "TypeScript"],
             "timelineType": "work"
         },
         {
-            "jobTitle": "Founding Engineer",
-            "description": "Hydex founding engineer",
+            "jobTitle": "Founding Web3 Developer",
+            "description": "Developed a cryptocurrency privacy suite designed to obfuscate and secure transactions on the Solana network. Developed on-chain smart contracts using Rust's Arcium framework, with a focus on secure and efficient transaction logic. Created instructions to fully hide transaction data while maintaining full on-chain verifiability. Designed a fully on-chain architecture, eliminating the need for off-chain databases by leveraging Solana's data storage capabilities. Built a TypeScript SDK for monitoring and interacting with on-chain data, enabling developer-friendly access to protocol state. Implemented an automated bot to ensure data consistency and integrity across on-chain processes.",
             "location": "Remote",
             "image": "https://pbs.twimg.com/profile_images/1992033186835218432/sfdMaWZD_400x400.jpg",
             "startDate": "October 2025",
+            "endDate": "Present",
             "employer": "Hydex",
-            "skills": ["Rust", "Vite", "TypeScript", "Python"],
+            "skills": ["Rust", "Solana", "Vite", "TypeScript", "Python"],
             "timelineType": "work"
         },
         {
-            "jobTitle": "Independent Contractor",
-            "description": "Contributor to Albany ARCE Website",
-            "location": "Albany, New York",
+            "jobTitle": "Project Manager",
+            "description": "Managed the dev team that developed the Albany Rural Cemetery Explorer (ARCE). Deployed mobile applications using the Expo framework to make the source code cross-functional across different mobile platforms. Used TypeScript, ReactJS, as well as the GeoJSON and Leaflet APIs to map and display coordinate data for the burials within the cemetery. Worked in an Agile CI/CD framework to address user needs and deliver constant updates.",
+            "location": "Remote",
             "image": "https://b.thumbs.redditmedia.com/ns1HdZpcjczeNX_Ff2XkPqxRIx1bpicfxHcd6daEq4I.png",
             "startDate": "May 2025",
-            "endDate": "Present",
+            "endDate": "December 2025",
             "employer": "University at Albany",
-            "skills": ["Javascript", "TypeScript", "Leaflet API", "VS Code"],
+            "skills": ["Javascript", "TypeScript", "ReactJS", "Leaflet API", "GeoJSON", "VS Code"],
             "timelineType" : "work"
         },
         {
@@ -43,14 +45,14 @@
             "timelineType" : "work"
         },
         {
-            "jobTitle": "Java Internship",
-            "description": "Participate on teams for projects that have a Web functional component. Prepare size and scope analysis and timeline documentation. Perform development tasks on all areas of applications including front, middle, and back-end. Front-end web technologies include JSP, JSF, HTML, JavaScript, and Cascading Style Sheets. Middle-tier technologies include Servlet, JSP, Action-based frameworks, and Ajax/web-services. Back-end technologies include SQL/JDBC/JPA with DB2/SQL Server, CICS, and JMS/MQ. Create development test plans and prepare and/or refresh test conditions and associated accounts. Following the test plan, execute unit, run stream, subsystem, and regression tests as needed. Review all test results, comparing the results to the identified conditions. Debug and rerun as needed.",
+            "jobTitle": "Full Stack Developer Intern",
+            "description": "Created a new feature within the Higher Services Corporation (HESC) portal web application which enables internal users to view and edit critical student data within the International Scholarship and Tuition Services (ISTS) database table. Used Java, Spring Boot, and SQL for the backend within the Spring framework, using the Java Database Connectivity (JDBC) API to query the ISTS table to deliver data to users.",
             "location": "Albany, New York",
             "image": "https://avatars.githubusercontent.com/u/3894610?s=200&v=4",
-            "startDate": "March 2024",
+            "startDate": "November 2023",
             "endDate": "August 2024",
             "employer": "New York ITS",
-            "skills": ["Microsoft Excel", "Java", "Eclipse", "SQL", "Javascript"],
+            "skills": ["Microsoft Excel", "Java", "Spring Boot", "Eclipse", "SQL", "Javascript"],
             "timelineType" : "work"
         },
         {
