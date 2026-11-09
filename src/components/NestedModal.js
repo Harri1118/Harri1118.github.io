@@ -116,7 +116,7 @@ export default function NestedModal(props) {
             </Typography>
             }
         {
-          (image != null) && !isMobile && 
+          image && !isMobile && 
             <Box
             component="img"
             loading="lazy"
@@ -126,7 +126,7 @@ export default function NestedModal(props) {
             
         }
                 {
-          (image != null) && isMobile && 
+          image && isMobile && 
             <Box
             component="img"
             loading="lazy"
@@ -136,7 +136,7 @@ export default function NestedModal(props) {
             
         }
         {
-          (youtubeLink != null) &&
+          youtubeLink &&
             <Box
             sx={{
               display: "flex",
